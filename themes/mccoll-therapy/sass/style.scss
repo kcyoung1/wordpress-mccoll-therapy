@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: McColl Therapy Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Kurtis Young
+Author URI: http://www.kurtisyoung.ca
+Description: A WordPress custom theme for McColl Therapy Inc.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+McColl Therapy Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -45,21 +45,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 
-// Imported but not included in the stylesheet.
+// Abstract
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/normalize";
 
-@import "variables";
-@import "mixins";
+// Fonts
+@import "fonts/fonts";
+@import "fonts/typography";
 
-// CSS included in style.css.
+// Layout
+@import "layout/elements";
+@import "layout/forms";
+@import "layout/navigation";
+@import "layout/modules";
+@import "layout/widgets";
+@import "layout/content";
+@import "layout/media";
 
-@import "normalize";
-@import "fonts";
-@import "typography";
-@import "elements";
-@import "forms";
-@import "navigation";
-@import "modules";
-@import "widgets";
-@import "content";
-@import "media";
-@import "page-templates";
+// Pages
+@import "pages/front-page";
+
+// Template-parts

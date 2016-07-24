@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'inhabitent.dev',
+        proxy: 'mccoll-therapy.dev',
     });
 
     gulp.watch(files).on('change', browserSync.reload);

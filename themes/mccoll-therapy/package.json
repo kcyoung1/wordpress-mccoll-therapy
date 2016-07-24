@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "mccoll-therapy",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A custom theme for McColl Therapy Inc.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -27,10 +27,10 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "mandiwise",
+  "author": "kurtisyoung",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/redstarter/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/kcyoung1/wordpress-mccoll-therapy#readme"
 }
