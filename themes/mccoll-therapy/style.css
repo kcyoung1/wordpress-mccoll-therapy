@@ -508,6 +508,12 @@ a {
   position: fixed;
   z-index: 100;
   top: 0; }
+  .main-navigation .mccoll-logo {
+    height: auto;
+    width: 50px; }
+    .main-navigation .mccoll-logo img {
+      height: 50px;
+      width: 50px; }
   .main-navigation ul {
     margin-right: 100px;
     display: -ms-flexbox;
