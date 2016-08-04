@@ -32,7 +32,12 @@
 							<a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
 							<a href="/"><h3>McColl Therapy</h3></a>
 					</div>
+					<div class="menu-options">
+						<a href="#">About</a>
+						<a href="#" class="btn contact-nav">Contact Us</a>
+					</div>
 
+					<!-- Not displaying this menu because it is not being used -->
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
