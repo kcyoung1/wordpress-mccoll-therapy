@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .btn:hover {
     background: #B8F4F3; }
 
-.center, .banner-container .hero-banner {
+.center, .container, .banner-wrapper .hero-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -60,6 +60,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+.container {
+  width: 350px;
+  margin: 0 auto; }
+  @media (min-width: 700px) {
+    .container {
+      width: 650px; } }
+  @media (min-width: 1240px) {
+    .container {
+      width: 1150px; } }
 
 html {
   font-family: sans-serif;
@@ -724,13 +734,18 @@ object {
 .display-none {
   display: none; }
 
-.banner-container {
+.site-footer {
+  background: #225378;
+  height: 70px;
+  width: 100%; }
+
+.banner-wrapper {
   margin-top: 30px;
   color: white; }
-  .banner-container .hero-banner {
+  .banner-wrapper .hero-banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-2.jpg);
     background-size: 100%;
     height: 700px;
     width: 100%; }
-  .banner-container h1 {
+  .banner-wrapper h1 {
     text-transform: uppercase; }

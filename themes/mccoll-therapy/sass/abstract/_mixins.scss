@@ -11,6 +11,22 @@
 	margin-right: auto;
 }
 
+// Media Queries
+$tablet-width: 700px;
+$desktop-width: 1240px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 // Extends
 .btn {
 	padding: 5px 20px;
@@ -26,4 +42,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.container {
+	@extend .center;
+	width: 350px;
+	margin: 0 auto;
+	@include tablet {
+		width: 650px;
+	}
+	@include desktop {
+		width: 1150px;
+	}
 }
