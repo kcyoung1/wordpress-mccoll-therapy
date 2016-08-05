@@ -69,6 +69,9 @@ get_header(); ?>
 				<h2>Contact Us</h2>
 				<p>
 					Contact form 7 with call to action
+					<?php
+						echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
+						?>
 				</p>
 			</section><!-- .contact-wrapper -->
 
