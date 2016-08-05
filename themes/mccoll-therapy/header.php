@@ -30,7 +30,7 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<div class="logo-container">
 							<a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
-							<a href="/"><h3>McColl Therapy</h3></a>
+							<a href="/" class="mccoll-name"><h3>McColl Therapy</h3></a>
 					</div>
 					<div class="menu-options">
 						<a href="#">About</a>

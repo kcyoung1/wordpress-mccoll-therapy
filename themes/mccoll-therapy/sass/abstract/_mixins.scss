@@ -27,12 +27,15 @@ $desktop-width: 1240px;
   }
 }
 
-// Extends
+// Extends & Global Classes
 .btn {
-	padding: 5px 20px;
+	padding: 5px 10px;
 	background: $color__main-dark;
 	color: $color__main;
 	cursor: pointer;
+	@include tablet {
+		padding: 5px 20px;
+	}
 	&:hover {
 		background: $color__main-light;
 	}
@@ -44,8 +47,8 @@ $desktop-width: 1240px;
 	align-items: center;
 }
 .container {
-	@extend .center;
 	width: 350px;
+	@extend .center;
 	margin: 0 auto;
 	@include tablet {
 		width: 650px;

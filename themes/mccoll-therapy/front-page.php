@@ -1,4 +1,4 @@
-2<?php
+<?php
 /**
  * The Front Page.
  *
@@ -61,7 +61,7 @@ get_header(); ?>
 				<h2>Information</h2>
 				<p>
 					Link
-					Information and resources for support (links to financial aid, free local resources eg crisis number, support network number, 211(? because they offer counselling too))
+					Information and resources for support - links to financial aid, free local resources eg crisis number, support network number, 211 because they offer counselling too
 				</p>
 			</section><!-- .information-wrapper -->
 

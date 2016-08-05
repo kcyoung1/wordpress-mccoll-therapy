@@ -44,10 +44,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 .btn {
-  padding: 5px 20px;
+  padding: 5px 10px;
   background: #225378;
   color: #06A6B0;
   cursor: pointer; }
+  @media (min-width: 700px) {
+    .btn {
+      padding: 5px 20px; } }
   .btn:hover {
     background: #B8F4F3; }
 
@@ -485,7 +488,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: none; }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -521,7 +524,7 @@ a {
 .main-navigation {
   width: 100%;
   height: 70px;
-  background: #06A6B0;
+  background: rgba(6, 166, 176, 0.9);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -532,28 +535,54 @@ a {
   z-index: 100;
   top: 0;
   color: #B8F4F3;
-  font-size: 1.2rem; }
+  font-size: 1rem;
+  font-weight: bold; }
+  @media (min-width: 700px) {
+    .main-navigation {
+      font-size: 1.2rem; } }
   .main-navigation .logo-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    margin-left: 100px; }
+    margin-left: 10px; }
+    @media (min-width: 700px) {
+      .main-navigation .logo-container {
+        margin-left: 70px; } }
+    @media (min-width: 1240px) {
+      .main-navigation .logo-container {
+        margin-left: 100px; } }
   .main-navigation .mccoll-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .main-navigation .mccoll-name {
+    display: none; }
+    @media (min-width: 700px) {
+      .main-navigation .mccoll-name {
+        display: block; } }
+  .main-navigation img {
     height: 60px;
     width: 70px; }
-    .main-navigation .mccoll-logo img {
-      height: 60px;
-      width: 70px; }
   .main-navigation .menu-options {
-    margin-right: 100px;
+    margin-right: 10px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .main-navigation .menu-options {
+        margin-right: 70px; } }
+    @media (min-width: 1240px) {
+      .main-navigation .menu-options {
+        margin-right: 100px; } }
     .main-navigation .menu-options a {
-      margin: 0 30px; }
+      margin: 0 15px; }
+      @media (min-width: 700px) {
+        .main-navigation .menu-options a {
+          margin: 0 30px; } }
   .main-navigation .contact-nav {
     color: white; }
     .main-navigation .contact-nav:hover {
@@ -740,11 +769,11 @@ object {
   width: 100%; }
 
 .banner-wrapper {
-  margin-top: 30px;
+  margin-top: 70px;
   color: white; }
   .banner-wrapper .hero-banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-2.jpg);
-    background-size: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-2.jpg) no-repeat center;
+    background-size: cover;
     height: 700px;
     width: 100%; }
   .banner-wrapper h1 {
