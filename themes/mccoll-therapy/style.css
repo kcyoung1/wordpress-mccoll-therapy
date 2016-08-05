@@ -51,6 +51,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .btn:hover {
     background: #B8F4F3; }
 
+.center, .banner-container .hero-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -518,7 +528,7 @@ a {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    margin-left: 50px; }
+    margin-left: 100px; }
   .main-navigation .mccoll-logo {
     height: 60px;
     width: 70px; }
@@ -711,7 +721,16 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
+.display-none {
+  display: none; }
+
+.banner-container {
+  margin-top: 30px;
+  color: white; }
+  .banner-container .hero-banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-2.jpg);
+    background-size: 100%;
+    height: 700px;
+    width: 100%; }
+  .banner-container h1 {
+    text-transform: uppercase; }

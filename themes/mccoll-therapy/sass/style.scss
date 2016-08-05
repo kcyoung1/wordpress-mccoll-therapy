@@ -62,8 +62,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/widgets";
 @import "layout/content";
 @import "layout/media";
+@import "layout/footer";
 
-// Pages
-@import "pages/front-page";
+// Sections
+@import "sections/hero-banner";
+
 
 // Template-parts

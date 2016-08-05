@@ -21,3 +21,9 @@
 		background: $color__main-light;
 	}
 }
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
