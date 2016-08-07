@@ -52,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     .btn {
       padding: 5px 20px; } }
   .btn:hover {
-    background: #B8F4F3; }
+    background: rgba(34, 83, 120, 0.8); }
 
 .center, .container, .banner-wrapper .hero-banner {
   display: -ms-flexbox;

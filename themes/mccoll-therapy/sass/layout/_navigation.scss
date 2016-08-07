@@ -148,7 +148,7 @@ a {
 	position: fixed;
 	z-index: 100;
 	top: 0;
-	color: $color__main-light;
+	color: $color__mint;
 	font-size: 1rem;
 	font-weight: bold;
 	@include tablet {
@@ -206,7 +206,7 @@ a {
 	a {
 		color: $color__white;
 		&:hover {
-			color: $color__main-dark;
+			color: $color__navy;
 		}
 	}
 }

@@ -30,14 +30,14 @@ $desktop-width: 1240px;
 // Extends & Global Classes
 .btn {
 	padding: 5px 10px;
-	background: $color__main-dark;
-	color: $color__main;
+	background: $color__navy;
+	color: $color__turq;
 	cursor: pointer;
 	@include tablet {
 		padding: 5px 20px;
 	}
 	&:hover {
-		background: $color__main-light;
+		background: $color__navy-li;
 	}
 }
 .center {
