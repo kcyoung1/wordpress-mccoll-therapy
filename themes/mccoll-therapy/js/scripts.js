@@ -1,4 +1,5 @@
 jQuery(document).ready(function() {
+
     // Smooth Scrolling
 
     jQuery('a[href*=#]:not([href=#])').click(function() {

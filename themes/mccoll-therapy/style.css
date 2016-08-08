@@ -596,6 +596,11 @@ a {
   .main-navigation img {
     height: 60px;
     width: 70px; }
+  .main-navigation ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
   .main-navigation .menu-options {
     margin-right: 10px;
     display: -ms-flexbox;
@@ -615,15 +620,21 @@ a {
       @media (min-width: 700px) {
         .main-navigation .menu-options a {
           margin: 0 30px; } }
+  .main-navigation .focus:focus {
+    border-bottom: 2px solid #225378; }
   .main-navigation .contact-nav {
     color: white;
     text-align: center; }
     .main-navigation .contact-nav:hover {
       color: white; }
+    .main-navigation .contact-nav:focus {
+      outline: 2px solid #B8F4F3; }
   .main-navigation a {
     color: white; }
     .main-navigation a:hover {
       color: #225378; }
+  .main-navigation .active {
+    color: #225378; }
 
 /*--------------------------------------------------------------
 # Accessibility
