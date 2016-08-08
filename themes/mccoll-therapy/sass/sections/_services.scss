@@ -1,4 +1,8 @@
 .services-wrapper {
+  @extend .center;
+  background-color: $color__turq;
+  color: white;
+  padding-bottom: 50px;
   ul {
     list-style: none;
     margin: 0 auto;
@@ -8,12 +12,23 @@
   }
   li {
     flex: 0 1 50%;
-  	@include desktop {
+  	@include tablet {
   		flex: 0 1 25%;
   	}
   }
   h3 {
     margin: 0;
+  }
+  .services-wrap {
+    @extend .center;
+  }
+  .services-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .services-title {
+    color: $color__tan;
+    width: 180px;
   }
   .services-info {
     text-align: center;

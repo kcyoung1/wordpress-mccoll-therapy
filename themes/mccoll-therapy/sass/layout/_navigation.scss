@@ -195,6 +195,7 @@ a {
 		}
 		a {
 			margin: 0 15px;
+			outline: none;
 			@include tablet {
 				margin: 0 30px;
 			}
@@ -202,6 +203,7 @@ a {
 	}
 	.contact-nav {
 		color: $color__white;
+		text-align: center;
 		&:hover {
 			color: $color__white;
 		}

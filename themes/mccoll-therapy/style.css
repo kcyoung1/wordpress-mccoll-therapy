@@ -43,18 +43,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.btn {
+.btn, .contact-wrapper .wpcf7-submit {
   padding: 5px 10px;
   background: #225378;
   color: #06A6B0;
   cursor: pointer; }
   @media (min-width: 700px) {
-    .btn {
+    .btn, .contact-wrapper .wpcf7-submit {
       padding: 5px 20px; } }
-  .btn:hover {
+  .btn:hover, .contact-wrapper .wpcf7-submit:hover {
     background: rgba(34, 83, 120, 0.8); }
 
-.center, .container, .banner-wrapper .hero-banner {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -290,6 +290,7 @@ h2 {
       font-size: 2rem; } }
 
 h3 {
+  font-weight: 400;
   font-size: 1.2rem; }
   @media (min-width: 700px) {
     h3 {
@@ -609,12 +610,14 @@ a {
       .main-navigation .menu-options {
         margin-right: 100px; } }
     .main-navigation .menu-options a {
-      margin: 0 15px; }
+      margin: 0 15px;
+      outline: none; }
       @media (min-width: 700px) {
         .main-navigation .menu-options a {
           margin: 0 30px; } }
   .main-navigation .contact-nav {
-    color: white; }
+    color: white;
+    text-align: center; }
     .main-navigation .contact-nav:hover {
       color: white; }
   .main-navigation a {
@@ -799,38 +802,60 @@ object {
   width: 100%; }
 
 .banner-wrapper {
-  margin-top: 70px;
   color: white; }
   .banner-wrapper .hero-banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-2.jpg) no-repeat center;
     background-size: cover;
-    height: 700px;
+    height: 800px;
     width: 100%; }
   .banner-wrapper h1 {
     text-transform: uppercase; }
 
-.services-wrapper ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+.services-wrapper {
+  background-color: #06A6B0;
+  color: white;
+  padding-bottom: 50px; }
+  .services-wrapper ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .services-wrapper li {
+    -ms-flex: 0 1 50%;
+        flex: 0 1 50%; }
+    @media (min-width: 700px) {
+      .services-wrapper li {
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%; } }
+  .services-wrapper h3 {
+    margin: 0; }
+  .services-wrapper .services-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .services-wrapper .services-title {
+    color: #F3FEE5;
+    width: 180px; }
+  .services-wrapper .services-info {
+    text-align: center; }
+  .services-wrapper .services-desc {
+    display: none; }
 
-.services-wrapper li {
-  -ms-flex: 0 1 50%;
-      flex: 0 1 50%; }
-  @media (min-width: 1240px) {
-    .services-wrapper li {
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%; } }
-
-.services-wrapper h3 {
-  margin: 0; }
-
-.services-wrapper .services-info {
-  text-align: center; }
-
-.services-wrapper .services-desc {
-  display: none; }
+.contact-wrapper .wpcf7-submit {
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 7px 25px; }
+  .contact-wrapper .wpcf7-submit:hover {
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    border: none; }

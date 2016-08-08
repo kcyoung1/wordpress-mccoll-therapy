@@ -18,7 +18,7 @@ get_header(); ?>
 			</section><!-- .banner-wrapper -->
 
 			<section id="about" class="about-wrapper container">
-				<h2>About Us</h2>
+				<h2>About</h2>
 				<p>
 					Custom post type possibly
 					About Us company overview - Who We Are - supporting [balance and growth / independence and resilience / ???] (horizontal side scroll? Currently mission, values etc. should be minimal text, ~3 statements)
@@ -49,7 +49,7 @@ get_header(); ?>
 				</p>
 			</section><!-- .graphic-two-wrapper -->
 
-			<section id="services" class="services-wrapper container">
+			<section id="services" class="services-wrapper">
 				<h2>Services</h2>
 				<p>
 					Custom Post Type
