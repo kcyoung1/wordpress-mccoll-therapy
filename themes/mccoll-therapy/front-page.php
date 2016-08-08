@@ -55,6 +55,30 @@ get_header(); ?>
 					Icons
 					Services - all visible or side scroll - icons and name and/or with taglines/hooks if sidescroll - Click for pop-up page with description of service
 				</p>
+
+				<ul class="services-list">
+					<?php $services_icons = array(
+						'post_type' => 'services',
+						'posts_per_page' => 4,
+						'order' => 'ASC',
+						'orderby' => 'name');
+						$services = get_posts( $services_icons );
+						foreach ( $services as $post ) : setup_postdata( $post ); ?>
+
+						<li>
+							<div class="services-wrap">
+								<div class="services-icon">
+									<?php the_post_thumbnail('full'); ?>
+								</div>
+								<div class="services-info">
+									<h2 class="services-title"><?php the_title(); ?></h2>
+									<div class="services-desc"><?php the_content(); ?></div>
+								</div>
+							</div>
+						</li>
+					<?php endforeach;
+									wp_reset_postdata(); ?>
+				</ul><!-- services-list -->
 			</section><!-- .services-wrapper -->
 
 			<section class="information-wrapper container">

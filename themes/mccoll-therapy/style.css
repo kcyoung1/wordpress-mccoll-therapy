@@ -778,3 +778,6 @@ object {
     width: 100%; }
   .banner-wrapper h1 {
     text-transform: uppercase; }
+
+.services-wrapper ul {
+  list-style: none; }
