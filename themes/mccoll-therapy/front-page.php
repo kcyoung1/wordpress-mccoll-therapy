@@ -52,7 +52,7 @@ get_header(); ?>
 			<section class="services-wrapper container">
 				<h2>Services</h2>
 				<p>
-					Icons
+					Custom Post Type
 					Services - all visible or side scroll - icons and name and/or with taglines/hooks if sidescroll - Click for pop-up page with description of service
 				</p>
 
@@ -71,7 +71,7 @@ get_header(); ?>
 									<?php the_post_thumbnail('full'); ?>
 								</div>
 								<div class="services-info">
-									<h2 class="services-title"><?php the_title(); ?></h2>
+									<h3 class="services-title"><?php the_title(); ?></h3>
 									<div class="services-desc"><?php the_content(); ?></div>
 								</div>
 							</div>

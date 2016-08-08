@@ -1,6 +1,24 @@
 .services-wrapper {
   ul {
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
-
+  li {
+    flex: 0 1 50%;
+  	@include desktop {
+  		flex: 0 1 25%;
+  	}
+  }
+  h3 {
+    margin: 0;
+  }
+  .services-info {
+    text-align: center;
+  }
+  .services-desc {
+    display: none;
+  }
 }
