@@ -33,8 +33,9 @@
 							<a href="/" class="mccoll-name"><h3>McColl Therapy</h3></a>
 					</div>
 					<div class="menu-options">
-						<a href="#">About</a>
-						<a href="#" class="btn contact-nav">Contact Us</a>
+						<a href="#about">About</a>
+						<a href="#services">Services</a>
+						<a href="#contact" class="btn contact-nav">Contact Us</a>
 					</div>
 
 					<!-- Not displaying this menu because it is not being used -->

@@ -17,7 +17,7 @@ get_header(); ?>
 				</div>
 			</section><!-- .banner-wrapper -->
 
-			<section class="about-wrapper container">
+			<section id="about" class="about-wrapper container">
 				<h2>About Us</h2>
 				<p>
 					Custom post type possibly
@@ -49,7 +49,7 @@ get_header(); ?>
 				</p>
 			</section><!-- .graphic-two-wrapper -->
 
-			<section class="services-wrapper container">
+			<section id="services" class="services-wrapper container">
 				<h2>Services</h2>
 				<p>
 					Custom Post Type
@@ -89,7 +89,7 @@ get_header(); ?>
 				</p>
 			</section><!-- .information-wrapper -->
 
-			<section class="contact-wrapper  container">
+			<section id= "contact" class="contact-wrapper  container">
 				<h2>Contact Us</h2>
 				<p>
 					Contact form 7 with call to action

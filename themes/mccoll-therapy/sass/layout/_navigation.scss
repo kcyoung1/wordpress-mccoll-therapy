@@ -149,8 +149,11 @@ a {
 	z-index: 100;
 	top: 0;
 	color: $color__mint;
-	font-size: 1rem;
+	font-size: .9rem;
 	font-weight: bold;
+	@include tablet {
+		font-size: 1rem;
+	}
 	@include tablet {
 		font-size: 1.2rem;
 	}
@@ -171,7 +174,7 @@ a {
 	}
 	.mccoll-name {
 		display: none;
-		@include tablet {
+		@include desktop {
 			display: block;
 		}
 	}

@@ -562,8 +562,11 @@ a {
   z-index: 100;
   top: 0;
   color: #B8F4F3;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold; }
+  @media (min-width: 700px) {
+    .main-navigation {
+      font-size: 1rem; } }
   @media (min-width: 700px) {
     .main-navigation {
       font-size: 1.2rem; } }
@@ -586,7 +589,7 @@ a {
         align-items: center; }
   .main-navigation .mccoll-name {
     display: none; }
-    @media (min-width: 700px) {
+    @media (min-width: 1240px) {
       .main-navigation .mccoll-name {
         display: block; } }
   .main-navigation img {
