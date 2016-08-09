@@ -72,7 +72,19 @@ get_header(); ?>
 								</div>
 								<div class="services-info">
 									<h3 class="services-title"><?php the_title(); ?></h3>
-									<div class="services-desc"><?php the_content(); ?></div>
+									<a href="#modal btn">Read More</a>
+
+									<div id="modal">
+										<div class="modal-content">
+											<h3 class="services-title"><?php the_title(); ?></h3>
+										</div>
+										<div class="copy">
+											<div class="services-desc"><?php the_content(); ?></div>
+											<a href="#">Close</a>
+											<div class="overlay"></div>
+										</div>
+									</div>
+									
 								</div>
 							</div>
 						</li>
