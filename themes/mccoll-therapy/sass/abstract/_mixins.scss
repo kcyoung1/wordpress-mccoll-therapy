@@ -31,21 +31,25 @@ $desktop-width: 1240px;
 .btn {
 	padding: 5px 10px;
 	background: $color__navy;
-	color: $color__turq;
+	color: $color__white;
 	cursor: pointer;
+	outline: none;
 	@include tablet {
 		padding: 5px 20px;
 	}
 	&:hover {
 		background: $color__navy-li;
+		color: $color__white;
 	}
 }
+
 .center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
 .container {
 	width: 350px;
 	@extend .center;

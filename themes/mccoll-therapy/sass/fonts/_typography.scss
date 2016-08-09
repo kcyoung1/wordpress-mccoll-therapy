@@ -53,6 +53,14 @@ p {
 	margin-bottom: $base__space-unit;
 }
 
+a {
+	text-decoration: none;
+	outline: none;
+	&:visited {
+		outline: none;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

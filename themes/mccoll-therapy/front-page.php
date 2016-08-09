@@ -72,19 +72,21 @@ get_header(); ?>
 								</div>
 								<div class="services-info">
 									<h3 class="services-title"><?php the_title(); ?></h3>
-									<a href="#modal btn">Read More</a>
 
-									<div id="modal">
-										<div class="modal-content">
-											<h3 class="services-title"><?php the_title(); ?></h3>
-										</div>
-										<div class="copy">
-											<div class="services-desc"><?php the_content(); ?></div>
-											<a href="#">Close</a>
-											<div class="overlay"></div>
+									<span class="popup-trigger btn">Read More</span>
+
+									<div class="popup">
+										<div class="popup-content">
+											<div class="popup-header">
+												<h3><?php the_title(); ?></h3>
+											</div>
+											<div class="popup-body">
+												<div><?php the_content(); ?></div>
+											</div>
+											<span class="popup-btn-close">close</span>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>
 						</li>
