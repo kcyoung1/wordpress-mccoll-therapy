@@ -76,6 +76,7 @@ get_header(); ?>
 									<span class="popup-trigger btn">Read More</span>
 
 									<div class="popup">
+										<span class="popup-btn-close">close</span>
 										<div class="popup-content">
 											<div class="popup-header">
 												<h3><?php the_title(); ?></h3>
@@ -83,7 +84,6 @@ get_header(); ?>
 											<div class="popup-body">
 												<div><?php the_content(); ?></div>
 											</div>
-											<span class="popup-btn-close">close</span>
 										</div>
 									</div>
 
