@@ -846,7 +846,8 @@ object {
         justify-content: center; }
   .services-wrapper .services-title {
     color: #F3FEE5;
-    width: 180px; }
+    width: 180px;
+    margin-bottom: 20px; }
   .services-wrapper .services-info {
     text-align: center; }
 
@@ -854,20 +855,21 @@ object {
   display: none;
   position: absolute;
   top: 100px;
-  left: 93%;
-  width: 350px;
-  margin-left: -350px;
+  left: 87.5%;
+  width: 400px;
   padding: 50px 30px;
+  margin-left: -350px;
   background: #fff;
   color: #333;
-  font-size: 19px;
+  font-size: 1rem;
   line-height: 30px;
-  border: 10px solid #150E2D;
+  border: 10px solid #225378;
   z-index: 9999; }
   @media (min-width: 700px) {
     .popup {
       left: 50%;
-      width: 700px; } }
+      width: 700px;
+      font-size: 1.3rem; } }
   .popup .popup-btn-close {
     position: absolute;
     top: 8px;
@@ -878,7 +880,9 @@ object {
     text-transform: uppercase;
     cursor: pointer; }
   .popup .popup-header {
-    border-bottom: 3px solid #225378; }
+    border-bottom: 3px solid #225378;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
 
 .contact-wrapper .wpcf7-submit {
   outline: none;

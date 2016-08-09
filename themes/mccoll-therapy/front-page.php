@@ -72,7 +72,6 @@ get_header(); ?>
 								</div>
 								<div class="services-info">
 									<h3 class="services-title"><?php the_title(); ?></h3>
-
 									<span class="popup-trigger btn">Read More</span>
 
 									<div class="popup">
