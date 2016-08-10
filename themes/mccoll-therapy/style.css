@@ -863,7 +863,7 @@ object {
   color: #333;
   font-size: 1rem;
   line-height: 30px;
-  border: 10px solid #225378;
+  border: 10px solid black;
   z-index: 9999; }
   @media (min-width: 700px) {
     .popup {
@@ -880,9 +880,21 @@ object {
     text-transform: uppercase;
     cursor: pointer; }
   .popup .popup-header {
-    border-bottom: 3px solid #225378;
     font-size: 1.5rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background: #06A6B0;
+    color: #F3FEE5; }
+    @media (min-width: 700px) {
+      .popup .popup-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+    .popup .popup-header img {
+      width: 200px;
+      height: 173.33px; }
 
 .contact-wrapper .wpcf7-submit {
   outline: none;

@@ -50,7 +50,7 @@
     color: #333;
     font-size: 1rem;
     line-height: 30px;
-    border: 10px solid $color__navy;
+    border: 10px solid $color__black;
     z-index: 9999;
     @include tablet {
       left: 50%;
@@ -68,8 +68,19 @@
         cursor: pointer;
     }
     .popup-header {
-        border-bottom: 3px solid $color__navy;
+        // border: 3px solid $color__navy;
         font-size: 1.5rem;
         text-transform: uppercase;
+        background: $color__turq;
+        color: $color__tan;
+        @include tablet {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          width: 200px;
+          height: 173.33px;
+        }
     }
 }

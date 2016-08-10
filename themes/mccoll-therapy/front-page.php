@@ -78,6 +78,7 @@ get_header(); ?>
 										<span class="popup-btn-close">close</span>
 										<div class="popup-content">
 											<div class="popup-header">
+												<?php the_post_thumbnail('full'); ?>
 												<h3><?php the_title(); ?></h3>
 											</div>
 											<div class="popup-body">
