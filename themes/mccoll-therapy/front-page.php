@@ -51,10 +51,10 @@ get_header(); ?>
 
 			<section id="services" class="services-wrapper">
 				<h2>Services</h2>
-				<p>
+				<!-- <p>
 					Custom Post Type
 					Services - all visible or side scroll - icons and name and/or with taglines/hooks if sidescroll - Click for pop-up page with description of service
-				</p>
+				</p> -->
 
 				<ul class="services-list">
 					<?php $services_icons = array(
