@@ -23,29 +23,6 @@ get_header(); ?>
 					Custom post type possibly
 					About Us company overview - Who We Are - supporting [balance and growth / independence and resilience / ???] (horizontal side scroll? Currently mission, values etc. should be minimal text, ~3 statements)
 				</p>
-
-				<ul class="services-list">
-					<?php $services_icons = array(
-						'post_type' => 'profile',
-						'posts_per_page' => 4,
-						'order' => 'ASC',
-						'orderby' => 'name');
-						$services = get_posts( $services_icons );
-						foreach ( $services as $post ) : setup_postdata( $post ); ?>
-
-						<li>
-							<div class="profile-wrap">
-								<div class="profile-image">
-									<?php the_post_thumbnail('full'); ?>
-								</div>
-								<div class="profile-info">
-									<h3 class="profile-title"><?php the_title(); ?></h3>
-								</div>
-							</div>
-						</li>
-					<?php endforeach;
-									wp_reset_postdata(); ?>
-				</ul><!-- services-list -->
 			</section><!-- .about-wrapper -->
 
 			<section class="profile-wrapper container">
@@ -54,6 +31,33 @@ get_header(); ?>
 					Custom post type possibly
 					Specific About Us - circle headshots of each practitioner associated, name, designation and titles under - click each headshot for a pop-up page - half body shot (cutoff lower legs), background, bio, specializations
 				</p>
+
+				<ul class="profile-list">
+					<?php $profile_info = array(
+						'post_type' => 'profile',
+						'posts_per_page' => 4,
+						'order' => 'ASC',
+						'orderby' => 'name');
+						$profiles = get_posts( $profile_info );
+						foreach ( $profiles as $post ) : setup_postdata( $post ); ?>
+
+						<li>
+							<div class="profile-wrap">
+								<div class="profile-image">
+									<?php the_post_thumbnail('full'); ?>
+								</div>
+								<div class="profile-info">
+									<h3 class="profile-title"><?php the_title(); ?></h3>
+									<?php echo wp_kses_post(CFS()->get( 'designation' )); ?>
+									<?php echo wp_kses_post(CFS()->get( 'background' )); ?>
+									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
+									<?php echo wp_kses_post(CFS()->get( 'specialization' )); ?>
+								</div>
+							</div>
+						</li>
+					<?php endforeach;
+									wp_reset_postdata(); ?>
+				</ul><!-- services-list -->
 
 			</section><!-- .profile-wrapper -->
 
