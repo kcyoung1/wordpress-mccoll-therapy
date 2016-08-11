@@ -13,7 +13,7 @@ get_header(); ?>
 			<section class="banner-wrapper">
 				<div class="hero-banner">
 					<h1>McColl Therapy</h1>
-					<h2>Support for a lasting wellness</h2>
+					<h3>Support for a lasting wellness</h3>
 				</div>
 			</section><!-- .banner-wrapper -->
 
@@ -26,7 +26,7 @@ get_header(); ?>
 			</section><!-- .about-wrapper -->
 
 			<section class="profile-wrapper container">
-				<h2>Profile</h2>
+				<h2>Profiles</h2>
 				<p>
 					Custom post type possibly
 					Specific About Us - circle headshots of each practitioner associated, name, designation and titles under - click each headshot for a pop-up page - half body shot (cutoff lower legs), background, bio, specializations
@@ -48,10 +48,10 @@ get_header(); ?>
 								</div>
 								<div class="profile-info">
 									<h3 class="profile-title"><?php the_title(); ?></h3>
-									<?php echo wp_kses_post(CFS()->get( 'designation' )); ?>
+									<p><?php echo wp_kses_post(CFS()->get( 'designation' )); ?></p>
 									<?php echo wp_kses_post(CFS()->get( 'background' )); ?>
+									<p>	<?php echo wp_kses_post(CFS()->get( 'specialization' )); ?></p>
 									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
-									<?php echo wp_kses_post(CFS()->get( 'specialization' )); ?>
 								</div>
 							</div>
 						</li>

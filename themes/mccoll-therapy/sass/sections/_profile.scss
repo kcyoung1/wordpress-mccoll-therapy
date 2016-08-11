@@ -19,4 +19,13 @@
         margin-left: 30px;
       }
     }
+    .profile-title {
+      text-transform: uppercase;
+      border-bottom: 2px solid $color__mint;
+    }
+    p {
+      &:nth-child(2n) {
+        border-bottom: 2px solid $color__mint;
+    }
+  }
 }
