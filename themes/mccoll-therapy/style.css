@@ -380,7 +380,9 @@ ul, ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
 
 ol {
   list-style: decimal; }
@@ -817,6 +819,27 @@ object {
     width: 100%; }
   .banner-wrapper h1 {
     text-transform: uppercase; }
+
+@media (min-width: 700px) {
+  .profile-list .profile-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; } }
+
+.profile-list .profile-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.profile-list .profile-info {
+  width: 350px; }
+  @media (min-width: 700px) {
+    .profile-list .profile-info {
+      width: 450px;
+      margin-left: 30px; } }
 
 .services-wrapper {
   background-color: #06A6B0;

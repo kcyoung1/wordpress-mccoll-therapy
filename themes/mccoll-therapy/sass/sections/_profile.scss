@@ -1,0 +1,22 @@
+.profile-list {
+    .profile-wrap {
+      @include tablet {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .profile-image {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .profile-info {
+      width: 350px;
+      @include tablet {
+        width: 450px;
+        margin-left: 30px;
+      }
+    }
+}
