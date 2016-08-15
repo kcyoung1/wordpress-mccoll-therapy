@@ -39,6 +39,10 @@ jQuery(document).ready(function($) {
         pager: false
     });
 
+    $('.bxslider-profile').bxSlider({
+        controls: false
+    });
+
     // Popup Windows
 
     var scrollTop = '';

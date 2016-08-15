@@ -811,6 +811,17 @@ object {
   height: 70px;
   width: 100%; }
 
+.bx-viewport {
+  box-shadow: none !important;
+  border: none !important; }
+
+.bx-controls {
+  margin-right: 40px; }
+
+.about-wrapper .bx-wrapper {
+  display: -ms-flexbox;
+  display: flex; }
+
 .banner-wrapper {
   color: white; }
   .banner-wrapper .hero-banner {
@@ -821,28 +832,28 @@ object {
   .banner-wrapper h1 {
     text-transform: uppercase; }
 
-.about-wrapper .bx-viewport {
-  height: 50px !important; }
-
 .about-wrapper li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  margin-left: 25px; }
 
 @media (min-width: 700px) {
   .profile-list .profile-wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; } }
 
 .profile-list .profile-image {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   overflow: hidden;
-  margin: 0 auto; }
+  margin-right: 130px; }
 
 .profile-list .profile-info {
   width: 350px; }
@@ -855,8 +866,10 @@ object {
   text-transform: uppercase;
   border-bottom: 2px solid #B8F4F3; }
 
-.profile-list p:nth-child(2n) {
+.profile-list p {
   border-bottom: 2px solid #B8F4F3; }
+  .profile-list p:last-child {
+    border-bottom: none; }
 
 .services-wrapper {
   background-color: #06A6B0;

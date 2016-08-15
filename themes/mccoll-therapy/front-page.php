@@ -19,10 +19,6 @@ get_header(); ?>
 
 			<section id="about" class="about-wrapper container">
 				<h2>About</h2>
-				<p>
-					Custom post type possibly
-					About Us company overview - Who We Are - supporting [balance and growth / independence and resilience / ???] (horizontal side scroll? Currently mission, values etc. should be minimal text, ~3 statements)
-				</p>
 				<p>Our registered health professionals work with you to address your concerns through effective counselling and personalized therapy, supporting</p>
 				<ul class="bxslider">
 					<li>Health and Wellness</li>
@@ -33,12 +29,8 @@ get_header(); ?>
 
 			<section class="profile-wrapper container">
 				<h2>Profiles</h2>
-				<p>
-					Custom post type possibly
-					Specific About Us - circle headshots of each practitioner associated, name, designation and titles under - click each headshot for a pop-up page - half body shot (cutoff lower legs), background, bio, specializations
-				</p>
 
-				<ul class="profile-list">
+				<ul class="bxslider-profile profile-list">
 					<?php $profile_info = array(
 						'post_type' => 'profile',
 						'posts_per_page' => 4,
@@ -54,9 +46,8 @@ get_header(); ?>
 								</div>
 								<div class="profile-info">
 									<h3 class="profile-title"><?php the_title(); ?></h3>
-									<p><?php echo wp_kses_post(CFS()->get( 'designation' )); ?></p>
-									<?php echo wp_kses_post(CFS()->get( 'background' )); ?>
-									<p>	<?php echo wp_kses_post(CFS()->get( 'specialization' )); ?></p>
+									<p><?php echo wp_kses_post(CFS()->get( 'position' )); ?></p>
+									<p><?php echo wp_kses_post(CFS()->get( 'education' )); ?></p>
 									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
 								</div>
 							</div>

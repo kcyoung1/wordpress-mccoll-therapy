@@ -3,6 +3,7 @@
       @include tablet {
         display: flex;
         justify-content: center;
+        align-items: center;
       }
     }
     .profile-image {
@@ -10,7 +11,7 @@
         width: 200px;
         height: 200px;
         overflow: hidden;
-        margin: 0 auto;
+        margin-right: 130px;
     }
     .profile-info {
       width: 350px;
@@ -24,8 +25,9 @@
       border-bottom: 2px solid $color__mint;
     }
     p {
-      &:nth-child(2n) {
-        border-bottom: 2px solid $color__mint;
-    }
+      border-bottom: 2px solid $color__mint;
+      &:last-child {
+        border-bottom: none;
+      }
   }
 }
