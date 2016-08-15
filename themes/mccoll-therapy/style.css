@@ -821,6 +821,15 @@ object {
   .banner-wrapper h1 {
     text-transform: uppercase; }
 
+.about-wrapper .bx-viewport {
+  height: 50px !important; }
+
+.about-wrapper li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 @media (min-width: 700px) {
   .profile-list .profile-wrap {
     display: -ms-flexbox;

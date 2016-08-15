@@ -33,6 +33,12 @@ jQuery(document).ready(function($) {
         });
     });
 
+    // BxSlider
+
+    $('.bxslider').bxSlider({
+        pager: false
+    });
+
     // Popup Windows
 
     var scrollTop = '';
@@ -45,8 +51,8 @@ jQuery(document).ready(function($) {
 
     $('.popup-trigger').click(function(e) {
         e.stopPropagation();
-            $('.popup').hide();
-            $(this).nextAll('.popup:first').css('top', newHeight).toggle();
+        $('.popup').hide();
+        $(this).nextAll('.popup:first').css('top', newHeight).toggle();
     });
 
     $('html').click(function() {

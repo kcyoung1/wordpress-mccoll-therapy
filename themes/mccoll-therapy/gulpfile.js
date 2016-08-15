@@ -49,7 +49,7 @@ gulp.task('jscs', function () {
 });
 
 gulp.task('lint', function() {
-  return gulp.src('./js/*.js')
+  return gulp.src('./js/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
 });

@@ -87,7 +87,11 @@ function mccoll_therapy_scripts() {
 
 	wp_enqueue_script( 'mccoll-therapy-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-		wp_enqueue_script( 'scripts-js', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true );
+	wp_enqueue_style( 'style-bxslider', get_template_directory_uri() . '/build/js/js-bxslider/jquery.bxslider.css' );
+
+	wp_enqueue_script( 'script-bxslider', get_template_directory_uri() . '/build/js/js-bxslider/jquery.bxslider.min.js', array('jquery'), false, true );
+
+	wp_enqueue_script( 'scripts-js', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

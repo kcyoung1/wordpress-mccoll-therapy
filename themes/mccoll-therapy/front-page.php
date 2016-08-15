@@ -23,6 +23,12 @@ get_header(); ?>
 					Custom post type possibly
 					About Us company overview - Who We Are - supporting [balance and growth / independence and resilience / ???] (horizontal side scroll? Currently mission, values etc. should be minimal text, ~3 statements)
 				</p>
+				<p>Our registered health professionals work with you to address your concerns through effective counselling and personalized therapy, supporting</p>
+				<ul class="bxslider">
+					<li>Health and Wellness</li>
+					<li>Independence and Success</li>
+					<li>Growth and Balance</li>
+				</ul>
 			</section><!-- .about-wrapper -->
 
 			<section class="profile-wrapper container">
