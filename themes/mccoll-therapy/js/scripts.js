@@ -16,6 +16,23 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // Parallax Scrolling
+
+    var $window = jQuery(window); //You forgot this line in the above example
+
+    jQuery('div[data-type="background"]').each(function() {
+        var $bgobj = jQuery(this); // assigning the object
+        jQuery(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+            // Put together our final background position
+            var coords = '50% ' + yPos + 'px';
+            // Move the background
+            $bgobj.css({
+                'background-position': coords
+            });
+        });
+    });
+
     // Popup Windows
 
     var scrollTop = '';
