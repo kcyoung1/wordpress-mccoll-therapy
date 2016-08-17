@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper .dimensions-wrapper li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -954,6 +954,44 @@ object {
   border-bottom: 2px solid #B8F4F3; }
   .profile-list p:last-child {
     border-bottom: none; }
+
+.wellness-wrapper .dimensions-wrapper ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.wellness-wrapper .dimensions-wrapper li {
+  -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  @media (min-width: 700px) {
+    .wellness-wrapper .dimensions-wrapper li {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; } }
+  .wellness-wrapper .dimensions-wrapper li img {
+    height: 180px;
+    width: 180px; }
+    @media (min-width: 700px) {
+      .wellness-wrapper .dimensions-wrapper li img {
+        height: 100%;
+        width: 100%; } }
+  .wellness-wrapper .dimensions-wrapper li h3 {
+    border-bottom: 1px solid black;
+    width: 150px; }
+  .wellness-wrapper .dimensions-wrapper li p {
+    margin: 0; }
+    @media (min-width: 700px) {
+      .wellness-wrapper .dimensions-wrapper li p {
+        width: 150px; } }
+    @media (min-width: 1240px) {
+      .wellness-wrapper .dimensions-wrapper li p {
+        width: 200px; } }
+  .wellness-wrapper .dimensions-wrapper li .margin-bottom {
+    margin-bottom: 22px; }
 
 .resources-wrapper .resources-info {
   display: -ms-flexbox;

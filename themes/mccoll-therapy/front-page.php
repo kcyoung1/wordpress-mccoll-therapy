@@ -101,12 +101,39 @@ get_header(); ?>
 
 			<section class="wellness-wrapper container">
 				<h2>Understanding Wellness</h2>
-				<ul>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" /></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" /></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" /></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" /></li>
-				</ul>
+				<div class="dimensions-wrapper">
+					<h3>Dimensions of Wellness</h3>
+					<ul>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
+							<div>
+								<h3>Emotional</h3>
+								<p class="margin-bottom">Noticing and handling our feelings in effective ways</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
+							<div>
+								<h3>Mental</h3>
+								<p class="margin-bottom">Using our minds to problem solve and be productive</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
+							<div>
+								<h3>Physical</h3>
+								<p>Attending to our body and maintaining a healthy lifestyle</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
+							<div>
+								<h3>Spiritual</h3>
+								<p>Aligning decisions and actions with our values and beliefs</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</section><!-- .wellness-wrapper -->
 
 			<section class="resources-wrapper container">
@@ -133,9 +160,12 @@ get_header(); ?>
 							echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
 							?>
 							<div class="contact-info">
-								<p> logan@mccolltherapy.com</p>
-								<p>780-965-9906</p>
-								<p>Location</p>
+								<p>call: 780 965 9906</p>
+								<p>email: logan@mccolltherapy.com</p>
+
+								<p>Location:</p>
+								<p>9707 –110St #312</p>
+								<p>Edmonton, Alberta T5K 2L9</p>
 							</div>
 				</div>
 

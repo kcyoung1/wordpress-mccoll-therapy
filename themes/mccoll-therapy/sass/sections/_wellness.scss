@@ -1,0 +1,41 @@
+.wellness-wrapper {
+  .dimensions-wrapper {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      flex: 0 1 100%;
+      flex-direction: row;
+      @extend .center;
+      @include tablet {
+        flex-direction: column;
+        flex: 0 1 25%;
+      }
+      img {
+        height: 180px;
+        width: 180px;
+        @include tablet {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      h3 {
+        border-bottom: 1px solid black;
+        width: 150px;
+      }
+      p {
+        margin: 0;
+        @include tablet {
+          width: 150px
+        }
+        @include desktop {
+          width: 200px;
+        }
+      }
+      .margin-bottom {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
