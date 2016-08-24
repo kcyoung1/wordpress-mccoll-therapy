@@ -13,7 +13,7 @@
     }
     li {
         flex: 0 1 50%;
-        @include desktop {
+        @include tablet {
             flex: 0 1 25%;
         }
     }

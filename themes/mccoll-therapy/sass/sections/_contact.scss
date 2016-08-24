@@ -18,5 +18,11 @@
   }
   .contact-form-info {
     display: flex;
+    .contact-info {
+      display: none;
+      @include tablet {
+        display: block;
+      }
+    }
   }
 }

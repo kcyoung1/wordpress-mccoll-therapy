@@ -99,8 +99,10 @@ get_header(); ?>
 
 			</section><!-- .profile-wrapper -->
 
-			<section class="wellness-wrapper container">
-				<h2>Understanding Wellness</h2>
+			<section class="wellness-wrapper">
+				<div class="wellness-banner" data-type="background" data-speed="10">
+					<h2>Understanding Wellness</h2>
+				</div>
 				<div class="dimensions-wrapper">
 					<h3>Dimensions of Wellness</h3>
 					<ul>
