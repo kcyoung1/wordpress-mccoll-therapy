@@ -44,7 +44,7 @@ get_header(); ?>
 									<?php the_post_thumbnail('full'); ?>
 								</div>
 								<div class="services-info">
-									<h3 class="services-title"><?php the_title(); ?></h3>
+									<h5 class="services-title"><?php the_title(); ?></h5>
 									<span class="popup-trigger btn">Read More</span>
 
 									<div class="popup">
@@ -105,36 +105,45 @@ get_header(); ?>
 				</div>
 				<div class="dimensions-wrapper">
 					<h3>Dimensions of Wellness</h3>
+					<div class="blue-bg white">
+						<p>
+							Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
+						</p>
+					</div>
 					<ul>
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
 							<div>
-								<h3>Emotional</h3>
+								<h4>Emotional</h4>
 								<p class="margin-bottom">Noticing and handling our feelings in effective ways</p>
 							</div>
 						</li>
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
 							<div>
-								<h3>Mental</h3>
+								<h4>Mental</h4>
 								<p class="margin-bottom">Using our minds to problem solve and be productive</p>
 							</div>
 						</li>
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
 							<div>
-								<h3>Physical</h3>
+								<h4>Physical</h4>
 								<p>Attending to our body and maintaining a healthy lifestyle</p>
 							</div>
 						</li>
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
 							<div>
-								<h3>Spiritual</h3>
+								<h4>Spiritual</h4>
 								<p>Aligning decisions and actions with our values and beliefs</p>
 							</div>
 						</li>
 					</ul>
+					<div class="blue-bg">
+						<p>
+								Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
+						</p>
 				</div>
 			</section><!-- .wellness-wrapper -->
 

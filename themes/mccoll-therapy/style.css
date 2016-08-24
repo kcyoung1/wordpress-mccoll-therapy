@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -284,7 +284,7 @@ h1 {
       font-size: 2.6rem; } }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase; }
   @media (min-width: 768px) {
     h2 {
@@ -294,14 +294,36 @@ h2 {
       font-size: 2rem; } }
 
 h3 {
-  font-weight: 400;
-  font-size: 1.2rem; }
+  font-weight: 700;
+  font-size: 1.4rem; }
   @media (min-width: 768px) {
     h3 {
-      font-size: 1.3rem; } }
+      font-size: 1.7rem; } }
   @media (min-width: 1024px) {
     h3 {
+      font-size: 1.9rem; } }
+
+h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.3rem; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.5rem; } }
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: 1.7rem; } }
+
+h5 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: lighter; }
+  @media (min-width: 768px) {
+    h5 {
       font-size: 1.4rem; } }
+  @media (min-width: 1024px) {
+    h5 {
+      font-size: 1.6rem; } }
 
 /* Copy */
 p {
@@ -868,11 +890,15 @@ object {
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
     @media (min-width: 768px) {
+      .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
+        margin-bottom: 53px; } }
+    @media (min-width: 1024px) {
+      .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
+        margin-bottom: 56px; } }
+    @media (min-width: 768px) {
       .services-wrapper li {
         -ms-flex: 0 1 25%;
             flex: 0 1 25%; } }
-  .services-wrapper h3 {
-    margin: 0; }
   .services-wrapper .services-icons {
     display: -ms-flexbox;
     display: flex;
@@ -880,8 +906,11 @@ object {
         justify-content: center; }
   .services-wrapper .services-title {
     color: #F3FEE5;
-    width: 180px;
+    width: 165px;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .services-wrapper .services-title {
+        width: 180px; } }
   .services-wrapper .services-info {
     text-align: center; }
 
@@ -944,7 +973,8 @@ object {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 5px solid #B8F4F3; }
   @media (min-width: 768px) {
     .profile-list .profile-image {
       margin-right: 20px; } }
@@ -973,14 +1003,19 @@ object {
 
 .wellness-wrapper .wellness-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-3.jpg) no-repeat bottom fixed;
-  background-size: 400%;
+  background-size: cover cover;
   width: 100%;
-  height: 400px; }
+  height: 200px; }
   @media (min-width: 768px) {
     .wellness-wrapper .wellness-banner {
+      height: 400px;
       background-size: 150%; } }
   .wellness-wrapper .wellness-banner h2 {
     color: white; }
+
+.wellness-wrapper .dimensions-wrapper h3 {
+  color: #225378;
+  border-bottom: 2px solid #225378; }
 
 .wellness-wrapper .dimensions-wrapper ul {
   display: -ms-flexbox;
@@ -1000,19 +1035,19 @@ object {
       flex: 0 1 100%;
   -ms-flex-direction: row;
       flex-direction: row; }
-  .wellness-wrapper .dimensions-wrapper li:first-of-type h3 {
+  .wellness-wrapper .dimensions-wrapper li:first-of-type h4 {
     border-bottom: 2px solid #6F2FA0; }
   .wellness-wrapper .dimensions-wrapper li:first-of-type div {
     color: #6F2FA0; }
-  .wellness-wrapper .dimensions-wrapper li:nth-of-type(2) h3 {
+  .wellness-wrapper .dimensions-wrapper li:nth-of-type(2) h4 {
     border-bottom: 2px solid #006FBF; }
   .wellness-wrapper .dimensions-wrapper li:nth-of-type(2) div {
     color: #006FBF; }
-  .wellness-wrapper .dimensions-wrapper li:nth-of-type(3) h3 {
+  .wellness-wrapper .dimensions-wrapper li:nth-of-type(3) h4 {
     border-bottom: 2px solid #817F22; }
   .wellness-wrapper .dimensions-wrapper li:nth-of-type(3) div {
     color: #817F22; }
-  .wellness-wrapper .dimensions-wrapper li:last-of-type h3 {
+  .wellness-wrapper .dimensions-wrapper li:last-of-type h4 {
     border-bottom: 2px solid #00B050; }
   .wellness-wrapper .dimensions-wrapper li:last-of-type div {
     color: #00B050; }
@@ -1035,7 +1070,7 @@ object {
       .wellness-wrapper .dimensions-wrapper li img {
         height: 100%;
         width: 100%; } }
-  .wellness-wrapper .dimensions-wrapper li h3 {
+  .wellness-wrapper .dimensions-wrapper li h4 {
     width: 150px; }
   .wellness-wrapper .dimensions-wrapper li p {
     margin: 0; }
@@ -1047,6 +1082,27 @@ object {
         width: 200px; } }
   .wellness-wrapper .dimensions-wrapper li .margin-bottom {
     margin-bottom: 22px; }
+
+.wellness-wrapper .blue-bg {
+  background: #225378;
+  width: 100%;
+  padding: 15px 50px;
+  margin-top: 50px; }
+  @media (min-width: 768px) {
+    .wellness-wrapper .blue-bg {
+      padding: 15px 70px; } }
+  @media (min-width: 1024px) {
+    .wellness-wrapper .blue-bg {
+      padding: 15px 150px; } }
+  .wellness-wrapper .blue-bg p {
+    color: white; }
+
+.wellness-wrapper .white {
+  margin-top: 0;
+  padding-top: 0;
+  background: white; }
+  .wellness-wrapper .white p {
+    color: #225378; }
 
 .resources-wrapper .resources-info {
   display: -ms-flexbox;

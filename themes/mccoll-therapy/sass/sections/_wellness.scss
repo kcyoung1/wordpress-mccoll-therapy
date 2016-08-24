@@ -2,11 +2,12 @@
   @extend .center;
   .wellness-banner {
     background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url(../../assets/images/hero-banner-3.jpg) no-repeat bottom fixed;
-    background-size: 400%;
+    background-size: cover cover;
     width: 100%;
-    height: 400px;
+    height: 200px;
     @extend .center;
     @include tablet {
+      height: 400px;
       background-size: 150%;
     }
     h2 {
@@ -15,6 +16,10 @@
   }
   .dimensions-wrapper {
     @extend .center;
+    h3 {
+      color: $color__navy;
+      border-bottom: 2px solid $color__navy;
+    }
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -31,7 +36,7 @@
       flex-direction: row;
       @extend .center;
       &:first-of-type {
-        h3 {
+        h4 {
           border-bottom: 2px solid $color__purple;
         }
         div {
@@ -39,7 +44,7 @@
         }
       }
       &:nth-of-type(2) {
-        h3 {
+        h4 {
           border-bottom: 2px solid $color__blue;
         }
         div {
@@ -47,7 +52,7 @@
         }
       }
       &:nth-of-type(3) {
-        h3 {
+        h4 {
           border-bottom: 2px solid $color__olive;
         }
         div {
@@ -55,7 +60,7 @@
         }
       }
       &:last-of-type {
-        h3 {
+        h4 {
           border-bottom: 2px solid $color__green;
         }
         div {
@@ -84,7 +89,7 @@
           width: 100%;
         }
       }
-      h3 {
+      h4 {
         width: 150px;
       }
       p {
@@ -99,6 +104,30 @@
       .margin-bottom {
         margin-bottom: 22px;
       }
+    }
+  }
+  .blue-bg {
+    background: $color__navy;
+    width: 100%;
+    padding: 15px 50px;
+    margin-top: 50px;
+    @extend .center;
+    @include tablet {
+      padding: 15px 70px;
+    }
+    @include desktop {
+      padding: 15px 150px;
+    }
+    p {
+      color: $color__white;
+    }
+  }
+  .white {
+    margin-top: 0;
+    padding-top: 0;
+    background: $color__white;
+    p {
+      color: $color__navy;
     }
   }
 }

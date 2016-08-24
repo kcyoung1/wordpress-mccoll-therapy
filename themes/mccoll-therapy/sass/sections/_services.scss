@@ -13,12 +13,19 @@
     }
     li {
         flex: 0 1 50%;
+        &:nth-of-type(3), &:last-of-type {
+            h5 {
+                @include tablet {
+                    margin-bottom: 53px;
+                }
+                @include desktop {
+                    margin-bottom: 56px;
+                }
+            }
+        }
         @include tablet {
             flex: 0 1 25%;
         }
-    }
-    h3 {
-        margin: 0;
     }
     .services-wrap {
         @extend .center;
@@ -29,8 +36,11 @@
     }
     .services-title {
         color: $color__tan;
-        width: 180px;
+        width: 165px;
         margin-bottom: 20px;
+        @include tablet {
+            width: 180px;
+        }
     }
     .services-info {
         text-align: center;
