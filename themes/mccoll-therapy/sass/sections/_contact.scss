@@ -22,12 +22,18 @@
       display: none;
       @include tablet {
         display: block;
-        width: 250px;
-        background: $color__turq;
+        margin-left: 50px;
+        width: 300px;
+        height: 550px;
+        background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url(../../assets/images/contact.png) center;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
+        color: $color__white;
+        border-radius: 5px;
+        padding: 20px;
         span {
           font-size: 1.3rem;
         }

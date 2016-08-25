@@ -154,6 +154,9 @@ get_header(); ?>
 				</div>
 				<div class="where-we-help">
 					<h4>Where We Help</h4>
+					<p class="container">
+						We work with teens, adults, couples and families to help them succeed in challenging parts of life
+					</p>
 					<ul>
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-independence.png" alt="Independence Icon" />
@@ -188,13 +191,16 @@ get_header(); ?>
 				<h5>Contact information for support</h5>
 				<div class="resources-info">
 						<ul>
-							<li><a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
-							<li><a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
-							<li><a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
+							<li>
+								For local Edmonton resources:
+								<a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
+							<li>
+								If in distress:
+								<a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
+							<li>
+								If in immediate danger:
+								<a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
 						</ul>
-						 For local Edmonton resources:
-If in distress:
-If in immediate danger:
 				</div>
 			</section><!-- .information-wrapper -->
 

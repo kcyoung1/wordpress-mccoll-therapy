@@ -915,7 +915,8 @@ object {
   font-size: 1rem;
   line-height: 30px;
   border: 10px solid black;
-  z-index: 2; }
+  z-index: 2;
+  border-radius: 5px; }
   @media (min-width: 768px) {
     .popup {
       left: 50%;
@@ -934,7 +935,8 @@ object {
     font-size: 1.5rem;
     text-transform: uppercase;
     background: #06A6B0;
-    color: #F3FEE5; }
+    color: #F3FEE5;
+    border-radius: 5px; }
     @media (min-width: 768px) {
       .popup .popup-header {
         display: -ms-flexbox;
@@ -1092,18 +1094,19 @@ object {
   .wellness-wrapper .white p {
     color: #225378; }
 
-@media (min-width: 768px) {
-  .wellness-wrapper .dw-diagram {
-    -ms-flex-direction: row;
-        flex-direction: row; } }
-
-.wellness-wrapper .dw-diagram img {
-  width: 300px;
-  height: 250px; }
+.wellness-wrapper .dw-diagram {
+  margin: 50px 0; }
   @media (min-width: 768px) {
-    .wellness-wrapper .dw-diagram img {
-      width: 400px;
-      height: 350px; } }
+    .wellness-wrapper .dw-diagram {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .wellness-wrapper .dw-diagram img {
+    width: 300px;
+    height: 250px; }
+    @media (min-width: 768px) {
+      .wellness-wrapper .dw-diagram img {
+        width: 400px;
+        height: 350px; } }
 
 .wellness-wrapper .where-we-help {
   background: #06A6B0;
@@ -1118,13 +1121,14 @@ object {
         width: 200px; } }
   .wellness-wrapper .where-we-help h4 {
     color: #B8F4F3; }
-  .wellness-wrapper .where-we-help h5 {
+  .wellness-wrapper .where-we-help h5, .wellness-wrapper .where-we-help p {
     color: #F3FEE5; }
   .wellness-wrapper .where-we-help ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin-bottom: 50px; }
   .wellness-wrapper .where-we-help li {
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
@@ -1166,8 +1170,11 @@ object {
     @media (min-width: 768px) {
       .contact-wrapper .contact-form-info .contact-info {
         display: block;
-        width: 250px;
-        background: #06A6B0;
+        margin-left: 50px;
+        width: 300px;
+        height: 550px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/contact.png) center;
+        background-size: cover;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -1175,7 +1182,10 @@ object {
         -ms-flex-align: start;
             align-items: flex-start;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+        color: white;
+        border-radius: 5px;
+        padding: 20px; }
         .contact-wrapper .contact-form-info .contact-info span {
           font-size: 1.3rem; }
         .contact-wrapper .contact-form-info .contact-info p {
