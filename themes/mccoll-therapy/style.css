@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -295,7 +295,7 @@ h2 {
 
 h3 {
   font-weight: 700;
-  font-size: 1.4rem; }
+  font-size: 1.5rem; }
   @media (min-width: 768px) {
     h3 {
       font-size: 1.7rem; } }
@@ -315,15 +315,15 @@ h4 {
       font-size: 1.7rem; } }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
   font-weight: lighter; }
   @media (min-width: 768px) {
     h5 {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; } }
   @media (min-width: 1024px) {
     h5 {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
 
 /* Copy */
 p {
@@ -642,15 +642,11 @@ textarea {
       @media (min-width: 768px) {
         .main-navigation .menu-options a {
           margin: 0 30px; } }
-  .main-navigation .focus:focus {
-    border-bottom: 2px solid #225378; }
   .main-navigation .contact-nav {
     color: white;
     text-align: center; }
     .main-navigation .contact-nav:hover {
       color: white; }
-    .main-navigation .contact-nav:focus {
-      outline: 2px solid #B8F4F3; }
   .main-navigation a {
     color: white; }
     .main-navigation a:hover {
@@ -838,13 +834,6 @@ object {
   box-shadow: none !important;
   border: none !important; }
 
-.bx-controls {
-  margin-right: 40px; }
-
-.about-wrapper .bx-wrapper {
-  display: -ms-flexbox;
-  display: flex; }
-
 .banner-wrapper {
   color: white; }
   .banner-wrapper .hero-banner {
@@ -860,7 +849,6 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-left: 25px;
   font-size: 1.5rem; }
 
 .about-wrapper p {
@@ -891,10 +879,10 @@ object {
         flex: 0 1 50%; }
     @media (min-width: 768px) {
       .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
-        margin-bottom: 53px; } }
+        margin-bottom: 48px; } }
     @media (min-width: 1024px) {
       .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
-        margin-bottom: 56px; } }
+        margin-bottom: 51px; } }
     @media (min-width: 768px) {
       .services-wrapper li {
         -ms-flex: 0 1 25%;
@@ -906,11 +894,11 @@ object {
         justify-content: center; }
   .services-wrapper .services-title {
     color: #F3FEE5;
-    width: 165px;
+    width: 150px;
     margin-bottom: 20px; }
     @media (min-width: 768px) {
       .services-wrapper .services-title {
-        width: 180px; } }
+        width: 165px; } }
   .services-wrapper .services-info {
     text-align: center; }
 
@@ -1104,6 +1092,47 @@ object {
   .wellness-wrapper .white p {
     color: #225378; }
 
+@media (min-width: 768px) {
+  .wellness-wrapper .dw-diagram {
+    -ms-flex-direction: row;
+        flex-direction: row; } }
+
+.wellness-wrapper .dw-diagram img {
+  width: 300px;
+  height: 250px; }
+  @media (min-width: 768px) {
+    .wellness-wrapper .dw-diagram img {
+      width: 400px;
+      height: 350px; } }
+
+.wellness-wrapper .where-we-help {
+  background: #06A6B0;
+  width: 100%;
+  margin: 0 auto; }
+  .wellness-wrapper .where-we-help img {
+    height: 150px;
+    width: 150px; }
+    @media (min-width: 1024px) {
+      .wellness-wrapper .where-we-help img {
+        height: 200px;
+        width: 200px; } }
+  .wellness-wrapper .where-we-help h4 {
+    color: #B8F4F3; }
+  .wellness-wrapper .where-we-help h5 {
+    color: #F3FEE5; }
+  .wellness-wrapper .where-we-help ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .wellness-wrapper .where-we-help li {
+    -ms-flex: 0 1 50%;
+        flex: 0 1 50%; }
+    @media (min-width: 768px) {
+      .wellness-wrapper .where-we-help li {
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%; } }
+
 .resources-wrapper .resources-info {
   display: -ms-flexbox;
   display: flex; }
@@ -1136,4 +1165,18 @@ object {
     display: none; }
     @media (min-width: 768px) {
       .contact-wrapper .contact-form-info .contact-info {
-        display: block; } }
+        display: block;
+        width: 250px;
+        background: #06A6B0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: start;
+            align-items: flex-start;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .contact-wrapper .contact-form-info .contact-info span {
+          font-size: 1.3rem; }
+        .contact-wrapper .contact-form-info .contact-info p {
+          margin: 0; } }

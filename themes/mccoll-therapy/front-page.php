@@ -13,7 +13,7 @@ get_header(); ?>
 			<section class="banner-wrapper">
 				<div class="hero-banner" data-type="background" data-speed="10">
 					<h1>McColl Therapy</h1>
-					<h3>Support for a lasting wellness</h3>
+					<h5>Support for a lasting wellness</h5>
 				</div>
 			</section><!-- .banner-wrapper -->
 
@@ -52,7 +52,7 @@ get_header(); ?>
 										<div class="popup-content">
 											<div class="popup-header">
 												<?php the_post_thumbnail('full'); ?>
-												<h3><?php the_title(); ?></h3>
+												<h4><?php the_title(); ?></h4>
 											</div>
 											<div class="popup-body">
 												<div><?php the_content(); ?></div>
@@ -86,7 +86,7 @@ get_header(); ?>
 									<?php the_post_thumbnail('full'); ?>
 								</div>
 								<div class="profile-info">
-									<h3 class="profile-title"><?php the_title(); ?></h3>
+									<h4 class="profile-title"><?php the_title(); ?></h4>
 									<p><?php echo wp_kses_post(CFS()->get( 'position' )); ?></p>
 									<p><?php echo wp_kses_post(CFS()->get( 'education' )); ?></p>
 									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
@@ -140,27 +140,61 @@ get_header(); ?>
 							</div>
 						</li>
 					</ul>
+				</div>
 					<div class="blue-bg">
 						<p>
 								Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
 						</p>
 				</div>
+				<div class="dw-diagram container">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dimensions.jpg" alt="Dimensions Diagram" />
+					<div class="diagram-info">
+							Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
+					</div>
+				</div>
+				<div class="where-we-help">
+					<h4>Where We Help</h4>
+					<ul>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-independence.png" alt="Independence Icon" />
+							<h5>Independence</h5>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-mental-health.png" alt="Mental Health Icon" />
+							<h5>Mental Health</h5>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-relatiionships.png" alt="Relationships Icon" />
+							<h5>Relationships</h5>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-substance.png" alt="Substance Icon" />
+							<h5>Substance</h5>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-tech-use.png" alt="Tech Use Icon" />
+							<h5>Tech Use</h5>
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-work-edu.png" alt="Work Edu Icon" />
+							<h5>Work Edu</h5>
+						</li>
+					</ul>
+				</div>
 			</section><!-- .wellness-wrapper -->
 
 			<section class="resources-wrapper container">
 				<h2>Resources</h2>
-				<h4>Contact information for support</h4>
+				<h5>Contact information for support</h5>
 				<div class="resources-info">
-					<div class="distress-res">
-						<h3>Distress Lines</h3>
-						<p>211 for Edmonton resources</p>
-						<p>911 for immediate emergency</p>
-					</div>
-					<div class="financial-res">
-						<h3>Financial Support</h3>
-						<a href="#">Links</a>
-						<a href="#">Links</a>
-					</div>
+						<ul>
+							<li><a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
+							<li><a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
+							<li><a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
+						</ul>
+						 For local Edmonton resources:
+If in distress:
+If in immediate danger:
 				</div>
 			</section><!-- .information-wrapper -->
 
@@ -171,12 +205,15 @@ get_header(); ?>
 							echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
 							?>
 							<div class="contact-info">
-								<p>call: 780 965 9906</p>
-								<p>email: logan@mccolltherapy.com</p>
-
-								<p>Location:</p>
-								<p>9707 –110St #312</p>
-								<p>Edmonton, Alberta T5K 2L9</p>
+								<p><span>Call:</span> 780 965 9906</p>
+								<p><span>Email:</span> logan@mccolltherapy.com</p>
+								<div>
+									<span>Meet:</span>
+									<p>
+											 9707 –110St #312
+											Edmonton, Alberta T5K 2L9
+									</p>
+								</div>
 							</div>
 				</div>
 

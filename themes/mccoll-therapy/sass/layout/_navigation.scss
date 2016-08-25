@@ -183,17 +183,11 @@
 			}
 		}
 	}
-	.focus:focus {
-		border-bottom: 2px solid $color__navy;
-	}
 	.contact-nav {
 		color: $color__white;
 		text-align: center;
 		&:hover {
 			color: $color__white;
-		}
-		&:focus {
-			outline: 2px solid $color__mint;
 		}
 	}
 	a {

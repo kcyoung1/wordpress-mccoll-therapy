@@ -16,12 +16,13 @@
         &:nth-of-type(3), &:last-of-type {
             h5 {
                 @include tablet {
-                    margin-bottom: 53px;
+                    margin-bottom: 48px;
                 }
                 @include desktop {
-                    margin-bottom: 56px;
+                    margin-bottom: 51px;
                 }
             }
+
         }
         @include tablet {
             flex: 0 1 25%;
@@ -36,10 +37,10 @@
     }
     .services-title {
         color: $color__tan;
-        width: 165px;
+        width: 150px;
         margin-bottom: 20px;
         @include tablet {
-            width: 180px;
+            width: 165px;
         }
     }
     .services-info {

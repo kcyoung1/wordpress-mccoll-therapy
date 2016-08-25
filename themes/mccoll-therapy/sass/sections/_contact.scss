@@ -22,6 +22,18 @@
       display: none;
       @include tablet {
         display: block;
+        width: 250px;
+        background: $color__turq;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        span {
+          font-size: 1.3rem;
+        }
+        p {
+          margin: 0;
+        }
       }
     }
   }

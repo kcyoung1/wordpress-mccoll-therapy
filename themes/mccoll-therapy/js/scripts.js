@@ -36,7 +36,8 @@ jQuery(document).ready(function($) {
     // BxSlider
 
     $('.bxslider').bxSlider({
-        pager: false
+        controls: false,
+        auto: true
     });
 
     $('.bxslider-profile').bxSlider({
