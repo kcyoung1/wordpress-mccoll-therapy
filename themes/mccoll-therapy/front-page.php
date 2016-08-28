@@ -114,33 +114,93 @@ get_header(); ?>
 							Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
 						</p>
 					</div>
-					<ul>
-						<li>
+					<ul class="wellness-icons">
+						<li class="emotional-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
 							<div>
 								<h4>Emotional</h4>
 								<p class="margin-bottom">Noticing and handling our feelings in effective ways</p>
+								<span class="popup-trigger btn">Read More</span>
+
+								<div class="popup">
+									<span class="popup-btn-close">close</span>
+									<div class="popup-content">
+										<div class="popup-header">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
+											Emotional
+										</div>
+										<div class="popup-body">
+											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</li>
-						<li>
+						<li class="mental-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
 							<div>
 								<h4>Mental</h4>
 								<p class="margin-bottom">Using our minds to problem solve and be productive</p>
+								<span class="popup-trigger btn">Read More</span>
+
+								<div class="popup">
+									<span class="popup-btn-close">close</span>
+									<div class="popup-content">
+										<div class="popup-header">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
+											<h4>Mental</h4>
+										</div>
+										<div class="popup-body">
+											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</li>
-						<li>
+						<li class="physical-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
 							<div>
 								<h4>Physical</h4>
 								<p>Attending to our body and maintaining a healthy lifestyle</p>
+								<span class="popup-trigger btn">Read More</span>
+
+								<div class="popup">
+									<span class="popup-btn-close">close</span>
+									<div class="popup-content">
+										<div class="popup-header">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
+											<h4>Physical</h4>
+										</div>
+										<div class="popup-body">
+											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</li>
-						<li>
+						<li class="spiritual-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
 							<div>
 								<h4>Spiritual</h4>
 								<p>Aligning decisions and actions with our values and beliefs</p>
+								<span class="popup-trigger btn">Read More</span>
+
+								<div class="popup">
+									<span class="popup-btn-close">close</span>
+									<div class="popup-content">
+										<div class="popup-header">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
+											<h4>Spiritual</h4>
+										</div>
+										<div class="popup-body">
+											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</li>
 					</ul>
