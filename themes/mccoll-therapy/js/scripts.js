@@ -1,5 +1,13 @@
 jQuery(document).ready(function($) {
 
+    // Mobile Menu
+    $('.tcon').click(function(event) {
+          $(this).toggleClass('tcon-transform');
+          $('.mobile-nav').toggleClass('active');
+          $('.nav-button').toggleClass('active');
+    });
+
+
     // Smooth Scrolling
 
     jQuery('a[href*=#]:not([href=#])').click(function() {

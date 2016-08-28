@@ -27,15 +27,29 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<div class="logo-container">
 							<a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
 							<a href="/" class="mccoll-name"><h3>McColl Therapy Inc.</h3></a>
 					</div>
-					<div class="menu-options">
-						<ul id="nav">
+					<button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+							<span class="tcon-menu__lines" aria-hidden="true"></span>
+							<span class="tcon-visuallyhidden">toggle menu</span>
+					</button>
+					<div  class="mobile-nav">
+						<ul id="mobile-nav">
 							<li><a href="#about" class="focus">About</a></li>
 							<li><a href="#services" class="focus">Services</a></li>
+							<li><a href="#wellness" class="focus">Wellness</a></li>
+							<li><a href="#resources" class="focus">Resources</a></li>
+							<li><a href="#contact" class="btn contact-nav">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="menu-options">
+						<ul id="nav" class="nav">
+							<li><a href="#about" class="focus">About</a></li>
+							<li><a href="#services" class="focus">Services</a></li>
+							<li><a href="#wellness" class="focus">Wellness</a></li>
+							<li><a href="#resources" class="focus">Resources</a></li>
 							<li><a href="#contact" class="btn contact-nav">Contact Us</a></li>
 						</ul>
 					</div>
