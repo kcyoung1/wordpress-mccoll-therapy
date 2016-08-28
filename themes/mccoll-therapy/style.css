@@ -1167,7 +1167,7 @@ object {
     @media (min-width: 1024px) {
       .resources-wrapper .resources-banner {
         height: 400px;
-        background-size: 150%; } }
+        background-size: 180%; } }
   .resources-wrapper h5 {
     margin-bottom: 20px; }
   .resources-wrapper .resources-info {
@@ -1212,7 +1212,7 @@ object {
     width: 320px;
     height: 350px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/contact.png) center no-repeat;
-    background-size: cover;
+    background-size: 96%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1227,6 +1227,7 @@ object {
     margin: 0 auto; }
     @media (min-width: 768px) {
       .contact-wrapper .contact-form-info .contact-info-wrapper {
+        background-size: cover;
         margin-right: 50px;
         width: 300px;
         height: 550px; } }
@@ -1244,4 +1245,5 @@ object {
   .contact-wrapper .contact-info h5 {
     margin-bottom: 10px; }
   .contact-wrapper .contact-info p:last-of-type {
-    margin-top: 10px; }
+    margin-top: 10px;
+    width: 200px; }

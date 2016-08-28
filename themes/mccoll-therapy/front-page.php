@@ -76,9 +76,9 @@ get_header(); ?>
 				<ul class="bxslider-profile profile-list">
 					<?php $profile_info = array(
 						'post_type' => 'profile',
-						'posts_per_page' => 4,
+						'posts_per_page' => 10,
 						'order' => 'ASC',
-						'orderby' => 'name');
+						'orderby' => 'date');
 						$profiles = get_posts( $profile_info );
 						foreach ( $profiles as $post ) : setup_postdata( $post ); ?>
 
