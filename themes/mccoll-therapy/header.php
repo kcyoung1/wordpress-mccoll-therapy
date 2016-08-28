@@ -41,7 +41,7 @@
 							<li><a href="#services" class="focus">Services</a></li>
 							<li><a href="#wellness" class="focus">Wellness</a></li>
 							<li><a href="#resources" class="focus">Resources</a></li>
-							<li><a href="#contact" class="btn contact-nav">Contact Us</a></li>
+							<li><a href="#contact" class="btn contact-nav focus">Contact Us</a></li>
 						</ul>
 					</div>
 					<div class="menu-options">

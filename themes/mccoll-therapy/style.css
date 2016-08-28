@@ -641,6 +641,8 @@ textarea {
       color: #225378; }
   .main-navigation .active {
     color: #225378; }
+  .main-navigation button {
+    box-shadow: none; }
 
 .tcon {
   -webkit-appearance: none;
@@ -681,7 +683,7 @@ textarea {
   width: 40px;
   border-radius: 2.85714px;
   transition: 0.3s;
-  background: black;
+  background: white;
   position: relative; }
   .tcon-menu__lines::before, .tcon-menu__lines::after {
     display: inline-block;
@@ -689,7 +691,7 @@ textarea {
     width: 40px;
     border-radius: 2.85714px;
     transition: 0.3s;
-    background: black;
+    background: white;
     content: '';
     position: absolute;
     left: 0;
@@ -747,10 +749,11 @@ textarea {
   overflow: hidden;
   color: white;
   transform: translateY(-100vh);
+  opacity: 0;
   transition: all 0.5s cubic-bezier(0.666, 0, 0.333, 1); }
   @media (min-width: 768px) {
     .mobile-nav {
-      width: calc(100% - 60px);
+      width: 100%;
       height: calc(100vh - 60px); } }
   @media (min-width: 1024px) {
     .mobile-nav {
@@ -761,12 +764,13 @@ textarea {
       height: calc(100vh); } }
   .mobile-nav.active {
     transform: translateY(0);
-    opacity: 1; }
+    opacity: 1;
+    margin-top: 70px; }
   .mobile-nav a {
     display: block;
     text-align: center;
     font-size: 25px;
-    color: #FFFFFF;
+    color: white;
     letter-spacing: 0.58px;
     line-height: 51px;
     margin: 0; }
@@ -778,6 +782,11 @@ textarea {
       .mobile-nav a {
         font-size: 17px;
         line-height: 23px; } }
+  .mobile-nav .btn, .mobile-nav .contact-wrapper .wpcf7-submit, .contact-wrapper .mobile-nav .wpcf7-submit {
+    border-radius: 0; }
+    @media (min-width: 768px) {
+      .mobile-nav .btn, .mobile-nav .contact-wrapper .wpcf7-submit, .contact-wrapper .mobile-nav .wpcf7-submit {
+        border-radius: 0; } }
 
 /*--------------------------------------------------------------
 # Accessibility

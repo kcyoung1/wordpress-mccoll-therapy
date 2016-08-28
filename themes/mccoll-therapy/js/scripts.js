@@ -7,6 +7,11 @@ jQuery(document).ready(function($) {
           $('.nav-button').toggleClass('active');
     });
 
+    $('.focus').click(function(event){
+        $('.mobile-nav').toggleClass('active');
+        $('.tcon').toggleClass('tcon-transform');
+    });
+
 
     // Smooth Scrolling
 

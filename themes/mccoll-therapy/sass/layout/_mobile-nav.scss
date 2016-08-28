@@ -5,7 +5,7 @@ $tcon-transition: .3s !default;
 $tcon-jstransform: 'tcon-transform' !default;
 
 $tcon-menu-radius: ($tcon-size / 14) !default;
-$tcon-menu-color: black !default;
+$tcon-menu-color: white !default;
 $tcon-menu-arrowleft-transformation: (
   transform: scale3d(.8, .8, .8) rotate3d(0, 0, 1, 90deg)
 ) !default;
@@ -140,12 +140,12 @@ $tcon-menu-arrow360left-transformation: (
   overflow: hidden;
   color: $color__white;
   transform: translateY(-100vh);
-  // opacity: 0;
+  opacity: 0;
 
   transition: all 0.5s cubic-bezier(0.666, 0, 0.333, 1);
 
   @include tablet {
-    width: calc(100% - 60px);
+    width: 100%;
     height: calc(100vh - 60px);
   }
 
@@ -164,13 +164,14 @@ $tcon-menu-arrow360left-transformation: (
   &.active {
     transform:translateY(0);
     opacity: 1;
+    margin-top: 70px;
   }
 
   a {
     display: block;
     text-align: center;
     font-size: 25px;
-    color: #FFFFFF;
+    color: $color__white;
     letter-spacing: 0.58px;
     line-height: 51px;
     margin: 0;
@@ -188,4 +189,10 @@ $tcon-menu-arrow360left-transformation: (
       line-height: 23px;
     }
   }
+  .btn {
+    border-radius: 0;
+		@include tablet {
+			border-radius: 0;
+		}
+	}
 }
