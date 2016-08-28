@@ -132,7 +132,7 @@ $tcon-menu-arrow360left-transformation: (
   bottom: 0;
   left: 0;
   margin: auto;
-  background: $color__turq;
+  background: rgba(#06A6B0, 0.9);
   background-size: cover;
   z-index: 9;
   width: calc(100%);
@@ -177,8 +177,9 @@ $tcon-menu-arrow360left-transformation: (
     margin: 0;
 
     @include tablet {
-      font-size: 35px;
+      font-size: 30px;
       line-height: 61px;
+      font-weight: 400;
     }
 
     @media only screen
@@ -187,6 +188,7 @@ $tcon-menu-arrow360left-transformation: (
     and (orientation : landscape) {
       font-size: 17px;
       line-height: 23px;
+      font-weight: 400;
     }
   }
   .btn {
@@ -195,4 +197,7 @@ $tcon-menu-arrow360left-transformation: (
 			border-radius: 0;
 		}
 	}
+  ul {
+    padding-top: 20px;
+  }
 }

@@ -127,6 +127,7 @@
 	color: $color__mint;
 	font-size: .8rem;
 	font-weight: bold;
+	border-bottom: 1px solid $color__mint;
 	@include tablet {
 		font-size: 1rem;
 	}
@@ -140,11 +141,16 @@
 		@include desktop {
 			margin-left: 100px
 		}
+		a:hover {
+			color: $color__white;
+		}
 	}
 	.mccoll-logo {
 		display: flex;
 		align-items: center;
 	}
+
+
 	h3 {
 		font-size: 1.2rem;
 	}
@@ -164,10 +170,10 @@
 			text-transform: uppercase;
 		}
 		a {
-			margin: 0 15px;
+			margin: 0 5px;
 			outline: none;
 			@include tablet {
-				margin: 0 30px;
+				margin: 0 15px;
 			}
 		}
 	}
@@ -189,5 +195,9 @@
 	}
 	button {
 		box-shadow: none;
+		margin-right: 10px;
+		@include tablet {
+			  margin-right: 60px;
+		}
 	}
 }

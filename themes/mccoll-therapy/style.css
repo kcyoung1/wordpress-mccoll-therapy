@@ -584,7 +584,8 @@ textarea {
   top: 0;
   color: #B8F4F3;
   font-size: .8rem;
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 1px solid #B8F4F3; }
   @media (min-width: 768px) {
     .main-navigation {
       font-size: 1rem; } }
@@ -600,6 +601,8 @@ textarea {
     @media (min-width: 1024px) {
       .main-navigation .logo-container {
         margin-left: 100px; } }
+    .main-navigation .logo-container a:hover {
+      color: white; }
   .main-navigation .mccoll-logo {
     display: -ms-flexbox;
     display: flex;
@@ -625,11 +628,11 @@ textarea {
             align-items: center;
         text-transform: uppercase; } }
     .main-navigation .menu-options a {
-      margin: 0 15px;
+      margin: 0 5px;
       outline: none; }
       @media (min-width: 768px) {
         .main-navigation .menu-options a {
-          margin: 0 30px; } }
+          margin: 0 15px; } }
   .main-navigation .contact-nav {
     color: white;
     text-align: center; }
@@ -642,7 +645,11 @@ textarea {
   .main-navigation .active {
     color: #225378; }
   .main-navigation button {
-    box-shadow: none; }
+    box-shadow: none;
+    margin-right: 10px; }
+    @media (min-width: 768px) {
+      .main-navigation button {
+        margin-right: 60px; } }
 
 .tcon {
   -webkit-appearance: none;
@@ -741,7 +748,7 @@ textarea {
   bottom: 0;
   left: 0;
   margin: auto;
-  background: #06A6B0;
+  background: rgba(6, 166, 176, 0.9);
   background-size: cover;
   z-index: 9;
   width: calc(100%);
@@ -776,17 +783,21 @@ textarea {
     margin: 0; }
     @media (min-width: 768px) {
       .mobile-nav a {
-        font-size: 35px;
-        line-height: 61px; } }
+        font-size: 30px;
+        line-height: 61px;
+        font-weight: 400; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       .mobile-nav a {
         font-size: 17px;
-        line-height: 23px; } }
+        line-height: 23px;
+        font-weight: 400; } }
   .mobile-nav .btn, .mobile-nav .contact-wrapper .wpcf7-submit, .contact-wrapper .mobile-nav .wpcf7-submit {
     border-radius: 0; }
     @media (min-width: 768px) {
       .mobile-nav .btn, .mobile-nav .contact-wrapper .wpcf7-submit, .contact-wrapper .mobile-nav .wpcf7-submit {
         border-radius: 0; } }
+  .mobile-nav ul {
+    padding-top: 20px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -968,6 +979,11 @@ object {
   box-shadow: none !important;
   border: none !important; }
 
+.bxslider-profile .bx-wrapper {
+  margin: 30px !important; }
+  .bxslider-profile .bx-wrapper .bx-pager {
+    bottom: -10px !important; }
+
 .banner-wrapper {
   color: white; }
   .banner-wrapper .hero-banner {
@@ -1127,7 +1143,8 @@ object {
   border-bottom: 2px solid #B8F4F3; }
 
 .profile-list p {
-  border-bottom: 2px solid #B8F4F3; }
+  border-bottom: 2px solid #B8F4F3;
+  font-size: 0.9rem; }
   .profile-list p:last-child {
     border-bottom: none; }
 

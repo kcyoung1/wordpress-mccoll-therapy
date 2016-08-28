@@ -2,3 +2,9 @@
     box-shadow: none !important;
     border: none !important;
   }
+.bxslider-profile  .bx-wrapper {
+    margin: 30px !important;
+    .bx-pager {
+      bottom: -10px !important;
+    }
+  }

@@ -101,7 +101,7 @@ get_header(); ?>
 
 			</section><!-- .profile-wrapper -->
 
-			<section class="wellness-wrapper">
+			<section  id= "wellness"  class="wellness-wrapper">
 				<div class="wellness-banner" data-type="background" data-speed="10">
 					<h2>Understanding Wellness</h2>
 				</div>
@@ -190,7 +190,7 @@ get_header(); ?>
 				</div>
 			</section><!-- .wellness-wrapper -->
 
-			<section class="resources-wrapper">
+			<section  id= "resources" class="resources-wrapper">
 				<div class="resources-banner" data-type="background" data-speed="10">
 					<h2>Resources</h2>
 					<h5>Contact information for support</h5>
