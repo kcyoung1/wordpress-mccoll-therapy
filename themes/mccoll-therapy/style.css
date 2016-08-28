@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li, .resources-wrapper .resources-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -75,7 +75,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       width: 650px; } }
   @media (min-width: 1024px) {
     .container {
-      width: 1150px; } }
+      width: 1000px; } }
 
 html {
   font-family: sans-serif;
@@ -866,6 +866,8 @@ object {
   background-color: #06A6B0;
   color: white;
   padding-bottom: 50px; }
+  .services-wrapper h2 {
+    color: #B8F4F3; }
   .services-wrapper ul {
     list-style: none;
     margin: 0 auto;
@@ -964,13 +966,17 @@ object {
   height: 200px;
   overflow: hidden;
   margin: 0 auto;
-  border: 5px solid #B8F4F3; }
+  border: 5px solid #06A6B0; }
   @media (min-width: 768px) {
     .profile-list .profile-image {
       margin-right: 20px; } }
   @media (min-width: 1024px) {
     .profile-list .profile-image {
-      margin-right: 70px; } }
+      margin-right: 70px;
+      border-radius: 5px;
+      height: 400px;
+      width: 300px;
+      border: none; } }
 
 .profile-list .profile-info {
   width: 350px; }
@@ -995,8 +1001,11 @@ object {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-3.jpg) no-repeat bottom fixed;
   background-size: cover cover;
   width: 100%;
-  height: 200px; }
+  height: 250px; }
   @media (min-width: 768px) {
+    .wellness-wrapper .wellness-banner {
+      height: 300px; } }
+  @media (min-width: 1024px) {
     .wellness-wrapper .wellness-banner {
       height: 400px;
       background-size: 150%; } }
@@ -1083,7 +1092,7 @@ object {
       padding: 15px 70px; } }
   @media (min-width: 1024px) {
     .wellness-wrapper .blue-bg {
-      padding: 15px 150px; } }
+      padding: 15px 220px; } }
   .wellness-wrapper .blue-bg p {
     color: white; }
 
@@ -1108,6 +1117,12 @@ object {
         width: 400px;
         height: 350px; } }
 
+.wellness-wrapper .diagram-info {
+  width: 350px; }
+  @media (min-width: 768px) {
+    .wellness-wrapper .diagram-info {
+      width: 500px; } }
+
 .wellness-wrapper .where-we-help {
   background: #06A6B0;
   width: 100%;
@@ -1118,7 +1133,7 @@ object {
     @media (min-width: 1024px) {
       .wellness-wrapper .where-we-help img {
         height: 200px;
-        width: 200px; } }
+        width: 220px; } }
   .wellness-wrapper .where-we-help h4 {
     color: #B8F4F3; }
   .wellness-wrapper .where-we-help h5, .wellness-wrapper .where-we-help p {
@@ -1137,19 +1152,44 @@ object {
         -ms-flex: 0 1 33.33%;
             flex: 0 1 33.33%; } }
 
-.resources-wrapper .resources-info {
-  display: -ms-flexbox;
-  display: flex; }
-
-.resources-wrapper .financial-res {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+.resources-wrapper {
+  display: block;
+  color: white; }
+  .resources-wrapper .resources-banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5)), url(../../assets/images/hero-banner-1.jpg) no-repeat bottom fixed;
+    background-size: cover cover;
+    width: 100%;
+    height: 250px; }
+    @media (min-width: 768px) {
+      .resources-wrapper .resources-banner {
+        height: 300px;
+        background-size: 300%; } }
+    @media (min-width: 1024px) {
+      .resources-wrapper .resources-banner {
+        height: 400px;
+        background-size: 150%; } }
+  .resources-wrapper h5 {
+    margin-bottom: 20px; }
+  .resources-wrapper .resources-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: white;
+    margin-bottom: 20px; }
+    .resources-wrapper .resources-info ul {
+      margin: 0; }
+    .resources-wrapper .resources-info a {
+      color: #06A6B0; }
+      .resources-wrapper .resources-info a:hover {
+        color: #B8F4F3; }
+  .resources-wrapper img {
+    height: 300px;
+    width: 200px; }
 
 .contact-wrapper .wpcf7-submit {
   outline: none;
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   text-shadow: none;
   border: none;
@@ -1163,30 +1203,45 @@ object {
     border: none; }
 
 .contact-wrapper .contact-form-info {
-  display: -ms-flexbox;
-  display: flex; }
-  .contact-wrapper .contact-form-info .contact-info {
-    display: none; }
+  display: block; }
+  @media (min-width: 768px) {
+    .contact-wrapper .contact-form-info {
+      display: -ms-flexbox;
+      display: flex; } }
+  .contact-wrapper .contact-form-info .contact-info-wrapper {
+    width: 320px;
+    height: 350px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/contact.png) center no-repeat;
+    background-size: cover;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto; }
     @media (min-width: 768px) {
-      .contact-wrapper .contact-form-info .contact-info {
-        display: block;
-        margin-left: 50px;
+      .contact-wrapper .contact-form-info .contact-info-wrapper {
+        margin-right: 50px;
         width: 300px;
-        height: 550px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/contact.png) center;
-        background-size: cover;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: start;
-            align-items: flex-start;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        color: white;
-        border-radius: 5px;
-        padding: 20px; }
-        .contact-wrapper .contact-form-info .contact-info span {
-          font-size: 1.3rem; }
-        .contact-wrapper .contact-form-info .contact-info p {
-          margin: 0; } }
+        height: 550px; } }
+    .contact-wrapper .contact-form-info .contact-info-wrapper span {
+      font-size: 1.3rem; }
+    .contact-wrapper .contact-form-info .contact-info-wrapper p {
+      margin: 0; }
+
+.contact-wrapper .contact-paragraph {
+  border-bottom: 2px solid white;
+  padding-bottom: 20px; }
+
+.contact-wrapper .contact-info {
+  padding-top: 20px; }
+  .contact-wrapper .contact-info h5 {
+    margin-bottom: 10px; }
+  .contact-wrapper .contact-info p:last-of-type {
+    margin-top: 10px; }

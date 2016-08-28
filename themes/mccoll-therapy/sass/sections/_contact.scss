@@ -2,7 +2,7 @@
   .wpcf7-submit {
     @extend .btn;
     outline: none;
-    border-radius: 0;
+    border-radius: 5px;
     box-shadow: none;
     text-shadow: none;
     border: none;
@@ -17,29 +17,48 @@
     }
   }
   .contact-form-info {
-    display: flex;
-    .contact-info {
-      display: none;
+    display: block;
+    @include tablet {
+      display: flex;
+    }
+    .contact-info-wrapper {
+      width: 320px;
+      height: 350px;
+      background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url(../../assets/images/contact.png) center no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      color: $color__white;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0 auto;
       @include tablet {
-        display: block;
-        margin-left: 50px;
+        margin-right: 50px;
         width: 300px;
         height: 550px;
-        background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url(../../assets/images/contact.png) center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        color: $color__white;
-        border-radius: 5px;
-        padding: 20px;
-        span {
-          font-size: 1.3rem;
-        }
-        p {
-          margin: 0;
-        }
+      }
+      span {
+        font-size: 1.3rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .contact-paragraph {
+    border-bottom: 2px solid $color__white;
+    padding-bottom: 20px;
+  }
+  .contact-info {
+    padding-top: 20px;
+    h5 {
+      margin-bottom: 10px;
+    }
+    p {
+      &:last-of-type {
+        margin-top: 10px;
       }
     }
   }

@@ -12,12 +12,16 @@
         height: 200px;
         overflow: hidden;
         margin: 0 auto;
-        border: 5px solid $color__mint;
+        border: 5px solid $color__turq;
         @include tablet {
           margin-right: 20px;
         }
         @include desktop {
           margin-right: 70px;
+          border-radius: 5px;
+          height: 400px;
+          width: 300px;
+          border: none;
         }
     }
     .profile-info {

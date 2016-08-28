@@ -70,7 +70,9 @@ get_header(); ?>
 
 			<section class="profile-wrapper container">
 				<h2>Our Team</h2>
-
+				<p>
+					Our team provides you with the highest quality services through extensive training and a dedication to the well-being of our clients
+				</p>
 				<ul class="bxslider-profile profile-list">
 					<?php $profile_info = array(
 						'post_type' => 'profile',
@@ -104,7 +106,9 @@ get_header(); ?>
 					<h2>Understanding Wellness</h2>
 				</div>
 				<div class="dimensions-wrapper">
-					<h3>Dimensions of Wellness</h3>
+					<div class="dimensions-title">
+						<h3>Dimensions of Wellness</h3>
+					</div>
 					<div class="blue-bg white">
 						<p>
 							Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
@@ -186,41 +190,49 @@ get_header(); ?>
 				</div>
 			</section><!-- .wellness-wrapper -->
 
-			<section class="resources-wrapper container">
-				<h2>Resources</h2>
-				<h5>Contact information for support</h5>
-				<div class="resources-info">
-						<ul>
-							<li>
-								For local Edmonton resources:
-								<a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
-							<li>
-								If in distress:
-								<a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
-							<li>
-								If in immediate danger:
-								<a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
-						</ul>
+			<section class="resources-wrapper">
+				<div class="resources-banner" data-type="background" data-speed="10">
+					<h2>Resources</h2>
+					<h5>Contact information for support</h5>
+					<div class="resources-info">
+								<ul>
+									<li>
+										For local Edmonton resources:
+										<a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
+									<li>
+										If in distress:
+										<a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
+									<li>
+										If in immediate danger:
+										<a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
+								</ul>
+								<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resources.png" alt="Resources Image" /> -->
+					</div>
 				</div>
 			</section><!-- .information-wrapper -->
 
 			<section id= "contact" class="contact-wrapper  container">
 				<h2>Contact Us</h2>
 				<div class="contact-form-info">
-						<?php
-							echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
-							?>
-							<div class="contact-info">
-								<p><span>Call:</span> 780 965 9906</p>
-								<p><span>Email:</span> logan@mccolltherapy.com</p>
-								<div>
-									<span>Meet:</span>
+							<div class="contact-info-wrapper">
+								<div class="contact-paragraph">
 									<p>
-											 9707 –110St #312
-											Edmonton, Alberta T5K 2L9
+										 For any inquiries, please send us a message or contact us directly through:
 									</p>
 								</div>
+								<div class="contact-info">
+									<h5>McColl Therapy Inc.</h5>
+									<p>780.965.9906</p>
+									<p>logan@mccolltherapy.com</p>
+										<p>
+												9707 –110St #312
+												Edmonton, Alberta T5K 2L9
+										</p>
+								</div>
 							</div>
+							<?php
+								echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
+								?>
 				</div>
 
 			</section><!-- .contact-wrapper -->
