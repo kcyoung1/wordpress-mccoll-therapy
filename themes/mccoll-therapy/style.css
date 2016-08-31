@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li, .resources-wrapper .resources-banner {
+.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li, .wellness-icons .popup .popup-header, .resources-wrapper .resources-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       align-items: center; }
 
 .container {
-  width: 350px;
+  width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .container {
@@ -1367,7 +1367,7 @@ object {
     text-transform: uppercase;
     border: 5px solid black;
     background: white;
-    border-radius: 0; }
+    border-radius: 5px; }
     @media (min-width: 768px) {
       .wellness-icons .popup .popup-header {
         display: -ms-flexbox;
@@ -1379,6 +1379,10 @@ object {
     .wellness-icons .popup .popup-header img {
       width: 200px;
       height: 173.33px; }
+    .wellness-icons .popup .popup-header h4 {
+      margin: 0;
+      text-align: center;
+      border-bottom: none !important; }
   .wellness-icons .popup .popup-body {
     margin-top: 20px; }
 

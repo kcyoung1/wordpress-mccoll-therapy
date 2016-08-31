@@ -254,7 +254,8 @@
           text-transform: uppercase;
           border: 5px solid $color__black;
           background: $color__white;
-          border-radius: 0;
+          border-radius: 5px;
+          @extend .center;
           @include tablet {
             display: flex;
             justify-content: center;
@@ -263,6 +264,11 @@
           img {
             width: 200px;
             height: 173.33px;
+          }
+          h4 {
+            margin: 0;
+            text-align: center;
+            border-bottom: none !important;
           }
       }
       .popup-body {
