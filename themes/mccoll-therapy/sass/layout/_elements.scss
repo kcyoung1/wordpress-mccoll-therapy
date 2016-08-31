@@ -15,6 +15,9 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	&.active {
+		overflow: hidden;
+	}
 }
 
 blockquote, q {

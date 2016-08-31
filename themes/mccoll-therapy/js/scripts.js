@@ -1,15 +1,18 @@
 jQuery(document).ready(function($) {
 
     // Mobile Menu
+
     $('.tcon').click(function(event) {
           $(this).toggleClass('tcon-transform');
           $('.mobile-nav').toggleClass('active');
           $('.nav-button').toggleClass('active');
+          $('body').toggleClass('active');
     });
 
     $('.focus').click(function(event){
         $('.mobile-nav').toggleClass('active');
         $('.tcon').toggleClass('tcon-transform');
+        $('body').toggleClass('active');
     });
 
 
@@ -69,16 +72,18 @@ jQuery(document).ready(function($) {
 
     $('.popup-trigger').click(function(e) {
         e.stopPropagation();
-        $('.popup').hide();
-        $(this).nextAll('.popup:first').css('top', newHeight).toggle();
+        $('.popup').fadeOut(500);
+        $(this).nextAll('.popup:first').css('top', newHeight).fadeIn(500);
     });
 
     $('html').click(function() {
-        $('.popup').hide();
+        $('.popup').fadeOut(500);
+        $('.cover').fadeOut(500);
     });
 
     $('.popup-btn-close').click(function(e) {
-        $(this).parent().hide();
+        $(this).parent().fadeOut(500);
+        $('.cover').fadeOut(500);
     });
 
     $('.popup').click(function(e) {

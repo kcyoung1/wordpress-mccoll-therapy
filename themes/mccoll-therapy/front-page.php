@@ -188,6 +188,7 @@ get_header(); ?>
 								<p>Aligning decisions and actions with our values and beliefs</p>
 								<span class="popup-trigger btn">Read More</span>
 
+								<div class="cover"></div>
 								<div class="popup">
 									<span class="popup-btn-close">close</span>
 									<div class="popup-content">
@@ -253,8 +254,8 @@ get_header(); ?>
 			<section  id= "resources" class="resources-wrapper">
 				<div class="resources-banner" data-type="background" data-speed="10">
 					<h2>Resources</h2>
-					<h5>Contact information for support</h5>
 					<div class="resources-info">
+						<h5>Contact information for support</h5>
 								<ul>
 									<li>
 										For local Edmonton resources:

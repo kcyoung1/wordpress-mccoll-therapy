@@ -20,12 +20,12 @@
     margin-bottom: 20px;
   }
   .resources-info {
-    display: flex;
-    align-items: center;
+    text-align: center;
     color: $color__white;
     margin-bottom: 20px;
     ul {
       margin: 0;
+      text-align: left;
     }
     a {
       color: $color__turq;

@@ -388,6 +388,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+  body.active {
+    overflow: hidden; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -1399,14 +1401,12 @@ object {
   .resources-wrapper h5 {
     margin-bottom: 20px; }
   .resources-wrapper .resources-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    text-align: center;
     color: white;
     margin-bottom: 20px; }
     .resources-wrapper .resources-info ul {
-      margin: 0; }
+      margin: 0;
+      text-align: left; }
     .resources-wrapper .resources-info a {
       color: #06A6B0; }
       .resources-wrapper .resources-info a:hover {
