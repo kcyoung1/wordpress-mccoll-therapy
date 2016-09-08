@@ -72,22 +72,22 @@ jQuery(document).ready(function($) {
 
     $('.popup-trigger').click(function(e) {
         e.stopPropagation();
-        $('.popup').fadeOut(500);
+        $('.popup').fadeOut(300);
         $('body').toggleClass('active');
         $('.overlay').toggleClass('active');
-        $(this).nextAll('.popup:first').css('top', newHeight).fadeIn(500);
+        $(this).nextAll('.popup:first').css('top', newHeight).fadeIn(300);
     });
 
-    $('html').click(function() {
-        $('.popup').fadeOut(500);
-        $('.cover').fadeOut(500);
+    $('.overlay').click(function() {
+        $('.popup').fadeOut(300);
+        $('.cover').fadeOut(300);
         $('body').toggleClass('active');
-        $('.overlay').toggleClass('active');
+        $(this).toggleClass('active');
     });
 
     $('.popup-btn-close').click(function(e) {
-        $(this).parent().fadeOut(500);
-        $('.cover').fadeOut(500);
+        $(this).parent().fadeOut(300);
+        $('.cover').fadeOut(300);
         $('body').toggleClass('active');
         $('.overlay').toggleClass('active');
     });
