@@ -28,8 +28,8 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo-container">
-							<a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
-							<a href="/" class="mccoll-name"><h3>McColl Therapy Inc.</h3></a>
+							<a href="#home" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
+							<a href="#home" class="mccoll-name"><h3>McColl Therapy Inc.</h3></a>
 					</div>
 					<button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
 							<span class="tcon-menu__lines" aria-hidden="true"></span>
@@ -46,10 +46,10 @@
 					</div>
 					<div class="menu-options">
 						<ul id="nav" class="nav">
-							<li><a href="#about" class="focus">About</a></li>
-							<li><a href="#services" class="focus">Services</a></li>
-							<li><a href="#wellness" class="focus">Wellness</a></li>
-							<li><a href="#resources" class="focus">Resources</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#wellness">Wellness</a></li>
+							<li><a href="#resources">Resources</a></li>
 							<li><a href="#contact" class="btn contact-nav">Contact Us</a></li>
 						</ul>
 					</div>

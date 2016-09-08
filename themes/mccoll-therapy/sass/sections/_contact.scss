@@ -2,7 +2,7 @@
   .wpcf7-submit {
     @extend .btn;
     outline: none;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: none;
     text-shadow: none;
     border: none;
@@ -10,7 +10,6 @@
     font-size: 1rem;
     padding: 7px 25px;
     &:hover {
-      border-radius: 0;
       box-shadow: none;
       text-shadow: none;
       border: none;
@@ -31,7 +30,7 @@
       align-items: flex-start;
       flex-direction: column;
       color: $color__white;
-      border-radius: 5px;
+      border-radius: 2px;
       padding: 20px;
       margin: 0 auto;
       @include tablet {

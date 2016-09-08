@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="banner-wrapper">
+			<section id="home" class="banner-wrapper">
 				<div class="hero-banner" data-type="background" data-speed="10">
 					<h1>McColl Therapy</h1>
 					<h5>Support for a lasting wellness</h5>

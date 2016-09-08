@@ -1,0 +1,13 @@
+.color-header {
+  background: $color__turq;
+  width: 100%;
+  height: 80px;
+}
+.error404 {
+  a {
+    color: $color__turq;
+    &:hover {
+      color: $color__mint;
+    }
+  }
+}

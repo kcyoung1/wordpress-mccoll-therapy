@@ -111,7 +111,7 @@
 }
 
 // Navigation Menu Customization
-.menu-menu-1-container {
+.menu-menu-1-container, .error404 .main-navigation {
 	display: none;
 }
 .main-navigation {
@@ -136,10 +136,10 @@
 		align-items: center;
 		margin-left: 10px;
 		@include tablet {
-			margin-left: 70px
+			margin-left: 40px
 		}
 		@include desktop {
-			margin-left: 100px
+			margin-left: 50px
 		}
 		a:hover {
 			color: $color__white;
@@ -149,8 +149,6 @@
 		display: flex;
 		align-items: center;
 	}
-
-
 	h3 {
 		font-size: 1.2rem;
 	}
