@@ -166,6 +166,7 @@ get_header(); ?>
 								<p>Attending to our body and maintaining a healthy lifestyle</p>
 								<span class="popup-trigger btn">Read More</span>
 
+								<div class="overlay"></div>
 								<div class="popup">
 									<span class="popup-btn-close">close</span>
 									<div class="popup-content">
@@ -259,13 +260,13 @@ get_header(); ?>
 								<ul>
 									<li>
 										For local Edmonton resources:
-										<a href="http://edmonton.cmha.ca/211-resource-lists/">211 Resource List</a></li>
+										<a href="http://edmonton.cmha.ca/211-resource-lists/" target="_blank">211 Resource List</a></li>
 									<li>
 										If in distress:
-										<a href="http://edmonton.cmha.ca/programs_services/distress-line/">Distress Lines</a></li>
+										<a href="http://edmonton.cmha.ca/programs_services/distress-line/" target="_blank">Distress Lines</a></li>
 									<li>
 										If in immediate danger:
-										<a href="http://www.edmontonpolice.ca/ContactEPS.aspx">911 Edmonton Police</a></li>
+										<a href="http://www.edmontonpolice.ca/ContactEPS.aspx" target="_blank">911 Edmonton Police</a></li>
 								</ul>
 								<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resources.png" alt="Resources Image" /> -->
 					</div>

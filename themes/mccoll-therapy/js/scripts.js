@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 
     // Smooth Scrolling
 
-    jQuery('a[href*=#]:not([href=#])').click(function() {
+    jQuery('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
             var target = jQuery(this.hash);
@@ -73,17 +73,23 @@ jQuery(document).ready(function($) {
     $('.popup-trigger').click(function(e) {
         e.stopPropagation();
         $('.popup').fadeOut(500);
+        $('body').toggleClass('active');
+        $('.overlay').toggleClass('active');
         $(this).nextAll('.popup:first').css('top', newHeight).fadeIn(500);
     });
 
     $('html').click(function() {
         $('.popup').fadeOut(500);
         $('.cover').fadeOut(500);
+        $('body').toggleClass('active');
+        $('.overlay').toggleClass('active');
     });
 
     $('.popup-btn-close').click(function(e) {
         $(this).parent().fadeOut(500);
         $('.cover').fadeOut(500);
+        $('body').toggleClass('active');
+        $('.overlay').toggleClass('active');
     });
 
     $('.popup').click(function(e) {

@@ -1335,6 +1335,20 @@ object {
 .spiritual-wrap .btn, .spiritual-wrap .contact-wrapper .wpcf7-submit, .contact-wrapper .spiritual-wrap .wpcf7-submit {
   background: #00B050; }
 
+.overlay {
+  position: fixed;
+  display: none;
+  /* color with alpha channel */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* 0.7 = 70% opacity */
+  /* stretch to screen edges */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .overlay.active {
+    display: block; }
+
 .wellness-icons .popup {
   display: none;
   position: absolute;
