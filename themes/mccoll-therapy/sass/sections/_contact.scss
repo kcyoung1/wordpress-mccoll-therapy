@@ -15,6 +15,21 @@
       border: none;
     }
   }
+  .wpcf7-text {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid $color__turq;
+    border-radius: 0;
+    width: 300px;
+  }
+  .wpcf7-textarea {
+    outline: none;
+    border: 0;
+    border-left: 2px solid $color__turq;
+    border-bottom: 2px solid $color__turq;
+    border-radius: 0;
+    width: 300px;
+  }
   .contact-form-info {
     display: block;
     @include tablet {

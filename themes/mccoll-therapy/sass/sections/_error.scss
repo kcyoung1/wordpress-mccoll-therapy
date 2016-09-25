@@ -4,10 +4,33 @@
   height: 80px;
 }
 .error404 {
+  text-align: center;
+  .page-content {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  img {
+    height: auto;
+    width: 100px;
+  }
   a {
     color: $color__turq;
     &:hover {
       color: $color__mint;
     }
   }
+  .error-msg {
+    margin-left: 20px;
+    width: 280px;
+    text-align: left;
+  }
+}
+
+.site-info {
+  @extend .container;
+  color: $color__white;
 }

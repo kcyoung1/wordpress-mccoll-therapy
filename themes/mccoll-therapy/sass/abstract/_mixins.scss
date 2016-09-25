@@ -51,8 +51,12 @@ $desktop-width: 1024px;
 	align-items: center;
 }
 
+.align-center {
+	text-align: center;
+}
+
 .container {
-	width: 320px;
+	width: 300px;
 	@extend .center;
 	margin: 0 auto;
 	@include tablet {

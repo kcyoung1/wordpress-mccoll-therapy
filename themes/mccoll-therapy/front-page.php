@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section id="home" class="banner-wrapper">
-				<div class="hero-banner" data-type="background" data-speed="10">
+				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
 					<h1>McColl Therapy</h1>
 					<h5>Support for a lasting wellness</h5>
 				</div>
@@ -70,7 +70,7 @@ get_header(); ?>
 
 			<section class="profile-wrapper container">
 				<h2>Our Team</h2>
-				<p>
+				<p class="align-center">
 					Our team provides you with the highest quality services through extensive training and a dedication to the well-being of our clients
 				</p>
 				<ul class="bxslider-profile profile-list">
@@ -102,7 +102,7 @@ get_header(); ?>
 			</section><!-- .profile-wrapper -->
 
 			<section  id= "wellness"  class="wellness-wrapper">
-				<div class="wellness-banner" data-type="background" data-speed="10">
+				<div class="wellness-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-3.jpg">
 					<h2>Understanding Wellness</h2>
 				</div>
 				<div class="dimensions-wrapper">
@@ -110,7 +110,7 @@ get_header(); ?>
 						<h3>Dimensions of Wellness</h3>
 					</div>
 					<div class="blue-bg white">
-						<p>
+						<p class="align-center">
 							Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
 						</p>
 					</div>
@@ -121,6 +121,9 @@ get_header(); ?>
 								<h4>Emotional</h4>
 								<p class="margin-bottom">Noticing and handling our feelings in effective ways</p>
 								<span class="popup-trigger btn">Read More</span>
+
+								<!-- The Overlay only has to be put in one location -->
+								<div class="overlay"></div>
 
 								<div class="popup">
 									<span class="popup-btn-close">close</span>
@@ -166,7 +169,6 @@ get_header(); ?>
 								<p>Attending to our body and maintaining a healthy lifestyle</p>
 								<span class="popup-trigger btn">Read More</span>
 
-								<div class="overlay"></div>
 								<div class="popup">
 									<span class="popup-btn-close">close</span>
 									<div class="popup-content">
@@ -208,13 +210,13 @@ get_header(); ?>
 					</ul>
 				</div>
 					<div class="blue-bg">
-						<p>
+						<p class="align-center">
 								Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
 						</p>
 				</div>
 				<div class="dw-diagram container">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dimensions.jpg" alt="Dimensions Diagram" />
-					<div class="diagram-info">
+					<div class="diagram-info align-center">
 							Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
 					</div>
 				</div>
@@ -253,7 +255,7 @@ get_header(); ?>
 			</section><!-- .wellness-wrapper -->
 
 			<section  id= "resources" class="resources-wrapper">
-				<div class="resources-banner" data-type="background" data-speed="10">
+				<div class="resources-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-7.jpg">
 					<h2>Resources</h2>
 					<div class="resources-info">
 						<h5>Contact information for support</h5>

@@ -28,8 +28,11 @@ h1 {
 	}
 }
 h2 {
+	@extend .container;
+	text-align: center;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+	margin: 20px 0;
 	@include tablet {
 		font-size: 1.8rem;
 	}

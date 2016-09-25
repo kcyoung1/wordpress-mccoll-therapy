@@ -57,21 +57,22 @@
     display: none;
     position: absolute;
     top: 100px;
-    left: 87.5%;
-    width: 400px;
+    left: 50%;
+    width: auto;
     padding: 50px 30px;
-    margin-left: -350px;
+    margin-left: -200px;
     background: $color__white;
     color: #333;
-    font-size: 1rem;
-    line-height: 30px;
+    font-size: .8rem;
+    line-height: 20px;
     border: 10px solid $color__black;
     z-index: 2;
     border-radius: 5px;
     @include tablet {
-      left: 50%;
+      line-height: 30px;
       width: 700px;
       font-size: 1.3rem;
+      margin-left: -350px;
     }
     .popup-btn-close {
         position: absolute;
@@ -95,8 +96,16 @@
           align-items: center;
         }
         img {
-          width: 200px;
-          height: 173.33px;
+        width: 150px;
+        height: 120px;
+        @include tablet {
+            width: 200px;
+            height: 173.33px;
+            }
+        }
+        h4 {
+            margin: 0;
+            padding-bottom: 15px;
         }
     }
 }

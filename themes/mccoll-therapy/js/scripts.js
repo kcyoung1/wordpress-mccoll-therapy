@@ -33,21 +33,14 @@ jQuery(document).ready(function($) {
     });
 
     // Parallax Scrolling
+    var templateUrl = object_name.templateUrl;
+    var heroBanner = '/assets/images/hero-banner-5.jpg';
+    var wellnessBanner = '/assets/images/hero-banner-3.jpg';
+    var resourcesBanner = '/assets/images/hero-banner-7.jpg';
 
-    var $window = jQuery(window); //You forgot this line in the above example
-
-    jQuery('div[data-type="background"]').each(function() {
-        var $bgobj = jQuery(this); // assigning the object
-        jQuery(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-            // Put together our final background position
-            var coords = '50% ' + yPos + 'px';
-            // Move the background
-            $bgobj.css({
-                'background-position': coords
-            });
-        });
-    });
+    $('.hero-banner').parallax({imageSrc: templateUrl + heroBanner});
+    $('.wellness-banner').parallax({imageSrc: templateUrl + wellnessBanner});
+    $('.resources-banner').parallax({imageSrc: templateUrl + resourcesBanner});
 
     // BxSlider
 
@@ -86,10 +79,10 @@ jQuery(document).ready(function($) {
     });
 
     $('.popup-btn-close').click(function(e) {
-        $(this).parent().fadeOut(300);
         $('.cover').fadeOut(300);
         $('body').toggleClass('active');
         $('.overlay').toggleClass('active');
+        $(this).parent().fadeOut(300);
     });
 
     $('.popup').click(function(e) {

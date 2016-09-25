@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     notify = require('gulp-notify'),
     sass = require('gulp-sass'),
+    sassGlob = require('gulp-sass-glob'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
@@ -24,6 +25,7 @@ var plumberErrorHandler = {
 gulp.task('sass', function() {
    gulp.src('./sass/style.scss')
       .pipe(plumber(plumberErrorHandler))
+      .pipe(sassGlob())
       .pipe(sass())
       .pipe(autoprefixer({
          browsers: ['last 2 versions']

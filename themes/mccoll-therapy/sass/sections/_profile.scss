@@ -36,11 +36,12 @@
     }
     .profile-title {
       text-transform: uppercase;
-      border-bottom: 2px solid $color__mint;
+      border-bottom: 2px solid $color__turq;
     }
     p {
-      border-bottom: 2px solid $color__mint;
+      border-bottom: 2px solid $color__turq;
       font-size: 0.9rem;
+      width: 300px;
       &:last-child {
         border-bottom: none;
       }

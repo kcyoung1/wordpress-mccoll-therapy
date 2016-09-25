@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li, .wellness-icons .popup .popup-header, .resources-wrapper .resources-banner {
+.center, .container, h2, .site-info, .banner-wrapper .hero-banner, .services-wrapper, .services-wrapper .services-wrap, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness-wrapper .dimensions-wrapper, .wellness-wrapper .dimensions-wrapper li, .wellness-wrapper .blue-bg, .wellness-wrapper .where-we-help, .wellness-wrapper .where-we-help li, .wellness-icons .popup .popup-header, .resources-wrapper .resources-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -67,14 +67,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -ms-flex-align: center;
       align-items: center; }
 
-.container {
-  width: 320px;
+.align-center {
+  text-align: center; }
+
+.container, h2, .site-info {
+  width: 300px;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    .container {
+    .container, h2, .site-info {
       width: 650px; } }
   @media (min-width: 1024px) {
-    .container {
+    .container, h2, .site-info {
       width: 1000px; } }
 
 html {
@@ -284,8 +287,10 @@ h1 {
       font-size: 2.6rem; } }
 
 h2 {
+  text-align: center;
   font-size: 1.6rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 20px 0; }
   @media (min-width: 768px) {
     h2 {
       font-size: 1.8rem; } }
@@ -387,7 +392,8 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  -webkit-font-smoothing: antialiased; }
   body.active {
     overflow: hidden; }
 
@@ -989,7 +995,7 @@ object {
 .banner-wrapper {
   color: white; }
   .banner-wrapper .hero-banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-5.jpg) bottom no-repeat fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1));
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -1062,22 +1068,23 @@ object {
   display: none;
   position: absolute;
   top: 100px;
-  left: 87.5%;
-  width: 400px;
+  left: 50%;
+  width: auto;
   padding: 50px 30px;
-  margin-left: -350px;
+  margin-left: -200px;
   background: white;
   color: #333;
-  font-size: 1rem;
-  line-height: 30px;
+  font-size: .8rem;
+  line-height: 20px;
   border: 10px solid black;
   z-index: 2;
   border-radius: 5px; }
   @media (min-width: 768px) {
     .popup {
-      left: 50%;
+      line-height: 30px;
       width: 700px;
-      font-size: 1.3rem; } }
+      font-size: 1.3rem;
+      margin-left: -350px; } }
   .popup .popup-btn-close {
     position: absolute;
     top: 8px;
@@ -1102,8 +1109,15 @@ object {
         -ms-flex-align: center;
             align-items: center; } }
     .popup .popup-header img {
-      width: 200px;
-      height: 173.33px; }
+      width: 150px;
+      height: 120px; }
+      @media (min-width: 768px) {
+        .popup .popup-header img {
+          width: 200px;
+          height: 173.33px; } }
+    .popup .popup-header h4 {
+      margin: 0;
+      padding-bottom: 15px; }
 
 @media (min-width: 768px) {
   .profile-list .profile-wrap {
@@ -1144,16 +1158,17 @@ object {
 
 .profile-list .profile-title {
   text-transform: uppercase;
-  border-bottom: 2px solid #B8F4F3; }
+  border-bottom: 2px solid #06A6B0; }
 
 .profile-list p {
-  border-bottom: 2px solid #B8F4F3;
-  font-size: 0.9rem; }
+  border-bottom: 2px solid #06A6B0;
+  font-size: 0.9rem;
+  width: 300px; }
   .profile-list p:last-child {
     border-bottom: none; }
 
 .wellness-wrapper .wellness-banner {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/hero-banner-3.jpg) no-repeat bottom fixed;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4));
   background-size: cover cover;
   width: 100%;
   height: 250px; }
@@ -1176,7 +1191,7 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 350px; }
+  width: 300px; }
   @media (min-width: 768px) {
     .wellness-wrapper .dimensions-wrapper ul {
       width: 700px; } }
@@ -1289,7 +1304,7 @@ object {
         height: 350px; } }
 
 .wellness-wrapper .diagram-info {
-  width: 350px; }
+  width: 300px; }
   @media (min-width: 768px) {
     .wellness-wrapper .diagram-info {
       width: 500px; } }
@@ -1353,22 +1368,24 @@ object {
   display: none;
   position: absolute;
   top: 100px;
-  left: 87.5%;
-  width: 400px;
+  left: 50%;
+  width: auto;
   padding: 50px 30px;
-  margin-left: -350px;
+  margin-left: -200px;
   background: white;
   color: #333;
-  font-size: 1rem;
-  line-height: 30px;
+  font-size: 0.8rem;
+  line-height: 20px;
   border: 10px solid black;
   z-index: 2;
   border-radius: 5px; }
   @media (min-width: 768px) {
     .wellness-icons .popup {
+      line-height: 30px;
       left: 50%;
       width: 700px;
-      font-size: 1.3rem; } }
+      font-size: 1.3rem;
+      margin-left: -350px; } }
   .wellness-icons .popup .popup-btn-close {
     position: absolute;
     top: 8px;
@@ -1393,10 +1410,15 @@ object {
         -ms-flex-align: center;
             align-items: center; } }
     .wellness-icons .popup .popup-header img {
-      width: 200px;
-      height: 173.33px; }
+      width: 150px;
+      height: 120px; }
+      @media (min-width: 768px) {
+        .wellness-icons .popup .popup-header img {
+          width: 200px;
+          height: 173.33px; } }
     .wellness-icons .popup .popup-header h4 {
       margin: 0;
+      margin-bottom: 15px;
       text-align: center;
       border-bottom: none !important; }
   .wellness-icons .popup .popup-body {
@@ -1449,6 +1471,21 @@ object {
     text-shadow: none;
     border: none; }
 
+.contact-wrapper .wpcf7-text {
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #06A6B0;
+  border-radius: 0;
+  width: 300px; }
+
+.contact-wrapper .wpcf7-textarea {
+  outline: none;
+  border: 0;
+  border-left: 2px solid #06A6B0;
+  border-bottom: 2px solid #06A6B0;
+  border-radius: 0;
+  width: 300px; }
+
 .contact-wrapper .contact-form-info {
   display: block; }
   @media (min-width: 768px) {
@@ -1500,7 +1537,27 @@ object {
   width: 100%;
   height: 80px; }
 
-.error404 a {
-  color: #06A6B0; }
-  .error404 a:hover {
-    color: #B8F4F3; }
+.error404 {
+  text-align: center; }
+  .error404 .page-content {
+    margin-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .error404 h1 {
+    text-transform: uppercase; }
+  .error404 img {
+    height: auto;
+    width: 100px; }
+  .error404 a {
+    color: #06A6B0; }
+    .error404 a:hover {
+      color: #B8F4F3; }
+  .error404 .error-msg {
+    margin-left: 20px;
+    width: 280px;
+    text-align: left; }
+
+.site-info {
+  color: white; }
