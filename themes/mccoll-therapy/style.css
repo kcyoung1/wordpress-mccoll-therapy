@@ -617,7 +617,10 @@ textarea {
     -ms-flex-align: center;
         align-items: center; }
   .main-navigation h3 {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      .main-navigation h3 {
+        font-size: 1.4rem; } }
   .main-navigation img {
     height: 60px;
     width: 70px; }
@@ -1039,12 +1042,14 @@ object {
   .services-wrapper li {
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
-    @media (min-width: 768px) {
-      .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
-        margin-bottom: 48px; } }
-    @media (min-width: 1024px) {
-      .services-wrapper li:nth-of-type(3) h5, .services-wrapper li:last-of-type h5 {
-        margin-bottom: 51px; } }
+    .services-wrapper li:last-of-type h5, .services-wrapper li:first-of-type h5 {
+      margin-bottom: 48px; }
+      @media (min-width: 768px) {
+        .services-wrapper li:last-of-type h5, .services-wrapper li:first-of-type h5 {
+          margin-bottom: 48px; } }
+      @media (min-width: 1024px) {
+        .services-wrapper li:last-of-type h5, .services-wrapper li:first-of-type h5 {
+          margin-bottom: 51px; } }
     @media (min-width: 768px) {
       .services-wrapper li {
         -ms-flex: 0 1 25%;
@@ -1137,10 +1142,12 @@ object {
   border: 5px solid #06A6B0; }
   @media (min-width: 768px) {
     .profile-list .profile-image {
-      margin-right: 20px; } }
+      margin-left: 30px;
+      -ms-flex-order: 2;
+          order: 2; } }
   @media (min-width: 1024px) {
     .profile-list .profile-image {
-      margin-right: 70px;
+      margin-right: 200px;
       border-radius: 2px;
       height: 400px;
       width: 300px;
@@ -1150,8 +1157,11 @@ object {
   width: 350px; }
   @media (min-width: 768px) {
     .profile-list .profile-info {
+      text-align: right;
+      -ms-flex-order: 1;
+          order: 1;
       width: 450px;
-      margin-left: 10px; } }
+      margin-right: 10px; } }
   @media (min-width: 1024px) {
     .profile-list .profile-info {
       margin-right: auto; } }
@@ -1160,10 +1170,18 @@ object {
   text-transform: uppercase;
   border-bottom: 2px solid #06A6B0; }
 
+@media (min-width: 768px) {
+  .profile-list h4 {
+    width: 350px;
+    margin-left: auto; } }
+
 .profile-list p {
   border-bottom: 2px solid #06A6B0;
   font-size: 0.9rem;
   width: 300px; }
+  @media (min-width: 768px) {
+    .profile-list p {
+      margin-left: auto; } }
   .profile-list p:last-child {
     border-bottom: none; }
 
@@ -1171,16 +1189,22 @@ object {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4));
   background-size: cover cover;
   width: 100%;
-  height: 250px; }
+  height: 300px; }
   @media (min-width: 768px) {
     .wellness-wrapper .wellness-banner {
-      height: 300px; } }
+      height: 350px; } }
   @media (min-width: 1024px) {
     .wellness-wrapper .wellness-banner {
       height: 400px;
       background-size: 150%; } }
   .wellness-wrapper .wellness-banner h2 {
     color: white; }
+  .wellness-wrapper .wellness-banner p {
+    color: white;
+    width: 300px; }
+    @media (min-width: 768px) {
+      .wellness-wrapper .wellness-banner p {
+        width: 650px; } }
 
 .wellness-wrapper .dimensions-wrapper h3 {
   color: #225378;
@@ -1304,6 +1328,7 @@ object {
         height: 350px; } }
 
 .wellness-wrapper .diagram-info {
+  margin-top: 30px;
   width: 300px; }
   @media (min-width: 768px) {
     .wellness-wrapper .diagram-info {
@@ -1457,6 +1482,23 @@ object {
     height: 300px;
     width: 200px; }
 
+.contact-banner {
+  width: 100%;
+  text-align: center;
+  height: 150px;
+  background: #06A6B0;
+  color: white;
+  margin-bottom: 40px; }
+
+@media (min-width: 768px) {
+  .contact-wrapper .wpcf7-form {
+    -ms-flex-order: 1;
+        order: 1; } }
+
+@media (min-width: 768px) {
+  .contact-wrapper .wpcf7-form p {
+    text-align: right; } }
+
 .contact-wrapper .wpcf7-submit {
   outline: none;
   border-radius: 2px;
@@ -1485,6 +1527,10 @@ object {
   border-bottom: 2px solid #06A6B0;
   border-radius: 0;
   width: 300px; }
+  @media (min-width: 768px) {
+    .contact-wrapper .wpcf7-textarea {
+      border-left: 0;
+      border-right: 2px solid #06A6B0; } }
 
 .contact-wrapper .contact-form-info {
   display: block; }
@@ -1511,8 +1557,10 @@ object {
     margin: 0 auto; }
     @media (min-width: 768px) {
       .contact-wrapper .contact-form-info .contact-info-wrapper {
+        -ms-flex-order: 2;
+            order: 2;
         background-size: cover;
-        margin-right: 50px;
+        margin-left: 50px;
         width: 300px;
         height: 550px; } }
     .contact-wrapper .contact-form-info .contact-info-wrapper span {

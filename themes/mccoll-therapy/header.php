@@ -39,8 +39,8 @@
 						<ul id="mobile-nav">
 							<li><a href="#about" class="focus">About</a></li>
 							<li><a href="#services" class="focus">Services</a></li>
+							<li><a href="#team" class="focus">Team</a></li>
 							<li><a href="#wellness" class="focus">Wellness</a></li>
-							<li><a href="#resources" class="focus">Resources</a></li>
 							<li><a href="#contact" class="btn contact-nav focus">Contact Us</a></li>
 						</ul>
 					</div>
@@ -48,8 +48,8 @@
 						<ul id="nav" class="nav">
 							<li><a href="#about">About</a></li>
 							<li><a href="#services">Services</a></li>
+							<li><a href="#team">Team</a></li>
 							<li><a href="#wellness">Wellness</a></li>
-							<li><a href="#resources">Resources</a></li>
 							<li><a href="#contact" class="btn contact-nav">Contact Us</a></li>
 						</ul>
 					</div>

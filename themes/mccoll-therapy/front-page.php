@@ -34,7 +34,7 @@ get_header(); ?>
 						'post_type' => 'services',
 						'posts_per_page' => 4,
 						'order' => 'ASC',
-						'orderby' => 'name');
+						'orderby' => 'date');
 						$services = get_posts( $services_icons );
 						foreach ( $services as $post ) : setup_postdata( $post ); ?>
 
@@ -68,7 +68,7 @@ get_header(); ?>
 				</ul><!-- services-list -->
 			</section><!-- .services-wrapper -->
 
-			<section class="profile-wrapper container">
+			<section id="team" class="profile-wrapper container">
 				<h2>Our Team</h2>
 				<p class="align-center">
 					Our team provides you with the highest quality services through extensive training and a dedication to the well-being of our clients
@@ -103,17 +103,12 @@ get_header(); ?>
 
 			<section  id= "wellness"  class="wellness-wrapper">
 				<div class="wellness-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-3.jpg">
-					<h2>Understanding Wellness</h2>
+					<h2>Dimensions of Wellness</h2>
+					<p class="align-center">
+						Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
+					</p>
 				</div>
 				<div class="dimensions-wrapper">
-					<div class="dimensions-title">
-						<h3>Dimensions of Wellness</h3>
-					</div>
-					<div class="blue-bg white">
-						<p class="align-center">
-							Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
-						</p>
-					</div>
 					<ul class="wellness-icons">
 						<li class="emotional-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
@@ -209,18 +204,18 @@ get_header(); ?>
 						</li>
 					</ul>
 				</div>
-					<div class="blue-bg">
+					<!-- <div class="blue-bg">
 						<p class="align-center">
 								Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
 						</p>
-				</div>
+				</div> -->
 				<div class="dw-diagram container">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dimensions.jpg" alt="Dimensions Diagram" />
 					<div class="diagram-info align-center">
 							Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
 					</div>
 				</div>
-				<div class="where-we-help">
+				<!-- <div class="where-we-help">
 					<h4>Where We Help</h4>
 					<p class="container">
 						We work with teens, adults, couples and families to help them succeed in challenging parts of life
@@ -251,10 +246,10 @@ get_header(); ?>
 							<h5>Work Edu</h5>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</section><!-- .wellness-wrapper -->
 
-			<section  id= "resources" class="resources-wrapper">
+			<!-- <section  id= "resources" class="resources-wrapper">
 				<div class="resources-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-7.jpg">
 					<h2>Resources</h2>
 					<div class="resources-info">
@@ -270,13 +265,11 @@ get_header(); ?>
 										If in immediate danger:
 										<a href="http://www.edmontonpolice.ca/ContactEPS.aspx" target="_blank">911 Edmonton Police</a></li>
 								</ul>
-								<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resources.png" alt="Resources Image" /> -->
 					</div>
 				</div>
-			</section><!-- .information-wrapper -->
-
-			<section id= "contact" class="contact-wrapper  container">
-				<h2>Contact Us</h2>
+			</section> .resources-wrapper -->
+			<h2 class="contact-banner">Contact Us</h2>
+			<section id= "contact" class="contact-wrapper  container">				
 				<div class="contact-form-info">
 							<div class="contact-info-wrapper">
 								<div class="contact-paragraph">

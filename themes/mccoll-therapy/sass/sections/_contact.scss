@@ -1,4 +1,22 @@
+.contact-banner {
+  width: 100%;
+  text-align: center;
+  height: 150px;
+  background: $color__turq;
+  color: white;
+  margin-bottom: 40px;
+}
 .contact-wrapper {
+  .wpcf7-form {
+    @include tablet {
+      order: 1;
+    }
+    p {
+      @include tablet {
+        text-align: right;
+      }
+    }
+  }
   .wpcf7-submit {
     @extend .btn;
     outline: none;
@@ -29,6 +47,10 @@
     border-bottom: 2px solid $color__turq;
     border-radius: 0;
     width: 300px;
+    @include tablet {
+      border-left: 0;
+      border-right: 2px solid $color__turq;
+    }
   }
   .contact-form-info {
     display: block;
@@ -49,8 +71,9 @@
       padding: 20px;
       margin: 0 auto;
       @include tablet {
+        order: 2;
         background-size: cover;
-        margin-right: 50px;
+        margin-left: 50px;
         width: 300px;
         height: 550px;
       }
