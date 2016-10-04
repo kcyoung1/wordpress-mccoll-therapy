@@ -269,7 +269,7 @@ get_header(); ?>
 				</div>
 			</section> .resources-wrapper -->
 			<h2 class="contact-banner">Contact Us</h2>
-			<section id= "contact" class="contact-wrapper  container">				
+			<section id= "contact" class="contact-wrapper  container">
 				<div class="contact-form-info">
 							<div class="contact-info-wrapper">
 								<div class="contact-paragraph">
@@ -282,8 +282,9 @@ get_header(); ?>
 									<p>780.965.9906</p>
 									<p>logan@mccolltherapy.com</p>
 										<p>
-												9707 –110St #312
-												Edmonton, Alberta T5K 2L9
+												9707 –110St <br/>
+												Edmonton, Alberta
+												<br/>T5K 2L9
 										</p>
 								</div>
 							</div>

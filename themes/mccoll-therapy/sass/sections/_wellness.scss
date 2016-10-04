@@ -228,7 +228,7 @@
 .overlay {
   position:fixed;
   display:none;
-
+  cursor: pointer;
   /* color with alpha channel */
   background-color: rgba(0, 0, 0, 0.7); /* 0.7 = 70% opacity */
 
