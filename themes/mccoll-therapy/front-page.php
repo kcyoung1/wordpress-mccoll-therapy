@@ -13,17 +13,36 @@ get_header(); ?>
 			<section id="home" class="banner-wrapper">
 				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
 					<h1>McColl Therapy</h1>
-					<h5>Support for a lasting wellness</h5>
+					<h5>Supporting personal growth and lasting wellness</h5>
 				</div>
 			</section><!-- .banner-wrapper -->
 
 			<section id="about" class="about-wrapper container">
 				<h2>About</h2>
-				<p>Our registered health professionals work with you to address your concerns through effective counselling and personalized therapy</p>
+				<p>McColl Therapy offers personalized therapy and counselling for success in the challenging parts of life. Our health professionals assist you with...</p>
 				<ul class="bxslider">
-					<li>Health and Wellness</li>
-					<li>Independence and Success</li>
-					<li>Growth and Balance</li>
+					<li>
+						<p>
+							Determining <span class="bold"> health </span>and
+							<span class="bold"> wellness </span>goals
+						</p>
+					</li>
+					<li>
+						<p>
+							Identifying areas for <span class="bold"> growth </span> and <span class="bold"> balance </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							Developing<span class="bold"> plans </span>
+							and <span class="bold"> skills </span>to achieve goals
+						</p>
+					</li>
+					<li>
+						<p>
+							Building<span class="bold"> independence </span>and <span class="bold"> success </span>
+						</p>
+					 </li>
 				</ul>
 			</section><!-- .about-wrapper -->
 
@@ -89,8 +108,8 @@ get_header(); ?>
 								</div>
 								<div class="profile-info">
 									<h4 class="profile-title"><?php the_title(); ?></h4>
-									<p><?php echo wp_kses_post(CFS()->get( 'position' )); ?></p>
-									<p><?php echo wp_kses_post(CFS()->get( 'education' )); ?></p>
+									<div class="profile-line"><?php echo wp_kses_post(CFS()->get( 'position' )); ?></div>
+									<div class="profile-line"><?php echo wp_kses_post(CFS()->get( 'education' )); ?></div>
 									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
 								</div>
 							</div>
@@ -138,8 +157,8 @@ get_header(); ?>
 						<li class="mental-wrap">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
 							<div>
-								<h4>Mental</h4>
-								<p class="margin-bottom">Using our minds to problem solve and be productive</p>
+								<h4>Cognitive</h4>
+								<p class="margin-bottom">Cognitive Wellness entails self-awareness, open-mindedness, and effective problem solving.</p>
 								<span class="popup-trigger btn">Read More</span>
 
 								<div class="popup">
@@ -161,7 +180,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
 							<div>
 								<h4>Physical</h4>
-								<p>Attending to our body and maintaining a healthy lifestyle</p>
+								<p>Physical Wellness entails attending to our bodies’ needs and maintaining a healthy lifestyle.</p>
 								<span class="popup-trigger btn">Read More</span>
 
 								<div class="popup">
@@ -172,7 +191,13 @@ get_header(); ?>
 											<h4>Physical</h4>
 										</div>
 										<div class="popup-body">
-											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
+											 Developing our Physical Wellness protects us from chronic health issues and reduces our vulnerabilities to imbalances across other dimensions of wellness. Examples of ways to support Physical Wellness include:
+											<ul>
+													<li>Keeping a balanced and nutritious diet</li>
+													<li>Engaging in physical activity and exercise</li>
+													<li>Maintaining a regular sleep schedule</li>
+													<li>Seeking medical help when needed</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -268,6 +293,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</section> .resources-wrapper -->
+
 			<h2 class="contact-banner">Contact Us</h2>
 			<section id= "contact" class="contact-wrapper  container">
 				<div class="contact-form-info">
