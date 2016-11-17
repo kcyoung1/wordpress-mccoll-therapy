@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 
     // Smooth Scrolling
 
-    jQuery('a[href*="#"]:not([href="#"])').click(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
             var target = jQuery(this.hash);
@@ -34,13 +34,11 @@ jQuery(document).ready(function($) {
 
     // Parallax Scrolling
     var templateUrl = object_name.templateUrl;
-    var heroBanner = '/assets/images/hero-banner-5.jpg';
-    var wellnessBanner = '/assets/images/hero-banner-3.jpg';
-    var resourcesBanner = '/assets/images/hero-banner-7.jpg';
+    var heroBanner = '/assets/images/banner.jpg';
+    var wellnessBanner = '/assets/images/dimensions-banner.jpg';
 
     $('.hero-banner').parallax({imageSrc: templateUrl + heroBanner});
     $('.wellness-banner').parallax({imageSrc: templateUrl + wellnessBanner});
-    $('.resources-banner').parallax({imageSrc: templateUrl + resourcesBanner});
 
     // BxSlider
 
@@ -51,6 +49,12 @@ jQuery(document).ready(function($) {
 
     $('.bxslider-profile').bxSlider({
         controls: false
+    });
+
+    // Accordian
+
+    $('.accordian-content').on('click', 'button', function() {
+        $(this).parent().parent().find('.expand-content').slideToggle();
     });
 
     // Popup Windows

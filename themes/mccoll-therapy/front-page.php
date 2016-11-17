@@ -12,6 +12,7 @@ get_header(); ?>
 
 			<section id="home" class="banner-wrapper">
 				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
+					<div class="gradient"></div>
 					<h1>McColl Therapy</h1>
 					<h5>Supporting personal growth and lasting wellness</h5>
 				</div>
@@ -121,157 +122,7 @@ get_header(); ?>
 			</section><!-- .profile-wrapper -->
 
 			<section  id= "wellness"  class="wellness-wrapper">
-				<div class="wellness-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-3.jpg">
-					<h2>Dimensions of Wellness</h2>
-					<p class="align-center">
-						Barriers and challenges experienced can affect people’s lives in different ways. Understanding and maintaining one's wellness prepares us to manage the challenges of life and keep growing.
-					</p>
-				</div>
-				<div class="dimensions-wrapper">
-					<ul class="wellness-icons">
-						<li class="emotional-wrap">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
-							<div>
-								<h4>Emotional</h4>
-								<p class="margin-bottom">Noticing and handling our feelings in effective ways</p>
-								<span class="popup-trigger btn">Read More</span>
-
-								<!-- The Overlay only has to be put in one location -->
-								<div class="overlay"></div>
-
-								<div class="popup">
-									<span class="popup-btn-close">close</span>
-									<div class="popup-content">
-										<div class="popup-header">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.svg" alt="Emotional Logo" />
-											Emotional
-										</div>
-										<div class="popup-body">
-											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-						<li class="mental-wrap">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
-							<div>
-								<h4>Cognitive</h4>
-								<p class="margin-bottom">Cognitive Wellness entails self-awareness, open-mindedness, and effective problem solving.</p>
-								<span class="popup-trigger btn">Read More</span>
-
-								<div class="popup">
-									<span class="popup-btn-close">close</span>
-									<div class="popup-content">
-										<div class="popup-header">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-mental.svg" alt="" />
-											<h4>Mental</h4>
-										</div>
-										<div class="popup-body">
-											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-						<li class="physical-wrap">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
-							<div>
-								<h4>Physical</h4>
-								<p>Physical Wellness entails attending to our bodies’ needs and maintaining a healthy lifestyle.</p>
-								<span class="popup-trigger btn">Read More</span>
-
-								<div class="popup">
-									<span class="popup-btn-close">close</span>
-									<div class="popup-content">
-										<div class="popup-header">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.svg" alt="" />
-											<h4>Physical</h4>
-										</div>
-										<div class="popup-body">
-											 Developing our Physical Wellness protects us from chronic health issues and reduces our vulnerabilities to imbalances across other dimensions of wellness. Examples of ways to support Physical Wellness include:
-											<ul>
-													<li>Keeping a balanced and nutritious diet</li>
-													<li>Engaging in physical activity and exercise</li>
-													<li>Maintaining a regular sleep schedule</li>
-													<li>Seeking medical help when needed</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-						<li class="spiritual-wrap">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
-							<div>
-								<h4>Spiritual</h4>
-								<p>Aligning decisions and actions with our values and beliefs</p>
-								<span class="popup-trigger btn">Read More</span>
-
-								<div class="cover"></div>
-								<div class="popup">
-									<span class="popup-btn-close">close</span>
-									<div class="popup-content">
-										<div class="popup-header">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.svg" alt="" />
-											<h4>Spiritual</h4>
-										</div>
-										<div class="popup-body">
-											Aliquam felis risus, pretium non bibendum efficitur, bibendum convallis nisl. Proin pellentesque facilisis elit quis lobortis. Aenean hendrerit massa ac tortor suscipit egestas. Maecenas posuere ultrices pretium. Nunc euismod malesuada egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum laoreet ac tellus vitae consequat. Maecenas in volutpat mi. Etiam eget volutpat risus. Praesent varius tortor non aliquam rutrum. Fusce hendrerit sagittis hendrerit. Donec a tempus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nec lectus nulla.
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-					</ul>
-				</div>
-					<!-- <div class="blue-bg">
-						<p class="align-center">
-								Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
-						</p>
-				</div> -->
-				<div class="dw-diagram container">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dimensions.jpg" alt="Dimensions Diagram" />
-					<div class="diagram-info align-center">
-							Our practice brings together effective, well-studied therapy approaches that best suit your personal needs. We strive to work with you as a partner in understanding your concerns and making progress towards your goals.
-					</div>
-				</div>
-				<!-- <div class="where-we-help">
-					<h4>Where We Help</h4>
-					<p class="container">
-						We work with teens, adults, couples and families to help them succeed in challenging parts of life
-					</p>
-					<ul>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-independence.png" alt="Independence Icon" />
-							<h5>Independence</h5>
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-mental-health.png" alt="Mental Health Icon" />
-							<h5>Mental Health</h5>
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-relatiionships.png" alt="Relationships Icon" />
-							<h5>Relationships</h5>
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-substance.png" alt="Substance Icon" />
-							<h5>Substance</h5>
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-tech-use.png" alt="Tech Use Icon" />
-							<h5>Tech Use</h5>
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/au-work-edu.png" alt="Work Edu Icon" />
-							<h5>Work Edu</h5>
-						</li>
-					</ul>
-				</div> -->
+					<?php get_template_part( 'template-parts/content', 'wellness' ); ?>
 			</section><!-- .wellness-wrapper -->
 
 			<!-- <section  id= "resources" class="resources-wrapper">
@@ -300,15 +151,15 @@ get_header(); ?>
 							<div class="contact-info-wrapper">
 								<div class="contact-paragraph">
 									<p>
-										 For any inquiries, please send us a message or contact us directly through:
+										 For any inquiries, please call or complete the form below to book an appointment.
 									</p>
 								</div>
 								<div class="contact-info">
 									<h5>McColl Therapy Inc.</h5>
 									<p>780.965.9906</p>
-									<p>logan@mccolltherapy.com</p>
+									<a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
 										<p>
-												9707 –110St <br/>
+												Ledgeview Business Centre<br/>
 												Edmonton, Alberta
 												<br/>T5K 2L9
 										</p>
