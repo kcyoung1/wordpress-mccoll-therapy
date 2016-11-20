@@ -49,7 +49,8 @@ get_header(); ?>
 
 			<section id="services" class="services-wrapper">
 				<h2>Services</h2>
-				<ul class="services-list">
+				<div class="border"></div>
+				<ul class="services-list accordian">
 					<?php $services_icons = array(
 						'post_type' => 'services',
 						'posts_per_page' => 4,
@@ -58,30 +59,19 @@ get_header(); ?>
 						$services = get_posts( $services_icons );
 						foreach ( $services as $post ) : setup_postdata( $post ); ?>
 
-						<li>
-							<div class="services-wrap">
-								<div class="services-icon">
+						<li class="accordian-content">
+								<div class="accordian-head">
 									<?php the_post_thumbnail('full'); ?>
+									<h2><?php the_title(); ?></h2>
+									<button type="button" name="button">+</button>
 								</div>
-								<div class="services-info">
-									<h5 class="services-title"><?php the_title(); ?></h5>
-									<span class="popup-trigger btn">Read More</span>
-
-									<div class="popup">
-										<span class="popup-btn-close">close</span>
-										<div class="popup-content">
-											<div class="popup-header">
-												<?php the_post_thumbnail('full'); ?>
-												<h4><?php the_title(); ?></h4>
-											</div>
-											<div class="popup-body">
-												<div><?php the_content(); ?></div>
-											</div>
+								<div class="border"></div>
+								<div class="expand-content">
+										<div class="content-wrap">
+											<?php the_content(); ?>
+											<a href="#contact" class="btn">Contact Us</a>
 										</div>
-									</div>
-
 								</div>
-							</div>
 						</li>
 					<?php endforeach;
 									wp_reset_postdata(); ?>

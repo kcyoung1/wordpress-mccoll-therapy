@@ -1,8 +1,7 @@
 .wellness-wrapper {
-  // height: 170vh;
   @extend .center;
   .wellness-banner {
-    background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4));
+    background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url('../../assets/images/dimensions-banner.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -20,130 +19,6 @@
       @include tablet {
         width: 650px;
       }
-    }
-  }
-  .dimensions-wrapper {
-    @extend .center;
-    h3 {
-      color: $color__navy;
-      border-bottom: 2px solid $color__navy;
-    }
-    // ul {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   width: 300px;
-    //   @include tablet {
-    //     width: 700px;
-    //   }
-    //   @include desktop {
-    //     width: 1000px;
-    //   }
-    // }
-    li {
-      flex: 0 1 100%;
-      flex-direction: row;
-      @extend .center;
-      &:first-of-type {
-        h4 {
-          border-bottom: 2px solid $color__purple;
-        }
-        div {
-          color: $color__purple;
-        }
-        p {
-          margin-bottom: 14px;
-          @include tablet {
-            margin-bottom: 35px;
-          }
-        }
-      }
-      &:nth-of-type(2) {
-        h4 {
-          border-bottom: 2px solid $color__blue;
-        }
-        div {
-          color: $color__blue;
-        }
-        p {
-          margin-bottom: 14px;
-          @include tablet {
-            margin-bottom: 35px;
-          }
-        }
-      }
-      &:nth-of-type(3) {
-        h4 {
-          border-bottom: 2px solid $color__olive;
-        }
-        div {
-          color: $color__olive;
-        }
-        p {
-          margin-bottom: 14px;
-          @include tablet {
-            margin-bottom: 11px;
-          }
-          @include desktop {
-            margin-bottom: 14px;
-          }
-        }
-      }
-      &:last-of-type {
-        h4 {
-          border-bottom: 2px solid $color__green;
-        }
-        div {
-          color: $color__green;
-        }
-        p {
-          margin-bottom: 14px;
-          @include tablet {
-            margin-bottom: 35px;
-          }
-          @include desktop {
-            margin-bottom: 14px;
-          }
-        }
-      }
-      @include tablet {
-        flex-direction: column;
-        flex: 0 1 25%;
-      }
-      img {
-        height: 180px;
-        width: 180px;
-        @include tablet {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      h4 {
-        width: 150px;
-      }
-      p {
-        @include tablet {
-          width: 150px
-        }
-        @include desktop {
-          width: 200px;
-        }
-      }
-    }
-  }
-  .blue-bg {
-    background: $color__navy;
-    width: 100%;
-    padding: 15px 50px;
-    margin-top: 50px;
-    @extend .center;
-    @include tablet {
-      padding: 15px 70px;
-    }
-    @include desktop {
-      padding: 15px 220px;
-    }
-    p {
-      color: $color__white;
     }
   }
   .white {
@@ -175,59 +50,34 @@
       width: 500px;
     }
   }
-  .where-we-help {
-    background: $color__turq;
+  .dimensions-wrapper {
     width: 100%;
-    margin: 0 auto;
-    @extend .center;
-    img {
-      height: 150px;
-      width: 150px;
-      @include desktop {
-        height: 200px;
-        width: 220px;
-      }
-    }
-    h4 {
-      color: $color__mint;
-    }
-    h5, p {
-      color: $color__tan;
-    }
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 50px;
-    }
-    li {
-      flex: 0 1 50%;
-      @extend .center;
-      @include tablet {
-        flex: 0 1 33.33%;
-      }
-    }
   }
 }
 
+// Accordian
 .accordian {
-  display: block !important;
-  width: 100% !important;
-  max-width: 1000px !important;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
   img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    @include tablet {
+      width: 150px;
+      height: 150px;
+    }
   }
   li {
-    display: block !important;
-    flex: 0 1 100% !important;
-    width: 100% !important;
+    flex: 0 1 100%;
+    width: 100%;
   }
   h2 {
     text-transform: uppercase;
   }
   p {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
   }
   button {
     background: transparent;
@@ -236,21 +86,37 @@
     outline: none;
     box-shadow: none;
     color: white;
+    font-size: 3.5rem;
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: transform 200ms ease;
+    &.active {
+      transform: rotate(44deg);
+    }
   }
   .accordian-head {
     display: flex;
+    justify-content: space-between;
   }
   .expand-content {
     display: none;
+    padding: 20px;
     ul {
-      width: 100% !important;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      list-style: inside !important;
+      padding: 0 30px;
+      list-style-type: disc;
+      margin-bottom: 15px;
     }
   }
+  .btn {
+    background: white;
+  }
 }
-.purple-wrapper {
+
+.emotional-wrapper {
   .accordian-head {
     border: 1px solid $color__purple;
     color: white !important;
@@ -258,14 +124,14 @@
   .expand-content {
     background: $color__purple;
   }
-  button, h2 {
+  button, h2, .btn {
     color: $color__purple;
   }
   p, li {
     color: white;
   }
 }
-.blue-wrapper {
+.cognitive-wrapper {
   .accordian-head {
     border: 1px solid $color__blue;
     color: white;
@@ -273,14 +139,14 @@
   .expand-content {
     background: $color__blue;
   }
-  button, h2 {
+  button, h2, .btn {
     color: $color__blue;
   }
   p, li {
     color: white;
   }
 }
-.yellow-wrapper {
+.physical-wrapper {
   .accordian-head {
     border: 1px solid $color__olive;
     color: $color__olive;
@@ -288,14 +154,14 @@
   .expand-content {
     background: $color__olive;
   }
-  button, h2 {
+  button, h2, .btn {
     color: $color__olive;
   }
   p, li {
     color: white;
   }
 }
-.green-wrapper {
+.spiritual-wrapper {
   .accordian-head {
     border: 1px solid $color__green;
     color: $color__green !important;
@@ -303,112 +169,10 @@
   .expand-content {
     background: $color__green;
   }
-  button, h2 {
+  button, h2, .btn {
     color: $color__green;
   }
   p, li {
   color: white;
-  }
-}
-
-.emotional-wrap .btn {
-  background: $color__purple;
-}
-.mental-wrap .btn {
-  background: $color__blue;
-}
-.physical-wrap .btn {
-  background: $color__olive;
-}
-.spiritual-wrap .btn {
-  background: $color__green;
-}
-
-// Popup boxes
-.overlay {
-  position:fixed;
-  display:none;
-  cursor: pointer;
-  /* color with alpha channel */
-  background-color: rgba(0, 0, 0, 0.7); /* 0.7 = 70% opacity */
-
-  /* stretch to screen edges */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  &.active {
-    display: block;
-  }
-}
-.wellness-icons {
-  .popup {
-      display: none;
-      position: absolute;
-      top: 100px;
-      left: 50%;
-      width: auto;
-      padding: 50px 30px;
-      margin-left: -200px;
-      background: $color__white;
-      color: #333;
-      font-size: 0.8rem;
-      line-height: 20px;
-      border: 10px solid $color__black;
-      z-index: 2;
-      border-radius: 5px;
-      @include tablet {
-        line-height: 30px;
-        left: 50%;
-        width: 700px;
-        font-size: 1.3rem;
-        margin-left: -350px;
-      }
-      .popup-btn-close {
-          position: absolute;
-          top: 8px;
-          right: 14px;
-          color: $color__black;
-          font-size: 14px;
-          font-weight: bold;
-          text-transform: uppercase;
-          cursor: pointer;
-      }
-      .popup-header {
-          font-size: 1.5rem;
-          text-transform: uppercase;
-          border: 5px solid $color__black;
-          background: $color__white;
-          border-radius: 5px;
-          @extend .center;
-          @include tablet {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          img {
-            width: 150px;
-            height: 120px;
-            @include tablet {
-              width: 200px;
-              height: 173.33px;
-            }
-          }
-          h4 {
-            margin: 0;
-            margin-bottom: 15px;
-            text-align: center;
-            border-bottom: none !important;
-          }
-      }
-      .popup-body {
-        margin-top: 20px;
-        ul, li {
-          display: block;
-        }
-        li {
-          list-style: inside;
-        }
-      }
   }
 }

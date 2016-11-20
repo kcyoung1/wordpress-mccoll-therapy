@@ -35,10 +35,9 @@ jQuery(document).ready(function($) {
     // Parallax Scrolling
     var templateUrl = object_name.templateUrl;
     var heroBanner = '/assets/images/banner.jpg';
-    var wellnessBanner = '/assets/images/dimensions-banner.jpg';
 
     $('.hero-banner').parallax({imageSrc: templateUrl + heroBanner});
-    $('.wellness-banner').parallax({imageSrc: templateUrl + wellnessBanner});
+
 
     // BxSlider
 
@@ -54,7 +53,9 @@ jQuery(document).ready(function($) {
     // Accordian
 
     $('.accordian-content').on('click', 'button', function() {
-        $(this).parent().parent().find('.expand-content').slideToggle();
+        var $this = $(this);
+        $this.parent().parent().find('.expand-content').slideToggle();
+        $this.toggleClass('active');
     });
 
     // Popup Windows
