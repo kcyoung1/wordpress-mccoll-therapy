@@ -1,5 +1,5 @@
 .services-wrapper {
-    margin-top: 70px;
+    margin-top: 30px;
     @extend .center;
     background-color: $color__turq;
     color: white;
@@ -12,7 +12,6 @@
         width: 100%;
     }
     .accordian {
-        max-width: 100%;
         .accordian-head {
             max-width: 1000px;
             width: 100%;
@@ -36,9 +35,6 @@
             color: $color__turq;
         }
         .content-wrap {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 1000px;
             p:last-of-type {
                 margin-bottom: 15px;
             }

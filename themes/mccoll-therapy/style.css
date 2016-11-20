@@ -1048,7 +1048,7 @@ object {
   color: #06A6B0; }
 
 .services-wrapper {
-  margin-top: 70px;
+  margin-top: 30px;
   background-color: #06A6B0;
   color: white;
   padding-bottom: 30px; }
@@ -1057,34 +1057,28 @@ object {
   .services-wrapper .border {
     border-bottom: 1px solid #B8F4F3;
     width: 100%; }
-  .services-wrapper .accordian {
-    max-width: 100%; }
-    .services-wrapper .accordian .accordian-head {
-      max-width: 1000px;
-      width: 100%;
-      margin: 0 auto; }
-    .services-wrapper .accordian h2 {
-      font-size: 1rem;
-      color: #F3FEE5; }
-      @media (min-width: 768px) {
-        .services-wrapper .accordian h2 {
-          font-size: 1.5rem; } }
-    .services-wrapper .accordian img {
-      width: 110px; }
-      @media (min-width: 768px) {
-        .services-wrapper .accordian img {
-          width: 170px; } }
-    .services-wrapper .accordian .expand-content {
-      background: white;
-      color: #06A6B0; }
-    .services-wrapper .accordian .content-wrap {
-      margin: 0 auto;
-      width: 100%;
-      max-width: 1000px; }
-      .services-wrapper .accordian .content-wrap p:last-of-type {
-        margin-bottom: 15px; }
-    .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
-      background: #225378; }
+  .services-wrapper .accordian .accordian-head {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; }
+  .services-wrapper .accordian h2 {
+    font-size: 1rem;
+    color: #F3FEE5; }
+    @media (min-width: 768px) {
+      .services-wrapper .accordian h2 {
+        font-size: 1.5rem; } }
+  .services-wrapper .accordian img {
+    width: 110px; }
+    @media (min-width: 768px) {
+      .services-wrapper .accordian img {
+        width: 170px; } }
+  .services-wrapper .accordian .expand-content {
+    background: white;
+    color: #06A6B0; }
+  .services-wrapper .accordian .content-wrap p:last-of-type {
+    margin-bottom: 15px; }
+  .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
+    background: #225378; }
 
 @media (min-width: 768px) {
   .profile-list .profile-wrap {
@@ -1187,26 +1181,32 @@ object {
           flex-direction: row; } }
   .wellness-wrapper .dw-diagram img {
     width: 300px;
-    height: 250px; }
+    height: 300px; }
     @media (min-width: 768px) {
       .wellness-wrapper .dw-diagram img {
         width: 400px;
-        height: 350px; } }
+        height: 400px; } }
 
 .wellness-wrapper .diagram-info {
   margin-top: 30px;
   width: 300px; }
   @media (min-width: 768px) {
     .wellness-wrapper .diagram-info {
-      width: 500px; } }
+      width: 500px;
+      margin-left: 30px; } }
 
 .wellness-wrapper .dimensions-wrapper {
   width: 100%; }
 
+.wellness-wrapper .accordian img {
+  width: 120px; }
+  @media (min-width: 768px) {
+    .wellness-wrapper .accordian img {
+      width: 180px; } }
+
 .accordian {
   display: block;
-  width: 100%;
-  max-width: 1000px; }
+  width: 100%; }
   .accordian img {
     width: 100px;
     height: 100px; }
@@ -1241,7 +1241,10 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; }
   .accordian .expand-content {
     display: none;
     padding: 20px; }
@@ -1251,14 +1254,20 @@ object {
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      padding: 0 30px;
+      padding: 0 60px;
       list-style-type: disc;
       margin-bottom: 15px; }
+  .accordian .content-wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px; }
   .accordian .btn, .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .accordian .wpcf7-submit {
     background: white; }
 
+.emotional-wrapper .border {
+  border: 1px solid #6F2FA0; }
+
 .emotional-wrapper .accordian-head {
-  border: 1px solid #6F2FA0;
   color: white !important; }
 
 .emotional-wrapper .expand-content {
@@ -1270,8 +1279,10 @@ object {
 .emotional-wrapper p, .emotional-wrapper li {
   color: white; }
 
+.cognitive-wrapper .border {
+  border: 1px solid #006FBF; }
+
 .cognitive-wrapper .accordian-head {
-  border: 1px solid #006FBF;
   color: white; }
 
 .cognitive-wrapper .expand-content {
@@ -1283,8 +1294,10 @@ object {
 .cognitive-wrapper p, .cognitive-wrapper li {
   color: white; }
 
+.physical-wrapper .border {
+  border: 1px solid #817F22; }
+
 .physical-wrapper .accordian-head {
-  border: 1px solid #817F22;
   color: #817F22; }
 
 .physical-wrapper .expand-content {
@@ -1296,9 +1309,11 @@ object {
 .physical-wrapper p, .physical-wrapper li {
   color: white; }
 
+.spiritual-wrapper .border {
+  border: 1px solid #00B050; }
+
 .spiritual-wrapper .accordian-head {
-  border: 1px solid #00B050;
-  color: #00B050 !important; }
+  color: #00B050; }
 
 .spiritual-wrapper .expand-content {
   background: #00B050; }

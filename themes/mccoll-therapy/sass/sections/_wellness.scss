@@ -36,10 +36,10 @@
     }
     img {
       width: 300px;
-      height: 250px;
+      height: 300px;
       @include tablet {
         width: 400px;
-        height: 350px;
+        height: 400px;
       }
     }
   }
@@ -48,10 +48,19 @@
     width: 300px;
     @include tablet {
       width: 500px;
+      margin-left: 30px;
     }
   }
   .dimensions-wrapper {
     width: 100%;
+  }
+  .accordian {
+    img {
+      width: 120px;
+      @include tablet {
+        width: 180px
+      }
+    }
   }
 }
 
@@ -59,7 +68,6 @@
 .accordian {
   display: block;
   width: 100%;
-  max-width: 1000px;
   img {
     width: 100px;
     height: 100px;
@@ -98,6 +106,9 @@
   .accordian-head {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
   }
   .expand-content {
     display: none;
@@ -106,10 +117,15 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding: 0 30px;
+      padding: 0 60px;
       list-style-type: disc;
       margin-bottom: 15px;
     }
+  }
+  .content-wrap {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1000px;
   }
   .btn {
     background: white;
@@ -117,8 +133,10 @@
 }
 
 .emotional-wrapper {
-  .accordian-head {
+  .border {
     border: 1px solid $color__purple;
+  }
+  .accordian-head {
     color: white !important;
   }
   .expand-content {
@@ -132,8 +150,10 @@
   }
 }
 .cognitive-wrapper {
-  .accordian-head {
+  .border {
     border: 1px solid $color__blue;
+  }
+  .accordian-head {
     color: white;
   }
   .expand-content {
@@ -147,8 +167,10 @@
   }
 }
 .physical-wrapper {
-  .accordian-head {
+  .border {
     border: 1px solid $color__olive;
+  }
+  .accordian-head {
     color: $color__olive;
   }
   .expand-content {
@@ -162,9 +184,11 @@
   }
 }
 .spiritual-wrapper {
-  .accordian-head {
+  .border {
     border: 1px solid $color__green;
-    color: $color__green !important;
+  }
+  .accordian-head {
+    color: $color__green;
   }
   .expand-content {
     background: $color__green;
