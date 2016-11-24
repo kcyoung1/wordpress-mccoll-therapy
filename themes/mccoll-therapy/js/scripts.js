@@ -52,10 +52,10 @@ jQuery(document).ready(function($) {
 
     // Accordian
 
-    $('.accordian-content').on('click', 'button', function() {
+    $('.accordian-content').on('click', '.accordian-head', function() {
         var $this = $(this);
-        $this.parent().parent().find('.expand-content').slideToggle();
-        $this.toggleClass('active');
+        $this.parent().find('.expand-content').slideToggle();
+        $this.find('button').toggleClass('active');
     });
 
     // Popup Windows

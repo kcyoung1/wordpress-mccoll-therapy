@@ -16,26 +16,26 @@
 
   <div class="dimensions-wrapper">
     <ul class="accordian ">
-      <li class="accordian-content emotional-wrapper">
+      <li class="accordian-content physical-wrapper">
         <div class="border"></div>
         <div class="accordian-head">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.png" alt="Emotional Logo" />
-          <h2>Emotional</h2>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.png" alt="" />
+          <h2>Physical</h2>
           <button type="button" name="button">+</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Emotional Wellness entails awareness, expression and acceptance of our feelings. Developing our emotional wellness allows us to be more in-tune with ourselves, to handle difficult emotions, and to foster connections with others. Examples of ways to support Emotional Wellness include:
-            </p>
-            <ul>
-                <li>Being present and focused in the moment</li>
-                <li>Participating in enjoyable and meaningful activities</li>
-                <li>Developing effective coping strategies</li>
-                <li>Maintaining a non-judgemental perspective</li>
-            </ul>
-            <a href="#contact" class="btn">Contact Us</a>
+              Physical Wellness entails attending to our bodies’ needs and maintaining a healthy lifestyle. Developing our Physical Wellness protects us from chronic health issues and reduces our vulnerabilities to imbalances across other dimensions of wellness. Examples of ways to support Physical Wellness include:
+          </p>
+          <ul>
+              <li>Keeping a balanced and nutritious diet</li>
+              <li>Engaging in physical activity and exercise</li>
+              <li>Maintaining a regular sleep schedule</li>
+              <li>Seeking medical help when needed</li>
+          </ul>
+          <a href="#contact" class="btn">Contact Us</a>
           </div>
         </div>
       </li>
@@ -62,26 +62,26 @@
           </div>
         </div>
       </li>
-      <li class="accordian-content physical-wrapper">
+      <li class="accordian-content emotional-wrapper">
         <div class="border"></div>
         <div class="accordian-head">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.png" alt="" />
-          <h2>Physical</h2>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.png" alt="Emotional Logo" />
+          <h2>Emotional</h2>
           <button type="button" name="button">+</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Physical Wellness entails attending to our bodies’ needs and maintaining a healthy lifestyle. Developing our Physical Wellness protects us from chronic health issues and reduces our vulnerabilities to imbalances across other dimensions of wellness. Examples of ways to support Physical Wellness include:
-          </p>
-          <ul>
-              <li>Keeping a balanced and nutritious diet</li>
-              <li>Engaging in physical activity and exercise</li>
-              <li>Maintaining a regular sleep schedule</li>
-              <li>Seeking medical help when needed</li>
-          </ul>
-          <a href="#contact" class="btn">Contact Us</a>
+              Emotional Wellness entails awareness, expression and acceptance of our feelings. Developing our emotional wellness allows us to be more in-tune with ourselves, to handle difficult emotions, and to foster connections with others. Examples of ways to support Emotional Wellness include:
+            </p>
+            <ul>
+                <li>Being present and focused in the moment</li>
+                <li>Participating in enjoyable and meaningful activities</li>
+                <li>Developing effective coping strategies</li>
+                <li>Maintaining a non-judgemental perspective</li>
+            </ul>
+            <a href="#contact" class="btn">Contact Us</a>
           </div>
         </div>
       </li>

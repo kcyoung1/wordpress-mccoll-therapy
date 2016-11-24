@@ -1080,6 +1080,9 @@ object {
   .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
     background: #225378; }
 
+.profile-wrapper .bx-pager {
+  display: none; }
+
 @media (min-width: 768px) {
   .profile-list .profile-wrap {
     display: -ms-flexbox;
@@ -1108,17 +1111,16 @@ object {
       width: 300px;
       border: none; } }
 
-.profile-list .profile-info {
-  width: 350px; }
-  @media (min-width: 768px) {
-    .profile-list .profile-info {
-      -ms-flex-order: 1;
-          order: 1;
-      width: 450px;
-      margin-right: 10px; } }
-  @media (min-width: 1024px) {
-    .profile-list .profile-info {
-      margin-right: auto; } }
+@media (min-width: 768px) {
+  .profile-list .profile-info {
+    -ms-flex-order: 1;
+        order: 1;
+    width: 450px;
+    margin-right: 10px; } }
+
+@media (min-width: 1024px) {
+  .profile-list .profile-info {
+    margin-right: auto; } }
 
 .profile-list .profile-title {
   text-transform: uppercase;
@@ -1126,21 +1128,21 @@ object {
 
 @media (min-width: 768px) {
   .profile-list h4 {
-    width: 300px;
+    width: 400px;
     margin-left: auto; } }
 
 .profile-list .profile-line {
   border-bottom: 2px solid #06A6B0;
-  width: 300px; }
+  width: 400px; }
   @media (min-width: 768px) {
     .profile-list .profile-line {
       margin-left: auto; } }
 
 .profile-list p, .profile-list li {
-  font-size: 0.9rem;
-  width: 300px; }
+  font-size: 0.9rem; }
   @media (min-width: 768px) {
     .profile-list p, .profile-list li {
+      width: 400px;
       margin-left: auto; } }
   .profile-list p:last-child, .profile-list li:last-child {
     border-bottom: none; }
@@ -1244,7 +1246,8 @@ object {
         justify-content: space-between;
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: pointer; }
   .accordian .expand-content {
     display: none;
     padding: 20px; }
@@ -1260,7 +1263,8 @@ object {
   .accordian .content-wrap {
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px; }
+    max-width: 1000px;
+    font-size: 1.1rem; }
   .accordian .btn, .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .accordian .wpcf7-submit {
     background: white; }
 

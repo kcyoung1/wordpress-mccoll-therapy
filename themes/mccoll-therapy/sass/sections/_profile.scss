@@ -1,6 +1,10 @@
 .profile-wrapper {
   // height: 100vh;
+  .bx-pager {
+    display: none;
+  }
 }
+
 .profile-list {
     .profile-wrap {
       @include tablet {
@@ -28,7 +32,6 @@
         }
     }
     .profile-info {
-      width: 350px;
       @include tablet {
         order: 1;
         width: 450px;
@@ -44,21 +47,21 @@
     }
     h4 {
       @include tablet {
-        width: 300px;
+        width: 400px;
         margin-left: auto;
       }
     }
     .profile-line {
       border-bottom: 2px solid $color__turq;
-      width: 300px;
+      width: 400px;
       @include tablet {
         margin-left: auto;
       }
     }
     p, li {
       font-size: 0.9rem;
-      width: 300px;
       @include tablet {
+        width: 400px;
         margin-left: auto;
       }
       &:last-child {
