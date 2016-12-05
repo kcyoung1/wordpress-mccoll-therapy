@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, h2, .site-info, .banner-wrapper .hero-banner, .services-wrapper, .wellness-wrapper, .wellness-wrapper .wellness-banner, .resources-wrapper .resources-banner {
+.center, .container, h2, .site-info, .site-footer, .banner-wrapper .hero-banner, .services-wrapper, .wellness-wrapper, .wellness-wrapper .wellness-banner, .resources-wrapper .resources-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -269,9 +269,15 @@ select,
 textarea {
   color: #404040;
   font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5; }
+  @media (min-width: 768px) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-size: 1.2rem; } }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -621,7 +627,8 @@ textarea {
         font-size: 1.4rem; } }
   .main-navigation img {
     height: 60px;
-    width: 70px; }
+    width: 60px;
+    margin-right: 15px; }
   .main-navigation .nav {
     display: -ms-flexbox;
     display: flex;
@@ -982,7 +989,10 @@ object {
 .site-footer {
   background: #225378;
   height: 70px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
+  .site-footer p {
+    margin: 0; }
 
 .bx-viewport {
   box-shadow: none !important;
@@ -1008,7 +1018,8 @@ object {
     z-index: 1; }
   .banner-wrapper h5 {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    text-align: center; }
 
 .gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -1105,7 +1116,6 @@ object {
           order: 2; } }
   @media (min-width: 1024px) {
     .profile-list .profile-image {
-      margin-right: 200px;
       border-radius: 2px;
       height: 400px;
       width: 300px;
@@ -1133,13 +1143,14 @@ object {
 
 .profile-list .profile-line {
   border-bottom: 2px solid #06A6B0;
-  width: 400px; }
+  max-width: 400px;
+  width: 100%; }
   @media (min-width: 768px) {
     .profile-list .profile-line {
       margin-left: auto; } }
 
 .profile-list p, .profile-list li {
-  font-size: 0.9rem; }
+  font-size: 1.1rem; }
   @media (min-width: 768px) {
     .profile-list p, .profile-list li {
       width: 400px;
@@ -1265,6 +1276,12 @@ object {
     width: 100%;
     max-width: 1000px;
     font-size: 1.1rem; }
+    @media (min-width: 768px) {
+      .accordian .content-wrap {
+        font-size: 1.2rem; } }
+    @media (min-width: 1024px) {
+      .accordian .content-wrap {
+        font-size: 1.4rem; } }
   .accordian .btn, .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .accordian .wpcf7-submit {
     background: white; }
 
@@ -1381,27 +1398,24 @@ object {
   text-shadow: none;
   border: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 7px 25px; }
   .contact-wrapper .wpcf7-submit:hover {
     box-shadow: none;
     text-shadow: none;
     border: none; }
 
-.contact-wrapper .wpcf7-text {
+.contact-wrapper .wpcf7-text, .contact-wrapper .wpcf7-textarea {
   outline: none;
   border: 0;
   border-bottom: 2px solid #06A6B0;
   border-radius: 0;
-  width: 300px; }
+  max-width: 350px;
+  width: 100%; }
 
 .contact-wrapper .wpcf7-textarea {
-  outline: none;
-  border: 0;
-  border-left: 2px solid #06A6B0;
-  border-bottom: 2px solid #06A6B0;
-  border-radius: 0;
-  width: 300px; }
+  height: 242px;
+  border-left: 2px solid #06A6B0; }
 
 .contact-wrapper .contact-form-info {
   display: block; }
@@ -1413,8 +1427,8 @@ object {
     max-width: 400px;
     width: 100%;
     height: 350px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../assets/images/contact.jpg) no-repeat;
-    background-position: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url(../../assets/images/contact.jpg) no-repeat;
+    background-position: 70%;
     background-size: cover;
     display: -ms-flexbox;
     display: flex;
@@ -1432,9 +1446,10 @@ object {
       .contact-wrapper .contact-form-info .contact-info-wrapper {
         -ms-flex-order: 2;
             order: 2;
-        background-position: 24%;
+        background-position: 80%;
         background-size: cover;
         margin-left: 50px;
+        margin-top: 20px;
         height: 550px; } }
     .contact-wrapper .contact-form-info .contact-info-wrapper span {
       font-size: 1.3rem; }

@@ -24,7 +24,6 @@
           order: 2;
         }
         @include desktop {
-          margin-right: 200px;
           border-radius: 2px;
           height: 400px;
           width: 300px;
@@ -53,13 +52,14 @@
     }
     .profile-line {
       border-bottom: 2px solid $color__turq;
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
       @include tablet {
         margin-left: auto;
       }
     }
     p, li {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       @include tablet {
         width: 400px;
         margin-left: auto;

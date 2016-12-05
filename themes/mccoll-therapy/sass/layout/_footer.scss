@@ -4,5 +4,10 @@
 .site-footer {
   background: $color__navy;
   height: 70px;
+  @extend .center;
   width: 100%;
+  color: white;
+  p {
+    margin: 0;
+  }
 }
