@@ -48,8 +48,7 @@ jQuery(document).ready(function($) {
 
     $('.bxslider-profile').bxSlider({
         controls: false,
-        minSlides: 1,
-        maxSlides: 1
+        touchEnabled: false
     });
 
     // Accordian
