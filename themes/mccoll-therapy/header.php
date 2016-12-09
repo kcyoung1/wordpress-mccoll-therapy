@@ -29,7 +29,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo-container">
 							<a href="#home" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/logo.png" alt="McColl Therapy Logo" /></a>
-							<a href="#home" class="mccoll-name"><h3>McColl Therapy Inc.</h3></a>
+							<a href="#home" class="mccoll-name"><h3>McColl Therapy</h3></a>
 					</div>
 					<button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
 							<span class="tcon-menu__lines" aria-hidden="true"></span>

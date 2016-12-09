@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<section id="about" class="about-wrapper container">
 				<h2>About</h2>
-				<p>McColl Therapy offers personalized therapy and counselling for success in the challenging parts of life. Our health professionals assist you with...</p>
+				<p>McColl Therapy offers personalized therapy and counselling for the challenging parts of life.</p>
 				<ul class="bxslider">
 					<li>
 						<p>
@@ -30,13 +30,13 @@ get_header(); ?>
 					</li>
 					<li>
 						<p>
-							Identifying areas for <span class="bold"> growth </span> and <span class="bold"> balance </span>
+							Promoting  <span class="bold"> balance </span> and <span class="bold"> growth </span> in life
 						</p>
 					</li>
 					<li>
 						<p>
-							Developing<span class="bold"> plans </span>
-							and <span class="bold"> skills </span>to achieve goals
+							Developing<span class="bold"> skills </span>
+							and <span class="bold"> plans </span>to act on
 						</p>
 					</li>
 					<li>
@@ -69,6 +69,7 @@ get_header(); ?>
 								<div class="expand-content">
 										<div class="content-wrap">
 											<?php the_content(); ?>
+											<br/>
 											<a href="#contact" class="btn">Contact Us</a>
 										</div>
 								</div>
@@ -80,9 +81,6 @@ get_header(); ?>
 
 			<section id="team" class="profile-wrapper container">
 				<h2>Our Team</h2>
-				<p class="align-center">
-					Our team provides you with the highest quality services through extensive training and a dedication to the well-being of our clients
-				</p>
 				<ul class="bxslider-profile profile-list">
 					<?php $profile_info = array(
 						'post_type' => 'profile',
@@ -141,7 +139,7 @@ get_header(); ?>
 							<div class="contact-info-wrapper">
 								<div class="contact-paragraph">
 									<p>
-										 For any inquiries, please call or complete the form below to book an appointment.
+										 For any inquiries, please call or complete the form.
 									</p>
 								</div>
 								<div class="contact-info">
@@ -149,8 +147,8 @@ get_header(); ?>
 									<p>780.965.9906</p>
 									<a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
 										<p>
-												Ledgeview Business Centre<br/>
-												Edmonton, Alberta
+												9707 - 110 Street NW<br/>
+												Edmonton, AB
 												<br/>T5K 2L9
 										</p>
 								</div>
