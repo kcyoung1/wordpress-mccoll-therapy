@@ -47,8 +47,7 @@ jQuery(document).ready(function($) {
     });
 
     $('.bxslider-profile').bxSlider({
-        controls: false,
-        touchEnabled: false
+        controls: false
     });
 
     // Accordian

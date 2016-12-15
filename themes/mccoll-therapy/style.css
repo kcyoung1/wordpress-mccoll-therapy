@@ -1091,9 +1091,6 @@ object {
   .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
     background: #225378; }
 
-.profile-wrapper .bx-pager {
-  display: none; }
-
 @media (min-width: 768px) {
   .profile-list .profile-wrap {
     display: -ms-flexbox;
