@@ -43,11 +43,15 @@ jQuery(document).ready(function($) {
 
     $('.bxslider').bxSlider({
         controls: false,
-        auto: true
+        auto: true,
+        mouseDrag: true,
+        touchEnabled: true
     });
 
     $('.bxslider-profile').bxSlider({
-        controls: false
+        controls: false,
+        mouseDrag: true,
+        touchEnabled: true
     });
 
     // Accordian
