@@ -7,7 +7,8 @@
 
 ?>
 
-  <div class="wellness-banner">
+<section  id= "wellness"  class="wellness-wrapper">
+<div class="wellness-banner">
     <h2>Dimensions of Wellness</h2>
   </div>
 
@@ -119,6 +120,10 @@
   <div class="dw-diagram container">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Dimensions Diagram" />
     <div class="diagram-info align-center">
-        Wellness entails balancing all dimensions to positively impact one’s life. McColl Therapy provides assistance to support personal growth and lasting wellness.
+        <p>Wellness entails balancing all dimensions to positively impact one’s life. McColl Therapy provides assistance to support personal growth and lasting wellness.</p>
+        <a href="/wellness" class="btn">Read More</a>
     </div>
   </div>
+</section><!-- .wellness-wrapper -->
+
+  

@@ -79,39 +79,10 @@ get_header(); ?>
 				</ul><!-- services-list -->
 			</section><!-- .services-wrapper -->
 
-			<section id="team" class="profile-wrapper container">
-				<h2>Our Team</h2>
-				<ul class="bxslider-profile profile-list">
-					<?php $profile_info = array(
-						'post_type' => 'profile',
-						'posts_per_page' => 10,
-						'order' => 'ASC',
-						'orderby' => 'date');
-						$profiles = get_posts( $profile_info );
-						foreach ( $profiles as $post ) : setup_postdata( $post ); ?>
+			<?php get_template_part( 'template-parts/content', 'profile' ); ?>
 
-						<li>
-							<div class="profile-wrap">
-								<div class="profile-image">
-									<?php the_post_thumbnail('full'); ?>
-								</div>
-								<div class="profile-info">
-									<h4 class="profile-title"><?php the_title(); ?></h4>
-									<div class="profile-line"><?php echo wp_kses_post(CFS()->get( 'position' )); ?></div>
-									<div class="profile-line"><?php echo wp_kses_post(CFS()->get( 'education' )); ?></div>
-									<?php echo wp_kses_post(CFS()->get( 'bio' )); ?>
-								</div>
-							</div>
-						</li>
-					<?php endforeach;
-									wp_reset_postdata(); ?>
-				</ul><!-- services-list -->
-
-			</section><!-- .profile-wrapper -->
-
-			<section  id= "wellness"  class="wellness-wrapper">
-					<?php get_template_part( 'template-parts/content', 'wellness' ); ?>
-			</section><!-- .wellness-wrapper -->
+			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>				
+			
 
 			<!-- <section  id= "resources" class="resources-wrapper">
 				<div class="resources-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-7.jpg">
@@ -144,7 +115,8 @@ get_header(); ?>
 								</div>
 								<div class="contact-info">
 									<h5>McColl Therapy Inc.</h5>
-									<p>780.965.9906</p>
+									<a href="tel:780-965-9906">780.965.9906</a>
+									<br/>
 									<a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
 										<p>
 												9707 - 110 Street NW<br/>

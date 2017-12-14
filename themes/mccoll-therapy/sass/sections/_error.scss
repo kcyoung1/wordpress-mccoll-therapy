@@ -5,6 +5,9 @@
 }
 .error404 {
   text-align: center;
+  .error-404 {
+    height: calc(100vh - 150px);
+  }
   .page-content {
     margin-top: 0;
     display: flex;

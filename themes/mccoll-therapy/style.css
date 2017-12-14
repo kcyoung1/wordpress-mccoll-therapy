@@ -44,15 +44,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 .btn, .contact-wrapper .wpcf7-submit {
-  padding: 5px 10px;
+  padding: 10px 20px;
   background: #225378;
   color: white;
   cursor: pointer;
   outline: none;
-  border-radius: 2px; }
-  @media (min-width: 768px) {
-    .btn, .contact-wrapper .wpcf7-submit {
-      padding: 5px 15px; } }
+  border-radius: 0;
+  transition: 300ms ease; }
   .btn:hover, .contact-wrapper .wpcf7-submit:hover {
     background: rgba(34, 83, 120, 0.8);
     color: white; }
@@ -456,7 +454,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  border-radius: 0 !important;
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
@@ -598,8 +596,7 @@ textarea {
   top: 0;
   color: #B8F4F3;
   font-size: .8rem;
-  font-weight: bold;
-  border-bottom: 1px solid #B8F4F3; }
+  font-weight: bold; }
   @media (min-width: 768px) {
     .main-navigation {
       font-size: 1rem; } }
@@ -1474,6 +1471,8 @@ object {
 
 .error404 {
   text-align: center; }
+  .error404 .error-404 {
+    height: calc(100vh - 150px); }
   .error404 .page-content {
     margin-top: 0;
     display: -ms-flexbox;
