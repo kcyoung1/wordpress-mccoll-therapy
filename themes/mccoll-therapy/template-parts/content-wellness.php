@@ -19,7 +19,7 @@
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.png" alt="" />
           <h2>Physical</h2>
-          <button type="button" name="button">+</button>
+          <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
@@ -44,7 +44,7 @@
         <div class="accordian-head ">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-cognitive.png" alt="" />
           <h2>Cognitive</h2>
-          <button type="button" name="button">+</button>
+          <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
@@ -69,7 +69,7 @@
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.png" alt="Emotional Logo" />
           <h2>Emotional</h2>
-          <button type="button" name="button">+</button>
+          <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
@@ -94,7 +94,7 @@
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.png" alt="" />
           <h2>Spiritual</h2>
-          <button type="button" name="button">+</button>
+          <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">

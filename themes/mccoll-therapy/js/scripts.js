@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
         $('body').toggleClass('active');
     });
 
-
+    
     // Smooth Scrolling
 
     $('a[href*="#"]:not([href="#"])').click(function() {

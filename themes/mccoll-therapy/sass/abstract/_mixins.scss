@@ -36,6 +36,11 @@ $desktop-width: 1024px;
 	outline: none;
 	border-radius: 0;
 	transition: 300ms ease;
+	letter-spacing: 0.5px;
+	font-size: 1.2rem;
+	font-family: $font__header;
+	font-weight: 700;
+	text-transform: uppercase;
 	&:hover {
 		background: $color__navy-li;
 		color: $color__white;

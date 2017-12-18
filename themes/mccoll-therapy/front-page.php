@@ -14,7 +14,7 @@ get_header(); ?>
 				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
 					<div class="gradient"></div>
 					<h1>McColl Therapy</h1>
-					<h5>Supporting personal growth and lasting wellness</h5>
+					<p>Supporting personal growth and lasting wellness</p>
 				</div>
 			</section><!-- .banner-wrapper -->
 
@@ -63,7 +63,7 @@ get_header(); ?>
 								<div class="accordian-head">
 									<?php the_post_thumbnail('full'); ?>
 									<h2><?php the_title(); ?></h2>
-									<button type="button" name="button">+</button>
+									<button type="button" name="button">&times;</button>
 								</div>
 								<div class="border"></div>
 								<div class="expand-content">

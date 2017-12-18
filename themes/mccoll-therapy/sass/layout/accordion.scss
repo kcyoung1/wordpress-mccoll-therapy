@@ -1,0 +1,81 @@
+// Accordian
+.accordian {
+    display: block;
+    width: 100%;
+    img {
+      width: 100px;
+      height: 100px;
+      @include tablet {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    li {
+      flex: 0 1 100%;
+      width: 100%;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      width: 100%;
+      margin: 0;
+    }
+    button {
+      background: transparent;
+      border: 1px solid transparent;
+      text-align: center;
+      outline: none;
+      box-shadow: none;
+      color: white;
+      font-size: 2rem;
+      padding: 0;
+      margin-right: 20px;
+    //   margin-bottom: 20px;
+      transition: transform 200ms ease;
+      transform-origin: 50% 50%;
+      transform: rotate(45deg);
+      @include tablet {
+          font-size: 3rem;
+      }
+      &.active {
+        transform: rotate(0deg);
+      }
+    }
+    .accordian-head {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .expand-content {
+      display: none;
+      padding: 60px 25px;
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 60px;
+        list-style-type: disc;
+        margin-bottom: 15px;
+      }
+    }
+    .content-wrap {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        font-size: 1.1rem;
+        @include tablet {
+          font-size: 1.2rem;
+        }
+        @include desktop {
+          font-size: 1.4rem;
+        }
+    }
+    .btn {
+      background: white;
+    }
+  }
