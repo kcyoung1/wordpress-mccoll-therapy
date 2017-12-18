@@ -117,11 +117,17 @@
     </ul>
   </div>
 
-  <div class="dw-diagram container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Dimensions Diagram" />
-    <div class="diagram-info align-center">
-        <p>Wellness entails balancing all dimensions to positively impact one’s life. McColl Therapy provides assistance to support personal growth and lasting wellness.</p>
+  <div class="dw-diagram container flexbox">
+    <div class="flex-item flex-half">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Dimensions Diagram" />
+    </div>
+    <div class="flex-item flex-half">
+        <p>Wellness entails balancing all dimensions to positively impact one’s life. McColl Therapy provides assistance to support personal growth and lasting wellness.
+        <br>
+        <br>
         <a href="/wellness" class="btn">Read More</a>
+        </p>
+        
     </div>
   </div>
 </section><!-- .wellness-wrapper -->

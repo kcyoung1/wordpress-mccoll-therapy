@@ -5,8 +5,14 @@
   background: $color__turq;
   color: white;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-wrapper {
+  .wpcf7 {
+    width: 100%;
+  }
   .wpcf7-form {
     @include tablet {
       order: 1;
@@ -15,13 +21,12 @@
   .wpcf7-submit {
     @extend .btn;
     outline: none;
-    border-radius: 2px;
     box-shadow: none;
     text-shadow: none;
     border: none;
     color: $color__white;
     font-size: 1.1rem;
-    padding: 7px 25px;
+    padding: 10px 30px;
     &:hover {
       box-shadow: none;
       text-shadow: none;
@@ -31,14 +36,14 @@
   .wpcf7-text, .wpcf7-textarea {
     outline: none;
     border: 0;
-    border-bottom: 2px solid $color__turq;
+    border-bottom: 1px solid $color__turq;
     border-radius: 0;
-    max-width: 350px;
+    // max-width: 350px;
     width: 100%;
   }
   .wpcf7-textarea {
-    height: 242px;
-    border-left: 2px solid $color__turq;
+    height: 150px;
+    border-left: 1px solid $color__turq;
   }
   .contact-form-info {
     display: block;
@@ -46,7 +51,7 @@
       display: flex;
     }
     .contact-info-wrapper {
-      max-width: 400px;
+      // max-width: 400px;
       width: 100%;
       height: 350px;
       background: linear-gradient(180deg,rgba(0,0,0,.6)  0,rgba(0,0,0,.6)), url(../../assets/images/contact.jpg) no-repeat;
@@ -57,15 +62,12 @@
       align-items: flex-start;
       flex-direction: column;
       color: $color__white;
-      border-radius: 2px;
       padding: 20px;
       margin: 0 auto;
       @include tablet {
         order: 2;
         background-position: 80%;
         background-size: cover;
-        margin-left: 50px;
-        margin-top: 20px;
         height: 550px;
       }
       span {

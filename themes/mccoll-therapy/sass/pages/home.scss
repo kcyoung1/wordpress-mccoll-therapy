@@ -253,9 +253,12 @@
     }
     .accordian {
       img {
-        width: 120px;
+        margin-left: 20px;
+        width: 60px; 
+        height: 60px;
         @include tablet {
-          width: 180px
+          width: 100px; 
+          height: 100px;
         }
       }
     }

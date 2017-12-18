@@ -106,11 +106,11 @@ get_header(); ?>
 
 			<h2 class="contact-banner">Contact Us</h2>
 			<section id= "contact" class="contact-wrapper  container">
-				<div class="contact-form-info">
-							<div class="contact-info-wrapper">
+				<div class="contact-form-info flexbox">
+							<div class="contact-info-wrapper flex-item flex-half">
 								<div class="contact-paragraph">
 									<p>
-										 For any inquiries, please call or complete the form.
+										For any inquiries, please call or complete the form.
 									</p>
 								</div>
 								<div class="contact-info">
@@ -125,9 +125,9 @@ get_header(); ?>
 										</p>
 								</div>
 							</div>
-							<?php
-								echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]');
-								?>
+							<div class="flex-item flex-half">
+								<?php echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]'); ?>
+							</div>
 				</div>
 
 			</section><!-- .contact-wrapper -->
