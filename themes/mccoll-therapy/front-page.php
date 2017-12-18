@@ -81,8 +81,40 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'profile' ); ?>
 
-			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>				
-			
+			<div id= "wellness" class="wellness-wrapper">
+				<div class="wellness-banner">
+					<h2>Dimensions of Wellness</h2>
+				</div>	
+				<div class="container">
+					<div style="text-align: center;">
+							<p style="max-width: 900px; width: 100%; margin: 0 auto;">Mental Wellness is important for people to live healthy, productive lives. It is a state of self-awareness and value-driven behavior that supports growth and success.</p>
+							<div class="flexbox" style="margin: 50px 0;">
+									<div class="flex-half flex-item ">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.png" alt="Physical" />
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-cognitive.png" alt="Cognitive" />
+									</div>
+									<div class="flex-half flex-item ">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.png" alt="Emotional" />
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.png" alt="Spiritual" />
+									</div>  
+							</div>
+							<p>Four health dimensions maintain Mental Wellness: <span class="bold physical">Physical</span>, <span class="bold cognitive">Cognitive</span>, <span class="bold emotional">Emotional</span>, and <span class="bold spiritual">Spiritual</span>.</p>
+					</div>
+					<div class="dw-diagram flexbox">
+						<div class="flex-item flex-half">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Dimensions Diagram" />
+						</div>
+						<div class="flex-item flex-half">
+								<p>Wellness entails balancing all dimensions to positively impact one’s life. McColl Therapy provides assistance to support personal growth and lasting wellness.
+								<br>
+								<br>
+								<a href="/wellness" class="btn">Read More</a>
+								</p>	
+						</div>
+					</div>
+				</div>
+
+			</div>
 
 			<!-- <section  id= "resources" class="resources-wrapper">
 				<div class="resources-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-7.jpg">
@@ -104,33 +136,7 @@ get_header(); ?>
 				</div>
 			</section> .resources-wrapper -->
 
-			<h2 class="contact-banner">Contact Us</h2>
-			<section id= "contact" class="contact-wrapper  container">
-				<div class="contact-form-info flexbox">
-							<div class="contact-info-wrapper flex-item flex-half">
-								<div class="contact-paragraph">
-									<p>
-										For any inquiries, please call or complete the form.
-									</p>
-								</div>
-								<div class="contact-info">
-									<h5>McColl Therapy Inc.</h5>
-									<a href="tel:780-965-9906">780.965.9906</a>
-									<br/>
-									<a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
-										<p>
-												9707 - 110 Street NW<br/>
-												Edmonton, AB
-												<br/>T5K 2L9
-										</p>
-								</div>
-							</div>
-							<div class="flex-item flex-half">
-								<?php echo do_shortcode('[contact-form-7 id="12" title="Contact form 1"]'); ?>
-							</div>
-				</div>
-
-			</section><!-- .contact-wrapper -->
+			<?php get_template_part( 'template-parts/content', 'contact' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

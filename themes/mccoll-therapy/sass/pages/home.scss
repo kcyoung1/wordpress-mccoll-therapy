@@ -193,6 +193,9 @@
     li {
       list-style: inside;
     }
+    i {
+      font-style: normal;
+    }
   }
   
 
@@ -218,25 +221,22 @@
         }
       }
     }
-    .white {
-      margin-top: 0;
-      padding-top: 0;
-      background: $color__white;
-      p {
-        color: $color__navy;
-      }
-    }
+    // .white {
+    //   margin-top: 0;
+    //   padding-top: 0;
+    //   background: $color__white;
+    //   p {
+    //     color: $color__navy;
+    //   }
+    // }
     .dw-diagram {
-      margin: 50px 0;
+      margin-top: 30px;
       @include tablet {
         flex-direction: row;
       }
-      img {
-        width: 300px;
-        height: 300px;
-        @include tablet {
-          width: 400px;
-          height: 400px;
+      p {
+        @media only screen and (max-width: $tablet-width) {
+          text-align: center;
         }
       }
     }
@@ -251,48 +251,6 @@
     .dimensions-wrapper {
       width: 100%;
     }
-    .accordian {
-      img {
-        margin-left: 20px;
-        width: 60px; 
-        height: 60px;
-        @include tablet {
-          width: 100px; 
-          height: 100px;
-        }
-      }
-    }
-  }
-
-  @mixin wellness-category($color) {
-    .border {
-        border: 1px solid $color;
-      }
-      .accordian-head {
-        color: white !important;
-      }
-      .expand-content {
-        background: $color;
-      }
-      button, h2, .btn {
-        color: $color;
-      }
-      p, li {
-        color: white;
-      }
-  }
-  
-  .emotional-wrapper {
-    @include wellness-category($color__purple);
-  }
-  .cognitive-wrapper {
-    @include wellness-category($color__blue);
-  }
-  .physical-wrapper {
-    @include wellness-category($color__olive);
-  }
-  .spiritual-wrapper {
-    @include wellness-category($color__green);
   }
   
 

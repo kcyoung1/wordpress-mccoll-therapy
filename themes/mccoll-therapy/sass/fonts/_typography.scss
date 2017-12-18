@@ -33,7 +33,6 @@ h1 {
 	}
 }
 h2 {
-	@extend .container;
 	text-align: center;
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -107,6 +106,9 @@ a {
 	}
 	&.cognitive {
 		color: $color__blue;
+	}
+	&.white {
+		color: $color__white;
 	}
 }
 

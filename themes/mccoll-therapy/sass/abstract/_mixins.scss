@@ -27,6 +27,19 @@ $desktop-width: 1024px;
   }
 }
 
+.hide-for-tablet {
+	display: block;
+	@include tablet {
+		display: none;
+	}
+}
+.show-for-tablet {
+	display: none;
+	@include tablet {
+		display: block;
+	}
+}
+
 // Extends & Global Classes
 .btn {
 	padding: 10px 20px;

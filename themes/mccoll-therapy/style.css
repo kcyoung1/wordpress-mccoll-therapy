@@ -43,6 +43,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.hide-for-tablet {
+  display: block; }
+  @media (min-width: 768px) {
+    .hide-for-tablet {
+      display: none; } }
+
+.show-for-tablet {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-tablet {
+      display: block; } }
+
 .btn, .contact-wrapper .wpcf7-submit {
   padding: 10px 20px;
   background: #225378;
@@ -353,6 +365,8 @@ a {
     color: #00B050; }
   .bold.cognitive {
     color: #006FBF; }
+  .bold.white {
+    color: white; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -390,12 +404,17 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.container, h2, .site-info {
+.container, .site-info {
   width: 90%;
-  margin: 50px auto; }
+  margin: 0 auto;
+  padding: 50px 0;
+  height: 100%; }
   @media (min-width: 768px) {
-    .container, h2, .site-info {
+    .container, .site-info {
       width: 85%; } }
+  @media (min-width: 1024px) {
+    .container, .site-info {
+      width: 80%; } }
 
 .section-spacing {
   padding: 30px 0; }
@@ -404,7 +423,9 @@ big {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%; }
 
 .flex-item {
   -ms-flex: 0 1 98%;
@@ -628,6 +649,27 @@ textarea {
 .menu-menu-1-container, .error404 .main-navigation {
   display: none; }
 
+.logo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .logo-container .mccoll-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .logo-container h3 {
+    font-size: 1rem;
+    color: white; }
+    @media (min-width: 768px) {
+      .logo-container h3 {
+        font-size: 1.4rem; } }
+  .logo-container img {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px; }
+
 .main-navigation {
   width: 100%;
   height: 70px;
@@ -648,10 +690,6 @@ textarea {
     .main-navigation {
       font-size: 1rem; } }
   .main-navigation .logo-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
     margin-left: 10px; }
     @media (min-width: 768px) {
       .main-navigation .logo-container {
@@ -659,20 +697,11 @@ textarea {
     @media (min-width: 1024px) {
       .main-navigation .logo-container {
         margin-left: 50px; } }
-  .main-navigation .mccoll-logo {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
   .main-navigation h3 {
     font-size: 1rem; }
     @media (min-width: 768px) {
       .main-navigation h3 {
         font-size: 1.4rem; } }
-  .main-navigation img {
-    height: 60px;
-    width: 60px;
-    margin-right: 15px; }
   .main-navigation .nav {
     display: -ms-flexbox;
     display: flex;
@@ -1041,12 +1070,45 @@ object {
   display: none; }
 
 .site-footer {
-  background: #225378;
-  height: 70px;
+  background: #06A6B0;
+  height: 400px;
+  position: relative;
   width: 100%;
-  color: white; }
+  color: white;
+  text-align: center;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    .site-footer {
+      height: 250px;
+      padding-bottom: 0; }
+      .site-footer .flex-item {
+        -ms-flex-align: start;
+            align-items: flex-start; }
+        .site-footer .flex-item:first-of-type {
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          text-align: left;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+        .site-footer .flex-item:last-of-type {
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          text-align: right; } }
   .site-footer p {
     margin: 0; }
+
+.disclaimer {
+  font-size: 0.9rem; }
+  @media only screen and (max-width: 768px) {
+    .disclaimer {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      width: 100%; } }
 
 .bx-viewport {
   box-shadow: none !important;
@@ -1101,7 +1163,7 @@ object {
         justify-content: space-around;
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     cursor: pointer;
     overflow: hidden;
     -ms-flex-align: center;
@@ -1122,15 +1184,75 @@ object {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    font-size: 1.1rem; }
+    font-size: 1rem; }
     @media (min-width: 768px) {
       .accordian .content-wrap {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     @media (min-width: 1024px) {
       .accordian .content-wrap {
-        font-size: 1.4rem; } }
+        font-size: 1.2rem; } }
   .accordian .btn, .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .accordian .wpcf7-submit {
     background: white; }
+
+.emotional-wrapper .border {
+  border: 1px solid #6F2FA0; }
+
+.emotional-wrapper .accordian-head {
+  color: white !important; }
+
+.emotional-wrapper .expand-content {
+  background: #6F2FA0; }
+
+.emotional-wrapper button, .emotional-wrapper h2, .emotional-wrapper .btn, .emotional-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .emotional-wrapper .wpcf7-submit {
+  color: #6F2FA0; }
+
+.emotional-wrapper p, .emotional-wrapper li {
+  color: white; }
+
+.cognitive-wrapper .border {
+  border: 1px solid #006FBF; }
+
+.cognitive-wrapper .accordian-head {
+  color: white !important; }
+
+.cognitive-wrapper .expand-content {
+  background: #006FBF; }
+
+.cognitive-wrapper button, .cognitive-wrapper h2, .cognitive-wrapper .btn, .cognitive-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .cognitive-wrapper .wpcf7-submit {
+  color: #006FBF; }
+
+.cognitive-wrapper p, .cognitive-wrapper li {
+  color: white; }
+
+.physical-wrapper .border {
+  border: 1px solid #817F22; }
+
+.physical-wrapper .accordian-head {
+  color: white !important; }
+
+.physical-wrapper .expand-content {
+  background: #817F22; }
+
+.physical-wrapper button, .physical-wrapper h2, .physical-wrapper .btn, .physical-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .physical-wrapper .wpcf7-submit {
+  color: #817F22; }
+
+.physical-wrapper p, .physical-wrapper li {
+  color: white; }
+
+.spiritual-wrapper .border {
+  border: 1px solid #00B050; }
+
+.spiritual-wrapper .accordian-head {
+  color: white !important; }
+
+.spiritual-wrapper .expand-content {
+  background: #00B050; }
+
+.spiritual-wrapper button, .spiritual-wrapper h2, .spiritual-wrapper .btn, .spiritual-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .spiritual-wrapper .wpcf7-submit {
+  color: #00B050; }
+
+.spiritual-wrapper p, .spiritual-wrapper li {
+  color: white; }
 
 .contact-banner {
   width: 100%;
@@ -1138,6 +1260,7 @@ object {
   height: 150px;
   background: #06A6B0;
   color: white;
+  margin-top: 0;
   margin-bottom: 40px;
   display: -ms-flexbox;
   display: flex;
@@ -1217,15 +1340,19 @@ object {
   border-bottom: 2px solid white;
   padding-bottom: 20px; }
 
-.contact-wrapper .contact-info {
+.contact-info {
   padding-top: 20px; }
-  .contact-wrapper .contact-info h5 {
-    margin-bottom: 10px; }
-  .contact-wrapper .contact-info p:last-of-type {
-    margin-top: 10px;
-    width: 200px; }
-  .contact-wrapper .contact-info a {
-    color: white; }
+  .contact-info h5 {
+    margin-bottom: 10px;
+    font-weight: 700; }
+  .contact-info p {
+    font-size: 1rem; }
+    .contact-info p:last-of-type {
+      margin-top: 10px;
+      width: 200px; }
+  .contact-info a {
+    color: white;
+    font-size: 1rem; }
 
 .banner-wrapper {
   color: white; }
@@ -1386,6 +1513,9 @@ object {
 .profile-list li {
   list-style: inside; }
 
+.profile-list i {
+  font-style: normal; }
+
 .wellness-wrapper .wellness-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/dimensions-banner.jpg") no-repeat top center;
   background-size: cover;
@@ -1400,26 +1530,15 @@ object {
       .wellness-wrapper .wellness-banner p {
         width: 650px; } }
 
-.wellness-wrapper .white {
-  margin-top: 0;
-  padding-top: 0;
-  background: white; }
-  .wellness-wrapper .white p {
-    color: #225378; }
-
 .wellness-wrapper .dw-diagram {
-  margin: 50px 0; }
+  margin-top: 30px; }
   @media (min-width: 768px) {
     .wellness-wrapper .dw-diagram {
       -ms-flex-direction: row;
           flex-direction: row; } }
-  .wellness-wrapper .dw-diagram img {
-    width: 300px;
-    height: 300px; }
-    @media (min-width: 768px) {
-      .wellness-wrapper .dw-diagram img {
-        width: 400px;
-        height: 400px; } }
+  @media only screen and (max-width: 768px) {
+    .wellness-wrapper .dw-diagram p {
+      text-align: center; } }
 
 .wellness-wrapper .diagram-info {
   margin-top: 30px;
@@ -1431,75 +1550,6 @@ object {
 
 .wellness-wrapper .dimensions-wrapper {
   width: 100%; }
-
-.wellness-wrapper .accordian img {
-  margin-left: 20px;
-  width: 60px;
-  height: 60px; }
-  @media (min-width: 768px) {
-    .wellness-wrapper .accordian img {
-      width: 100px;
-      height: 100px; } }
-
-.emotional-wrapper .border {
-  border: 1px solid #6F2FA0; }
-
-.emotional-wrapper .accordian-head {
-  color: white !important; }
-
-.emotional-wrapper .expand-content {
-  background: #6F2FA0; }
-
-.emotional-wrapper button, .emotional-wrapper h2, .emotional-wrapper .btn, .emotional-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .emotional-wrapper .wpcf7-submit {
-  color: #6F2FA0; }
-
-.emotional-wrapper p, .emotional-wrapper li {
-  color: white; }
-
-.cognitive-wrapper .border {
-  border: 1px solid #006FBF; }
-
-.cognitive-wrapper .accordian-head {
-  color: white !important; }
-
-.cognitive-wrapper .expand-content {
-  background: #006FBF; }
-
-.cognitive-wrapper button, .cognitive-wrapper h2, .cognitive-wrapper .btn, .cognitive-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .cognitive-wrapper .wpcf7-submit {
-  color: #006FBF; }
-
-.cognitive-wrapper p, .cognitive-wrapper li {
-  color: white; }
-
-.physical-wrapper .border {
-  border: 1px solid #817F22; }
-
-.physical-wrapper .accordian-head {
-  color: white !important; }
-
-.physical-wrapper .expand-content {
-  background: #817F22; }
-
-.physical-wrapper button, .physical-wrapper h2, .physical-wrapper .btn, .physical-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .physical-wrapper .wpcf7-submit {
-  color: #817F22; }
-
-.physical-wrapper p, .physical-wrapper li {
-  color: white; }
-
-.spiritual-wrapper .border {
-  border: 1px solid #00B050; }
-
-.spiritual-wrapper .accordian-head {
-  color: white !important; }
-
-.spiritual-wrapper .expand-content {
-  background: #00B050; }
-
-.spiritual-wrapper button, .spiritual-wrapper h2, .spiritual-wrapper .btn, .spiritual-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .spiritual-wrapper .wpcf7-submit {
-  color: #00B050; }
-
-.spiritual-wrapper p, .spiritual-wrapper li {
-  color: white; }
 
 .page-template-wellness header {
   display: none; }
@@ -1532,6 +1582,31 @@ object {
   text-align: center; }
   .wellness .banner h1 {
     color: white; }
+
+.wellness .accordian img {
+  margin-left: 20px;
+  width: 60px;
+  height: 60px; }
+  @media (min-width: 768px) {
+    .wellness .accordian img {
+      width: 100px;
+      height: 100px; } }
+
+.info-box {
+  max-width: 1000px;
+  margin: 20px auto;
+  width: 100%;
+  padding: 50px 25px;
+  background: #B8F4F3; }
+  @media (min-width: 768px) {
+    .info-box {
+      padding: 50px; } }
+  .info-box p {
+    margin-top: 0; }
+  .info-box ul {
+    padding-left: 20px;
+    margin-left: 20px;
+    list-style: disc; }
 
 .color-header {
   background: #06A6B0;

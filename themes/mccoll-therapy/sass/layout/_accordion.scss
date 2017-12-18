@@ -47,7 +47,7 @@
       justify-content: space-around;
       max-width: 1000px;
       width: 100%;
-      margin: 0 auto;
+      margin: 20px auto;
       cursor: pointer;
       overflow: hidden;
       align-items: center;
@@ -68,15 +68,46 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1000px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         @include tablet {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
         @include desktop {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
     }
     .btn {
       background: white;
     }
+  }
+
+  @mixin wellness-category($color) {
+    .border {
+        border: 1px solid $color;
+      }
+      .accordian-head {
+        color: white !important;
+      }
+      .expand-content {
+        background: $color;
+      }
+      button, h2, .btn {
+        color: $color;
+      }
+      p, li {
+        color: white;
+      }
+  }
+  
+  .emotional-wrapper {
+    @include wellness-category($color__purple);
+  }
+  .cognitive-wrapper {
+    @include wellness-category($color__blue);
+  }
+  .physical-wrapper {
+    @include wellness-category($color__olive);
+  }
+  .spiritual-wrapper {
+    @include wellness-category($color__green);
   }
