@@ -58,14 +58,3 @@ $desktop-width: 1024px;
 	text-align: center;
 }
 
-.container {
-	width: 300px;
-	@extend .center;
-	margin: 0 auto;
-	@include tablet {
-		width: 650px;
-	}
-	@include desktop {
-		width: 1000px;
-	}
-}

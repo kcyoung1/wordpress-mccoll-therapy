@@ -60,7 +60,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background: rgba(34, 83, 120, 0.8);
     color: white; }
 
-.center, .container, h2, .site-info, .site-footer, .services-wrapper, .wellness-wrapper, .wellness-wrapper .wellness-banner, .resources-wrapper .resources-banner, .banner-wrapper .hero-banner {
+.center, .site-footer, .banner-wrapper .hero-banner, .services-wrapper, .wellness-wrapper, .wellness-wrapper .wellness-banner, .wellness .banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -72,16 +72,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .align-center {
   text-align: center; }
-
-.container, h2, .site-info {
-  width: 300px;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .container, h2, .site-info {
-      width: 650px; } }
-  @media (min-width: 1024px) {
-    .container, h2, .site-info {
-      width: 1000px; } }
 
 html {
   font-family: sans-serif;
@@ -351,6 +341,19 @@ a {
   a:visited {
     outline: none; }
 
+.bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #06A6B0; }
+  .bold.physical {
+    color: #817F22; }
+  .bold.emotional {
+    color: #6F2FA0; }
+  .bold.spiritual {
+    color: #00B050; }
+  .bold.cognitive {
+    color: #006FBF; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -386,6 +389,40 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.container, h2, .site-info {
+  width: 90%;
+  margin: 50px auto; }
+  @media (min-width: 768px) {
+    .container, h2, .site-info {
+      width: 85%; } }
+
+.flexbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flex-item {
+  -ms-flex: 0 1 98%;
+      flex: 0 1 98%;
+  margin: 1%; }
+
+.flex-full {
+  -ms-flex: 0 1 98%;
+      flex: 0 1 98%; }
+
+.flex-half {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (min-width: 768px) {
+    .flex-half {
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1090,188 +1127,6 @@ object {
   .accordian .btn, .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .accordian .wpcf7-submit {
     background: white; }
 
-.services-wrapper {
-  margin-top: 30px;
-  background-color: #225378;
-  color: white;
-  padding-bottom: 30px; }
-  .services-wrapper h2 {
-    color: #B8F4F3; }
-  .services-wrapper .border {
-    border-bottom: 1px solid #B8F4F3;
-    width: 100%; }
-  .services-wrapper .accordian .accordian-head {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto; }
-  .services-wrapper .accordian h2 {
-    font-size: 1rem;
-    color: white; }
-    @media (min-width: 768px) {
-      .services-wrapper .accordian h2 {
-        font-size: 1.5rem; } }
-  .services-wrapper .accordian img {
-    width: 110px; }
-    @media (min-width: 768px) {
-      .services-wrapper .accordian img {
-        width: 170px; } }
-  .services-wrapper .accordian .expand-content {
-    background: white;
-    color: #404040; }
-  .services-wrapper .accordian .content-wrap p:last-of-type {
-    margin-bottom: 15px; }
-  .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
-    background: #06A6B0; }
-
-.wellness-wrapper .wellness-banner {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/dimensions-banner.jpg") no-repeat top center;
-  background-size: cover;
-  width: 100%;
-  height: 50vh; }
-  @media (min-width: 1024px) {
-    .wellness-wrapper .wellness-banner {
-      height: 500px;
-      background-size: 150%; } }
-  .wellness-wrapper .wellness-banner h2 {
-    color: white; }
-  .wellness-wrapper .wellness-banner p {
-    color: white;
-    width: 300px; }
-    @media (min-width: 768px) {
-      .wellness-wrapper .wellness-banner p {
-        width: 650px; } }
-
-.wellness-wrapper .white {
-  margin-top: 0;
-  padding-top: 0;
-  background: white; }
-  .wellness-wrapper .white p {
-    color: #225378; }
-
-.wellness-wrapper .dw-diagram {
-  margin: 50px 0; }
-  @media (min-width: 768px) {
-    .wellness-wrapper .dw-diagram {
-      -ms-flex-direction: row;
-          flex-direction: row; } }
-  .wellness-wrapper .dw-diagram img {
-    width: 300px;
-    height: 300px; }
-    @media (min-width: 768px) {
-      .wellness-wrapper .dw-diagram img {
-        width: 400px;
-        height: 400px; } }
-
-.wellness-wrapper .diagram-info {
-  margin-top: 30px;
-  width: 300px; }
-  @media (min-width: 768px) {
-    .wellness-wrapper .diagram-info {
-      width: 500px;
-      margin-left: 30px; } }
-
-.wellness-wrapper .dimensions-wrapper {
-  width: 100%; }
-
-.wellness-wrapper .accordian img {
-  width: 120px; }
-  @media (min-width: 768px) {
-    .wellness-wrapper .accordian img {
-      width: 180px; } }
-
-.emotional-wrapper .border {
-  border: 1px solid #6F2FA0; }
-
-.emotional-wrapper .accordian-head {
-  color: white !important; }
-
-.emotional-wrapper .expand-content {
-  background: #6F2FA0; }
-
-.emotional-wrapper button, .emotional-wrapper h2, .emotional-wrapper .btn, .emotional-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .emotional-wrapper .wpcf7-submit {
-  color: #6F2FA0; }
-
-.emotional-wrapper p, .emotional-wrapper li {
-  color: white; }
-
-.cognitive-wrapper .border {
-  border: 1px solid #006FBF; }
-
-.cognitive-wrapper .accordian-head {
-  color: white; }
-
-.cognitive-wrapper .expand-content {
-  background: #006FBF; }
-
-.cognitive-wrapper button, .cognitive-wrapper h2, .cognitive-wrapper .btn, .cognitive-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .cognitive-wrapper .wpcf7-submit {
-  color: #006FBF; }
-
-.cognitive-wrapper p, .cognitive-wrapper li {
-  color: white; }
-
-.physical-wrapper .border {
-  border: 1px solid #817F22; }
-
-.physical-wrapper .accordian-head {
-  color: #817F22; }
-
-.physical-wrapper .expand-content {
-  background: #817F22; }
-
-.physical-wrapper button, .physical-wrapper h2, .physical-wrapper .btn, .physical-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .physical-wrapper .wpcf7-submit {
-  color: #817F22; }
-
-.physical-wrapper p, .physical-wrapper li {
-  color: white; }
-
-.spiritual-wrapper .border {
-  border: 1px solid #00B050; }
-
-.spiritual-wrapper .accordian-head {
-  color: #00B050; }
-
-.spiritual-wrapper .expand-content {
-  background: #00B050; }
-
-.spiritual-wrapper button, .spiritual-wrapper h2, .spiritual-wrapper .btn, .spiritual-wrapper .contact-wrapper .wpcf7-submit, .contact-wrapper .spiritual-wrapper .wpcf7-submit {
-  color: #00B050; }
-
-.spiritual-wrapper p, .spiritual-wrapper li {
-  color: white; }
-
-.resources-wrapper {
-  display: block;
-  color: white; }
-  .resources-wrapper .resources-banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5)), url(../../assets/images/hero-banner-7.jpg) no-repeat bottom fixed;
-    background-size: cover cover;
-    width: 100%;
-    height: 250px; }
-    @media (min-width: 768px) {
-      .resources-wrapper .resources-banner {
-        height: 300px;
-        background-size: 300%; } }
-    @media (min-width: 1024px) {
-      .resources-wrapper .resources-banner {
-        height: 400px;
-        background-size: 180%; } }
-  .resources-wrapper h5 {
-    margin-bottom: 20px; }
-  .resources-wrapper .resources-info {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px; }
-    .resources-wrapper .resources-info ul {
-      margin: 0;
-      text-align: left; }
-    .resources-wrapper .resources-info a {
-      color: #06A6B0; }
-      .resources-wrapper .resources-info a:hover {
-        color: #B8F4F3; }
-  .resources-wrapper img {
-    height: 300px;
-    width: 200px; }
-
 .contact-banner {
   width: 100%;
   text-align: center;
@@ -1364,38 +1219,6 @@ object {
   .contact-wrapper .contact-info a {
     color: white; }
 
-.color-header {
-  background: #06A6B0;
-  width: 100%;
-  height: 80px; }
-
-.error404 {
-  text-align: center; }
-  .error404 .error-404 {
-    height: calc(100vh - 150px); }
-  .error404 .page-content {
-    margin-top: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-  .error404 h1 {
-    text-transform: uppercase; }
-  .error404 img {
-    height: auto;
-    width: 100px; }
-  .error404 a {
-    color: #06A6B0; }
-    .error404 a:hover {
-      color: #B8F4F3; }
-  .error404 .error-msg {
-    margin-left: 20px;
-    width: 280px;
-    text-align: left; }
-
-.site-info {
-  color: white; }
-
 .banner-wrapper {
   color: white; }
   .banner-wrapper .hero-banner {
@@ -1455,10 +1278,38 @@ object {
     .about-wrapper p {
       font-size: 1.8rem; } }
 
-.bold {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #06A6B0; }
+.services-wrapper {
+  margin-top: 30px;
+  background-color: #225378;
+  color: white;
+  padding-bottom: 30px; }
+  .services-wrapper h2 {
+    color: #B8F4F3; }
+  .services-wrapper .border {
+    border-bottom: 1px solid #B8F4F3;
+    width: 100%; }
+  .services-wrapper .accordian .accordian-head {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; }
+  .services-wrapper .accordian h2 {
+    font-size: 1rem;
+    color: white; }
+    @media (min-width: 768px) {
+      .services-wrapper .accordian h2 {
+        font-size: 1.5rem; } }
+  .services-wrapper .accordian img {
+    width: 110px; }
+    @media (min-width: 768px) {
+      .services-wrapper .accordian img {
+        width: 170px; } }
+  .services-wrapper .accordian .expand-content {
+    background: white;
+    color: #404040; }
+  .services-wrapper .accordian .content-wrap p:last-of-type {
+    margin-bottom: 15px; }
+  .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
+    background: #06A6B0; }
 
 @media (min-width: 768px) {
   .profile-list .profile-wrap {
@@ -1532,10 +1383,6 @@ object {
   background-size: cover;
   width: 100%;
   height: 50vh; }
-  @media (min-width: 1024px) {
-    .wellness-wrapper .wellness-banner {
-      height: 500px;
-      background-size: 150%; } }
   .wellness-wrapper .wellness-banner h2 {
     color: white; }
   .wellness-wrapper .wellness-banner p {
@@ -1645,3 +1492,64 @@ object {
 
 .page-template-wellness header {
   display: none; }
+
+.back-btn {
+  position: fixed;
+  max-width: 130px;
+  height: 60px;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: 20px;
+  left: 20px;
+  transition: 500ms ease; }
+  .back-btn span {
+    margin: 5px;
+    transition: 500ms ease; }
+  @media (min-width: 768px) {
+    .back-btn:hover span {
+      margin: 10px; } }
+  .back-btn h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+
+.wellness .banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/dimensions-banner.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  text-align: center; }
+  .wellness .banner h1 {
+    color: white; }
+
+.color-header {
+  background: #06A6B0;
+  width: 100%;
+  height: 80px; }
+
+.error404 {
+  text-align: center; }
+  .error404 .error-404 {
+    height: calc(100vh - 150px); }
+  .error404 .page-content {
+    margin-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .error404 h1 {
+    text-transform: uppercase; }
+  .error404 img {
+    height: auto;
+    width: 100px; }
+  .error404 a {
+    color: #06A6B0; }
+    .error404 a:hover {
+      color: #B8F4F3; }
+  .error404 .error-msg {
+    margin-left: 20px;
+    width: 280px;
+    text-align: left; }
+
+.site-info {
+  color: white; }

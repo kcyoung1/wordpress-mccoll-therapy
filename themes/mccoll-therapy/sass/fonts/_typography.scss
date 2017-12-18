@@ -92,6 +92,24 @@ a {
 	}
 }
 
+.bold {
+	font-family: $font__header;
+	font-weight: bold;
+	color: $color__turq;
+	&.physical {
+		color: $color__olive;
+	}
+	&.emotional {
+		color: $color__purple;
+	}
+	&.spiritual {
+		color: $color__green;
+	}
+	&.cognitive {
+		color: $color__blue;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

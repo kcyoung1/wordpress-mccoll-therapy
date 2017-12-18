@@ -1,0 +1,31 @@
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    @include tablet {
+        width: 85%;
+    }
+}
+
+.flex {
+    &box {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    &-item {
+        flex: 0 1 98%;
+        margin: 1%;
+    }
+    &-full {
+        flex: 0 1 98%;
+    }
+    &-half {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include tablet {
+            flex: 0 1 48%;
+            
+        }
+    }   
+}

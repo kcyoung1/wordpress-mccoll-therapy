@@ -55,6 +55,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "fonts/typography";
 
 // Layout
+@import "layout/grid";
 @import "layout/elements";
 @import "layout/forms";
 @import "layout/navigation";
@@ -67,14 +68,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/accordion";
 
 // Sections
-@import "sections/services";
-@import "sections/wellness";
-@import "sections/resources";
 @import "sections/contact";
-@import "sections/error";
 
 // Pages
 @import "pages/home";
 @import "pages/wellness";
+@import "pages/error";
 
 // Template-parts

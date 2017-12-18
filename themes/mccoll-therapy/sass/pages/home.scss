@@ -66,11 +66,57 @@
     }
   
   }
-  .bold {
-    font-family: $font__header;
-    font-weight: bold;
-    color: $color__turq;
-  }
+
+// Services Section
+// ================
+
+.services-wrapper {
+    margin-top: 30px;
+    @extend .center;
+    background-color: $color__navy;
+    color: white;
+    padding-bottom: 30px;
+    h2 {
+        color: $color__mint;
+    }
+    .border {
+        border-bottom: 1px solid $color__mint;
+        width: 100%;
+    }
+    .accordian {
+        .accordian-head {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1rem;
+            color: $color__white;
+            @include tablet {
+                font-size: 1.5rem;
+            }
+        }
+        img {
+            width: 110px;
+            @include tablet {
+                width: 170px;
+            }
+        }
+        .expand-content {
+            background: white;
+            color: $color__text-main;
+        }
+        .content-wrap {
+            p:last-of-type {
+                margin-bottom: 15px;
+            }
+        }
+        .btn {
+            background: $color__turq;
+        }
+    }
+}
+
 
 // Profile Section
 // ===============
@@ -161,10 +207,6 @@
       width: 100%;
       height: 50vh;
       @extend .center;
-      @include desktop {
-        height: 500px;
-        background-size: 150%;
-      }
       h2 {
         color: $color__white;
       }
@@ -250,3 +292,45 @@
     @include wellness-category($color__green);
   }
   
+
+//   .resources-wrapper {
+//     display: block;
+//     color: $color__white;
+//     .resources-banner {
+//       background: linear-gradient(180deg,rgba(0,0,0,.5)  0,rgba(0,0,0,.5)), url(../../assets/images/hero-banner-7.jpg) no-repeat bottom fixed;
+//       background-size: cover cover;
+//       width: 100%;
+//       height: 250px;
+//       @extend .center;
+//       @include tablet {
+//         height: 300px;
+//         background-size: 300%;
+//       }
+//       @include desktop {
+//         height: 400px;
+//         background-size: 180%;
+//       }
+//     }
+//     h5 {
+//       margin-bottom: 20px;
+//     }
+//     .resources-info {
+//       text-align: center;
+//       color: $color__white;
+//       margin-bottom: 20px;
+//       ul {
+//         margin: 0;
+//         text-align: left;
+//       }
+//       a {
+//         color: $color__turq;
+//         &:hover {
+//           color: $color__mint;
+//         }
+//       }
+//     }
+//     img {
+//       height: 300px;
+//       width: 200px;
+//     }
+//   }
