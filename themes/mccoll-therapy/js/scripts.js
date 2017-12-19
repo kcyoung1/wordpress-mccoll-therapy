@@ -37,7 +37,22 @@ jQuery(document).ready(function($) {
     var heroBanner = '/assets/images/banner.jpg';
 
     $('.hero-banner').parallax({imageSrc: templateUrl + heroBanner});
+    
 
+    // Fixed Nav
+    var $mainNav = $('.main-navigation'),
+        $heroBanner = $('.hero-banner'),
+        bannerHeight = $heroBanner.height(),
+        $window = $(window)
+    
+    $window.on('scroll', function() {
+        var scrollTop = $(document).scrollTop()
+        if(scrollTop >= bannerHeight) {
+            $mainNav.addClass('fixed')
+        } else {
+            $mainNav.removeClass('fixed')
+        }
+    })
 
     // BxSlider
 

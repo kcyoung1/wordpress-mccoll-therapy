@@ -673,22 +673,29 @@ textarea {
 .main-navigation {
   width: 100%;
   height: 70px;
-  background: rgba(6, 166, 176, 0.95);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  position: fixed;
   z-index: 100;
   top: 0;
+  left: 0;
+  position: absolute;
+  background: transparent;
   color: #B8F4F3;
   font-size: .8rem;
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  transition: 500ms ease; }
   @media (min-width: 768px) {
     .main-navigation {
       font-size: 1rem; } }
+  .main-navigation.fixed {
+    position: fixed;
+    background: rgba(6, 166, 176, 0.95);
+    border-color: transparent; }
   .main-navigation .logo-container {
     margin-left: 10px; }
     @media (min-width: 768px) {

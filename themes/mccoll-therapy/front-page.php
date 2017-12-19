@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<section id="home" class="banner-wrapper">
 				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
-					<div class="gradient"></div>
+					<!-- <div class="gradient"></div> -->
 					<h1>McColl Therapy</h1>
 					<p>Supporting personal growth and lasting wellness</p>
 				</div>

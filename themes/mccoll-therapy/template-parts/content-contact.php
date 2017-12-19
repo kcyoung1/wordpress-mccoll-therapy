@@ -18,14 +18,15 @@
           </div>
           <div class="contact-info">
             <h5>Contact Information:</h5>
-            <a href="tel:780-965-9906">780-965-9906</a>
-            <br/>
-            <a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
-            <p>
+            <a href="https://www.google.ca/maps/place/9707+110+St+%23312,+Delta,+BC+V4C/@49.1557601,-122.9204789,17z/data=!3m1!4b1!4m5!3m4!1s0x5485d9180122f993:0x60f3115c9097c34e!8m2!3d49.1557601!4d-122.9182902?q=%23312-9707+110+Street+NW&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiWkIrT5pTYAhUT9mMKHal_AcEQ_AUICigB" target="_blank">
                 #312-9707 110 Street NW<br/>
-                Edmonton, AB
-                <br/>T5K 2L9
-            </p>
+                Edmonton, AB, T5K 2L9
+            </a>
+            <br>
+            <br>
+            <a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
+            <br/>
+            <a href="tel:780-965-9906">780-965-9906</a>
           </div>
         </div>
         <div class="flex-item flex-half">
