@@ -83,7 +83,7 @@ get_header(); ?>
 
 			<div id= "wellness" class="wellness-wrapper">
 				<div class="wellness-banner">
-					<h2>Dimensions of Wellness</h2>
+					<h2>Mental Wellness</h2>
 				</div>	
 				<div class="container">
 					<div style="text-align: center;">

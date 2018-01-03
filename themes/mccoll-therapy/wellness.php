@@ -21,7 +21,7 @@
 				<p><span class="bold emotional">Emotional Wellness</span> entails awareness, expression and acceptance of our feelings. Developing this area makes us more in-tune when handling difficult emotions and fostering connections with others.</p>
 				<p><span class="bold spiritual">Spiritual Wellness</span> entails making decisions and acting in line with personal values and beliefs. Developing this area allows us to nurture self-esteem and to pursue rewarding experiences in life.</p> -->
 				<p>The health dimensions are connected internally, with the human nervous system, and externally, with communities and workplaces. Injury, illness, or adversity that impact one or more dimension’s ability to support the system lead to imbalances. The other dimensions will work to manage the imbalance and continue supporting Mental Wellness.</p>
-        <p>When the other dimensions are unable to compensate effectively, further imbalances may occur and in turn disrupt Mental Wellness.</p>
+        		<p>When the other dimensions are unable to compensate effectively, further imbalances may occur and in turn disrupt Mental Wellness.</p>
 			</div>
 			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>		
 		</div>
@@ -36,7 +36,7 @@
                     <p>Much like when a cup overflows, Mental Wellness is disrupted when imbalances accumulate and can no longer be handled effectively. The resulting concerns may create more imbalances and further impact quality of life.</p>
                 </div>
                 <div class="flex-half flex-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
+                    <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
                 </div>
             </div>
 
@@ -47,7 +47,7 @@
 					<h2>Addressing Imbalances</h2>
 					<div class="flexbox">
 						<div class="flex-half flex-item">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Wellness Diagram" />
+							<img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Wellness Diagram" />
 						</div>
 						<div class="flex-half flex-item">
 							<p>The health dimensions often require advanced skills to address imbalances and concerns. For example, the skills of emotion regulation.
