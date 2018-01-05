@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section id="home" class="banner-wrapper">
-				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-banner-5.jpg">
-					<!-- <div class="gradient"></div> -->
+				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-old.jpg">
+					<div class="gradient"></div>
 					<h1>McColl Therapy</h1>
 					<p>Supporting personal growth and lasting wellness</p>
 				</div>

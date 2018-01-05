@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 
     // Parallax Scrolling
     var templateUrl = object_name.templateUrl;
-    var heroBanner = '/assets/images/banner.jpg';
+    var heroBanner = '/assets/images/banner-old.jpg';
 
     $('.hero-banner').parallax({imageSrc: templateUrl + heroBanner});
     
