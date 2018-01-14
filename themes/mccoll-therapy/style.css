@@ -1177,8 +1177,15 @@ object {
     overflow: hidden;
     -ms-flex-align: center;
         align-items: center;
-    padding: 0;
-    margin: 20px auto; }
+    margin: 20px auto;
+    width: 90%;
+    height: 100%; }
+    @media (min-width: 768px) {
+      .accordian .accordian-head {
+        width: 85%; } }
+    @media (min-width: 1024px) {
+      .accordian .accordian-head {
+        width: 75%; } }
   .accordian .expand-content {
     display: none;
     padding: 60px 25px; }
@@ -1662,6 +1669,24 @@ object {
     .wellness .accordian img {
       width: 100px;
       height: 100px; } }
+
+.wellness .section-header {
+  margin-bottom: 50px; }
+
+.wellness .list-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .wellness .list-container p {
+    margin-bottom: 20px; }
+  .wellness .list-container ul {
+    list-style: disc;
+    margin-left: 40px; }
+  .wellness .list-container li p {
+    margin: 5px; }
 
 .info-box {
   max-width: 1000px;

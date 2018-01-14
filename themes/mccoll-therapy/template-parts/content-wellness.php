@@ -15,14 +15,14 @@
         <div class="border"></div>
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-physical.png" alt="" />
-          <h2>Physical Wellness</h2>
+          <h2>Physical</h2>
           <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Physical Wellness entails attending to our bodies’ needs and maintaining a healthy lifestyle. Developing this area protects us from chronic health issues and reduces imbalance across other dimensions of wellness. Examples of ways to support <span class="bold white">Physical Wellness</span> include:
+              Physical health entails attending to our bodies’ needs and maintaining a healthy lifestyle. Developing this area protects us from chronic health issues and reduces imbalance across other dimensions of health. Examples of ways to support physical health include:
             </p>
             <br/>
             <ul>
@@ -40,14 +40,14 @@
         <div class="border"></div>
         <div class="accordian-head ">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-cognitive.png" alt="" />
-          <h2>Cognitive Wellness</h2>
+          <h2>Cognitive</h2>
           <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Cognitive Wellness entails self-awareness, open-mindedness, and effective problem solving. Developing this area enables us to live productively and overcome challenges. Examples of ways to support <span class="bold white">Cognitive Wellness</span> include:
+              Cognitive health entails self-awareness, open-mindedness, and effective problem solving. Developing this area enables us to live productively and overcome challenges. Examples of ways to support Cognitive health include:
             </p>
             <br/>
             <ul>
@@ -65,14 +65,14 @@
         <div class="border"></div>
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-emotional.png" alt="Emotional Logo" />
-          <h2>Emotional Wellness</h2>
+          <h2>Emotional</h2>
           <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Emotional Wellness entails awareness, expression and acceptance of our feelings. Developing this area makes us more in-tune when handling difficult emotions and fostering connections with others. Examples of ways to support <span class="bold white">Emotional Wellness</span> include:
+              Emotional health entails awareness, expression and acceptance of our feelings. Developing this area makes us more in-tune when handling difficult emotions and fostering connections with others. Examples of ways to support Emotional health include:
             </p>
             <br/>
             <ul>
@@ -90,14 +90,14 @@
         <div class="border"></div>
         <div class="accordian-head">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/dw-spiritual.png" alt="" />
-          <h2>Spiritual Wellness</h2>
+          <h2>Spiritual</h2>
           <button type="button" name="button">&times;</button>
         </div>
         <div class="border"></div>
         <div class="expand-content">
           <div class="content-wrap">
             <p>
-              Spiritual Wellness entails making decisions and acting in line with personal values and beliefs. Developing this area allows us to nurture self-esteem and to pursue rewarding experiences in life. Examples of ways to support <span class="bold white">Spiritual Wellness</span> include:
+              Spiritual health entails making decisions and acting in line with personal values and beliefs. Developing this area allows us to nurture self-esteem and to pursue rewarding experiences in life. Examples of ways to support Spiritual health include:
             </p>
             <br/>
             <ul>

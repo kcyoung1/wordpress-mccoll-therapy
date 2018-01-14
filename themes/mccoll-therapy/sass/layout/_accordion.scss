@@ -49,9 +49,15 @@
       cursor: pointer;
       overflow: hidden;
       align-items: center;
-      @extend container;
-      padding: 0;
       margin: 20px auto;
+      width: 90%;
+      height: 100%;
+      @include tablet {
+        width: 85%;
+      }
+      @include desktop {
+        width: 75%;
+      }
     }
     .expand-content {
       display: none;
