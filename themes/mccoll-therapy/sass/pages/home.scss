@@ -44,9 +44,20 @@
 // About Section
 // =============
 .about-wrapper {
-    h2 {
-      margin-top: 45px;
+  h2 {
+    margin-top: 45px;
+  }
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    @include tablet {
+      font-size: 1.5rem;
     }
+    @include desktop {
+      font-size: 1.8rem;
+    }
+  }
+  .bxslider {
     li {
       display: flex;
       justify-content: center;
@@ -56,18 +67,49 @@
       border-radius: 3px;
       width: 100%;
     }
-    p {
-      font-size: 1.2rem;
+  }
+  .categories {
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    li {
+      flex: 0 1 50%;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       @include tablet {
-        font-size: 1.5rem;
-      }
-      @include desktop {
-        font-size: 1.8rem;
+        flex: 0 1 33.33%;
       }
     }
-  
+    h4 {
+      font-size: 1rem;
+      text-transform: none;
+      @include desktop {
+        font-size: 1.3rem;
+      }
+    }
+    .img-circle {
+      background: $color__navy;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      @include desktop {
+        height: 200px;
+        width: 200px;
+      }
+      img {
+        max-width: 50%;
+      }
+    }
   }
+}
 
 // Services Section
 // ================
@@ -90,9 +132,17 @@
             max-width: 1000px;
             width: 100%;
             margin: 0 auto;
+            justify-content: center;
+        }
+        button {
+          position: absolute; 
+          right: 0;
+          @include tablet {
+            right: 10%;
+          }
         }
         h2 {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: $color__white;
             @include tablet {
                 font-size: 1.5rem;

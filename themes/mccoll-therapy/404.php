@@ -20,8 +20,8 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a>
-					<p class="error-msg"><?php echo esc_html( 'It looks like nothing was found at this location.' ); ?> Click <a href="/">here</a> to go back to the front page.</p>
+					<!-- <a href="/" class="mccoll-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/icons/mccoll-therapy.png" alt="McColl Therapy Logo" /></a> -->
+					<p class="error-msg"><?php echo esc_html( 'It looks like nothing was found at this location.' ); ?> Click <a href="/" class="link">here</a> to go back to the front page.</p>
 
 					<?php if ( mccoll_therapy_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">

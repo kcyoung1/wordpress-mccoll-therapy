@@ -10,20 +10,24 @@
 <section class="wellness">
 
     <div class="banner">
-			<h1>Understanding Mental Wellness</h1>
+			<h1>Mental Wellness</h1>
     </div>
-    
 		<div class="section-spacing">
-			<h2>Health Dimensions</h2> 
 			<div class="container">
-				<!-- <p><span class="bold physical">Physical Wellness</span> entails attending to our bodies’ needs and maintaining a healthy lifestyle. Developing this area protects us from chronic health issues and reduces imbalance across other dimensions of wellness.</p>
-				<p><span class="bold cognitive">Cognitive Wellness</span> entails self-awareness, open-mindedness, and effective problem solving. Developing this area enables us to live productively and overcome challenges.</p>
-				<p><span class="bold emotional">Emotional Wellness</span> entails awareness, expression and acceptance of our feelings. Developing this area makes us more in-tune when handling difficult emotions and fostering connections with others.</p>
-				<p><span class="bold spiritual">Spiritual Wellness</span> entails making decisions and acting in line with personal values and beliefs. Developing this area allows us to nurture self-esteem and to pursue rewarding experiences in life.</p> -->
-				<p>The health dimensions are connected internally, with the human nervous system, and externally, with communities and workplaces. Injury, illness, or adversity that impact one or more dimension’s ability to support the system lead to imbalances. The other dimensions will work to manage the imbalance and continue supporting Mental Wellness.</p>
-        		<p>When the other dimensions are unable to compensate effectively, further imbalances may occur and in turn disrupt Mental Wellness.</p>
+				<p><span class="bold">Mental Wellness</span> is important for people to have healthy, productive lives. It is a state of positive health and quality of life that enables people to meet responsibilities, pursue ambitions, and grow as individuals. To maintain this optimal state of being people develop knowledge, skills, and habits that serve different aspects of personal health.</p>
+				<p>
+				<span class="bold">Four Health Dimensions</span> work together to build resilience and maintain Mental Wellness through experiences of adversity, illness, and injury. McColl Therapy assists individuals to understand and attend to each dimension, enabling individuals to experience personal growth and lasting wellness.
+				</p>
 			</div>
-			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>		
+			<h2>Health Dimensions</h2> 
+			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>	
+			<div class="container">
+				<p>The Health Dimensions are connected internally, with the human nervous system, as well as externally with communities and workplaces. When one dimension is negatively impacted by injury, illness or adversity, the other dimensions find strategies to compensate. 
+        <br>
+        <br>
+				If the Health Dimensions are unable to effectively protect Mental Wellness, <span class="bold">Health Imbalances</span> can develop.
+				</p>	
+			</div>
 		</div>
 
 		

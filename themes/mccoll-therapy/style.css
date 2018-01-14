@@ -288,7 +288,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: 1px; }
 
 h1 {
   font-size: 2rem; }
@@ -414,7 +415,7 @@ big {
       width: 85%; } }
   @media (min-width: 1024px) {
     .container, .site-info {
-      width: 80%; } }
+      width: 75%; } }
 
 .section-spacing {
   padding: 30px 0; }
@@ -451,6 +452,9 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden; }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -1128,7 +1132,8 @@ object {
 
 .accordian {
   display: block;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
   .accordian img {
     width: 100px;
     height: 100px; }
@@ -1141,7 +1146,7 @@ object {
         flex: 0 1 100%;
     width: 100%; }
   .accordian h2 {
-    text-transform: uppercase; }
+    text-transform: none; }
   .accordian p {
     width: 100%;
     margin: 0; }
@@ -1166,15 +1171,14 @@ object {
   .accordian .accordian-head {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    max-width: 1000px;
-    width: 100%;
-    margin: 20px auto;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     cursor: pointer;
     overflow: hidden;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    padding: 0;
+    margin: 20px auto; }
   .accordian .expand-content {
     display: none;
     padding: 60px 25px; }
@@ -1373,8 +1377,10 @@ object {
   .banner-wrapper h1 {
     text-transform: uppercase;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
   .banner-wrapper p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
     text-align: center;
@@ -1400,16 +1406,6 @@ object {
 .about-wrapper h2 {
   margin-top: 45px; }
 
-.about-wrapper li {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  font-size: 1.5rem;
-  border-top: 2px solid #B8F4F3;
-  border-radius: 3px;
-  width: 100%; }
-
 .about-wrapper p {
   font-size: 1.2rem;
   text-align: center; }
@@ -1419,6 +1415,66 @@ object {
   @media (min-width: 1024px) {
     .about-wrapper p {
       font-size: 1.8rem; } }
+
+.about-wrapper .bxslider li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 1.5rem;
+  border-top: 2px solid #B8F4F3;
+  border-radius: 3px;
+  width: 100%; }
+
+.about-wrapper .categories ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.about-wrapper .categories li {
+  -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 768px) {
+    .about-wrapper .categories li {
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%; } }
+
+.about-wrapper .categories h4 {
+  font-size: 1rem;
+  text-transform: none; }
+  @media (min-width: 1024px) {
+    .about-wrapper .categories h4 {
+      font-size: 1.3rem; } }
+
+.about-wrapper .categories .img-circle {
+  background: #225378;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+  @media (min-width: 1024px) {
+    .about-wrapper .categories .img-circle {
+      height: 200px;
+      width: 200px; } }
+  .about-wrapper .categories .img-circle img {
+    max-width: 50%; }
 
 .services-wrapper {
   margin-top: 30px;
@@ -1433,9 +1489,17 @@ object {
   .services-wrapper .accordian .accordian-head {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .services-wrapper .accordian button {
+    position: absolute;
+    right: 0; }
+    @media (min-width: 768px) {
+      .services-wrapper .accordian button {
+        right: 10%; } }
   .services-wrapper .accordian h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white; }
     @media (min-width: 768px) {
       .services-wrapper .accordian h2 {
@@ -1615,34 +1679,31 @@ object {
     margin-left: 20px;
     list-style: disc; }
 
-.color-header {
-  background: #06A6B0;
-  width: 100%;
-  height: 80px; }
-
 .error404 {
   text-align: center; }
   .error404 .error-404 {
-    height: calc(100vh - 150px); }
+    height: calc(100vh - 250px); }
   .error404 .page-content {
     margin-top: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
   .error404 h1 {
     text-transform: uppercase; }
   .error404 img {
     height: auto;
     width: 100px; }
-  .error404 a {
+  .error404 .link {
     color: #06A6B0; }
-    .error404 a:hover {
+    .error404 .link:hover {
       color: #B8F4F3; }
   .error404 .error-msg {
-    margin-left: 20px;
-    width: 280px;
-    text-align: left; }
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; }
 
 .site-info {
   color: white; }

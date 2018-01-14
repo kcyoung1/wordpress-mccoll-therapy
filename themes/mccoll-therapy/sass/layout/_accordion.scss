@@ -2,6 +2,7 @@
 .accordian {
     display: block;
     width: 100%;
+    overflow-x: hidden;
     img {
       width: 100px;
       height: 100px;
@@ -15,7 +16,7 @@
       width: 100%;
     }
     h2 {
-      text-transform: uppercase;
+      text-transform: none;
     }
     p {
       width: 100%;
@@ -44,13 +45,13 @@
     }
     .accordian-head {
       display: flex;
-      justify-content: space-around;
-      max-width: 1000px;
-      width: 100%;
-      margin: 20px auto;
+      justify-content: space-between;
       cursor: pointer;
       overflow: hidden;
       align-items: center;
+      @extend container;
+      padding: 0;
+      margin: 20px auto;
     }
     .expand-content {
       display: none;
