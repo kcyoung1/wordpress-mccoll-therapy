@@ -1466,7 +1466,7 @@ object {
       font-size: 1.3rem; } }
 
 .about-wrapper .categories .img-circle {
-  background: #225378;
+  background: #B8F4F3;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1496,7 +1496,6 @@ object {
   .services-wrapper .accordian .accordian-head {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
     -ms-flex-pack: center;
         justify-content: center; }
   .services-wrapper .accordian button {
@@ -1523,6 +1522,9 @@ object {
     margin-bottom: 15px; }
   .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
     background: #06A6B0; }
+
+.profile-wrapper .bx-pager {
+  display: none; }
 
 @media (min-width: 768px) {
   .profile-list .profile-wrap {

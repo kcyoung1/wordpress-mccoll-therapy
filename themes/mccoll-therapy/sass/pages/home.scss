@@ -93,7 +93,7 @@
       }
     }
     .img-circle {
-      background: $color__navy;
+      background: $color__mint;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -131,7 +131,6 @@
         .accordian-head {
             max-width: 1000px;
             width: 100%;
-            margin: 0 auto;
             justify-content: center;
         }
         button {
@@ -174,9 +173,9 @@
 // ===============
   .profile-wrapper {
     // height: 100vh;
-    // .bx-pager {
-    //   display: none;
-    // }
+    .bx-pager {
+      display: none;
+    }
   }
   
   .profile-list {
