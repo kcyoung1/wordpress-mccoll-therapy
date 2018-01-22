@@ -45,7 +45,7 @@
 // =============
 .about-wrapper {
   h2 {
-    margin-top: 45px;
+    // margin-top: 45px;
   }
   p {
     font-size: 1.2rem;
@@ -57,7 +57,8 @@
       font-size: 1.8rem;
     }
   }
-  .bxslider {
+  .bx-wrapper {
+    margin-bottom: 100px;
     li {
       display: flex;
       justify-content: center;
@@ -120,6 +121,26 @@
       img {
         max-width: 50%;
       }
+      &.focus {
+        img {
+          margin-left: 10px;
+        }
+      }
+      &.emotion {
+        img {
+          margin-right: 10px;
+        }
+      }
+      &.mental {
+        img {
+          margin-bottom: 10px;
+        }
+      }
+      &.safety {
+        img {
+          margin-top: 5px;
+        }
+      }
     }
   }
 }
@@ -128,7 +149,7 @@
 // ================
 
 .services-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   @extend .center;
   background-color: $color__navy;
   color: white;
@@ -186,6 +207,9 @@
 // ===============
   .profile-wrapper {
     // height: 100vh;
+    .bx-wrapper {
+      margin-bottom: 20px;
+    }
     .bx-pager {
       display: none;
     }

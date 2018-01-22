@@ -1410,9 +1410,6 @@ object {
   top: 0;
   z-index: 0; }
 
-.about-wrapper h2 {
-  margin-top: 45px; }
-
 .about-wrapper p {
   font-size: 1.2rem;
   text-align: center; }
@@ -1423,15 +1420,17 @@ object {
     .about-wrapper p {
       font-size: 1.8rem; } }
 
-.about-wrapper .bxslider li {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  font-size: 1.5rem;
-  border-top: 2px solid #B8F4F3;
-  border-radius: 3px;
-  width: 100%; }
+.about-wrapper .bx-wrapper {
+  margin-bottom: 100px; }
+  .about-wrapper .bx-wrapper li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 1.5rem;
+    border-top: 2px solid #B8F4F3;
+    border-radius: 3px;
+    width: 100%; }
 
 .about-wrapper .categories ul {
   display: -ms-flexbox;
@@ -1495,9 +1494,17 @@ object {
       width: 200px; } }
   .about-wrapper .categories .img-circle img {
     max-width: 50%; }
+  .about-wrapper .categories .img-circle.focus img {
+    margin-left: 10px; }
+  .about-wrapper .categories .img-circle.emotion img {
+    margin-right: 10px; }
+  .about-wrapper .categories .img-circle.mental img {
+    margin-bottom: 10px; }
+  .about-wrapper .categories .img-circle.safety img {
+    margin-top: 5px; }
 
 .services-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #225378;
   color: white;
   padding-bottom: 30px; }
@@ -1535,6 +1542,9 @@ object {
     margin-bottom: 15px; }
   .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
     background: #B8F4F3; }
+
+.profile-wrapper .bx-wrapper {
+  margin-bottom: 20px; }
 
 .profile-wrapper .bx-pager {
   display: none; }

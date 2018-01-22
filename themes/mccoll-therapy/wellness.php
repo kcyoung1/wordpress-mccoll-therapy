@@ -34,10 +34,11 @@
         <p>Many different situations may lead to Health Imbalances, from significant life difficulties to seemingly mundane stress to lapses in self-care. Typically, imbalances don’t become concerns for Mental Wellness until there are multiple occurring at the same time.
         <br>
         <br>
-        Imbalance in one Health Dimension can lead to imbalances in other dimensions. For example:</p>
+        Imbalance in one Health Dimension can lead to imbalances in other dimensions.</p>
           <div class="flexbox">
             <div class="flex-half flex-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width 85%;" />
+              <!-- <h3>For example:</h3> -->
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width: 70%;" />
             </div>
             <div class="flex-half flex-item list-container">
                 <p>Common Health Imbalances include:</p>
@@ -71,7 +72,7 @@
               The concerns people experience can vary significantly, as do the strategies to address Imbalances and restore Mental Wellness.</p>
             </div>
             <div class="flex-half flex-item">
-              <img style="max-width: 95%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
+              <img style="max-width: 100%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
             </div>
           </div>
         </div>
