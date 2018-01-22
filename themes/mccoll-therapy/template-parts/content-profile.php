@@ -8,7 +8,7 @@
 ?>
 
 <section id="team" class="profile-wrapper container">
-    <h2>Profile</h2>
+    <!-- <h2>Profile</h2> -->
     <ul class="bxslider-profile profile-list">
         <?php $profile_info = array(
             'post_type' => 'profile',

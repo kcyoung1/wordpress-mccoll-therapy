@@ -26,10 +26,10 @@
             </p>
             <br/>
             <ul>
-              <li>Keeping a balanced and nutritious diet</li>
-              <li>Engaging in physical activity and exercise</li>
-              <li>Maintaining a regular sleep schedule</li>
-              <li>Seeking medical help when needed</li>
+              <li>Keep a balanced and nutritious diet</li>
+              <li>Engage in physical activity and exercise</li>
+              <li>Maintain a regular sleep schedule</li>
+              <li>Seek medical help when needed</li>
             </ul>
             <br/>
             <a href="#contact" class="btn">Contact Us</a>
@@ -51,10 +51,10 @@
             </p>
             <br/>
             <ul>
-              <li>Recognizing unbalanced thought patterns</li>
-              <li>Considering facts, evidence and alternative perspectives</li>
-              <li>Engaging in education and career pursuits</li>
-              <li>Planning and preparing for difficult situations</li>
+              <li>Recognize unbalanced thought patterns</li>
+              <li>Consider facts, evidence and alternative perspectives</li>
+              <li>Engage in education and career pursuits</li>
+              <li>Plan and preparing for difficult situations</li>
             </ul>
             <br/>
             <a href="#contact" class="btn">Contact Us</a>
@@ -76,10 +76,10 @@
             </p>
             <br/>
             <ul>
-              <li>Being present and focused in the moment</li>
-              <li>Participating in enjoyable and meaningful activities</li>
-              <li>Developing effective coping strategies</li>
-              <li>Maintaining a non-judgemental perspective</li>
+              <li>Be present and focused in the moment</li>
+              <li>Participate in enjoyable and meaningful activities</li>
+              <li>Develop effective coping strategies</li>
+              <li>Maintain a non-judgemental perspective</li>
             </ul>
             <br/>
             <a href="#contact" class="btn">Contact Us</a>
@@ -101,10 +101,10 @@
             </p>
             <br/>
             <ul>
-              <li>Fostering connections with the people we care about</li>
-              <li>Supporting our communities and causes</li>
-              <li>Identifying and maintaining personal boundaries</li>
-              <li>Being open-minded about our experiences</li>
+              <li>Foster connections with the people we care about</li>
+              <li>Support our communities and causes</li>
+              <li>Identify and maintaining personal boundaries</li>
+              <li>Be open-minded about our experiences</li>
             </ul>
             <br/>
             <a href="#contact" class="btn">Contact Us</a>

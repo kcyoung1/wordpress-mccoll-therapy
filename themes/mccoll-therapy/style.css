@@ -1082,7 +1082,7 @@ object {
 
 .site-footer {
   background: #06A6B0;
-  height: 400px;
+  height: 300px;
   position: relative;
   width: 100%;
   color: white;
@@ -1090,7 +1090,7 @@ object {
   padding-bottom: 20px; }
   @media (min-width: 768px) {
     .site-footer {
-      height: 250px;
+      height: 200px;
       padding-bottom: 0; }
       .site-footer .flex-item {
         -ms-flex-align: start;
@@ -1452,7 +1452,8 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  margin-bottom: 30px; }
   @media (min-width: 768px) {
     .about-wrapper .categories li {
       -ms-flex: 0 1 33.33%;
@@ -1460,13 +1461,25 @@ object {
 
 .about-wrapper .categories h4 {
   font-size: 1rem;
-  text-transform: none; }
+  text-transform: none;
+  margin-bottom: 5px; }
   @media (min-width: 1024px) {
     .about-wrapper .categories h4 {
       font-size: 1.3rem; } }
 
+.about-wrapper .categories p {
+  font-size: 12px;
+  letter-spacing: .8px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .about-wrapper .categories p {
+      font-size: 14px;
+      letter-spacing: 1px; } }
+
 .about-wrapper .categories .img-circle {
-  background: #B8F4F3;
+  background: #225378;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1521,7 +1534,7 @@ object {
   .services-wrapper .accordian .content-wrap p:last-of-type {
     margin-bottom: 15px; }
   .services-wrapper .accordian .btn, .services-wrapper .accordian .contact-wrapper .wpcf7-submit, .contact-wrapper .services-wrapper .accordian .wpcf7-submit {
-    background: #06A6B0; }
+    background: #B8F4F3; }
 
 .profile-wrapper .bx-pager {
   display: none; }
@@ -1616,9 +1629,6 @@ object {
     .wellness-wrapper .dw-diagram {
       -ms-flex-direction: row;
           flex-direction: row; } }
-  @media only screen and (max-width: 768px) {
-    .wellness-wrapper .dw-diagram p {
-      text-align: center; } }
 
 .wellness-wrapper .diagram-info {
   margin-top: 30px;

@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section id="home" class="banner-wrapper">
-				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-old.jpg">
+				<div class="hero-banner" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/banner.jpg">
 					<div class="gradient"></div>
 					<h1>McColl Therapy</h1>
 					<p>Supporting personal growth and lasting wellness</p>
@@ -53,36 +53,42 @@ get_header(); ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-focus.png" alt="Focus and Productivity">
 							</div>	
 							<h4>Focus & Productivity</h4>
+							<p>Fully engage in activities to meet goals</p>
 						</li>
 						<li>
 							<div class="img-circle">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-work.png" alt="Work-Self Balance">
 							</div>	
 							<h4>Work-Self Balance</h4>
+							<p>Pursue interests and enjoy each moment</p>
 						</li>
 						<li>
 							<div class="img-circle">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-emotion.png" alt="Emotion Regulation">
 							</div>	
 							<h4>Emotion Regulation</h4>
+							<p>Experience and handle emotions effectively</p>
 						</li>
 						<li>
 							<div class="img-circle">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-transition.png" alt="Transitions and Independence">
 							</div>	
 							<h4>Transitions & Independence</h4>
+							<p>Engage in new activities of daily living</p>
 						</li>
 						<li>
 							<div class="img-circle">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-mental.png" alt="Mental Illness Recovery">
 							</div>	
 							<h4>Mental Illness Recovery</h4>
+							<p>Pursue life goals and prevent relapse</p>
 						</li>
 						<li>
 							<div class="img-circle">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-safety.png" alt="Safety and Risk Management">
 							</div>	
 							<h4>Safety and Risk Management</h4>
+							<p>Handle ineffective and harmful urges</p>
 						</li>
 					</ul>
 				</div>
@@ -127,7 +133,7 @@ get_header(); ?>
 					<h2>Mental Wellness</h2>
 				</div>	
 				<div class="container">
-					<div style="text-align: center;">
+					<div style="">
 							<p style="max-width: 900px; width: 100%; margin: 0 auto;">Mental Wellness is important for people to have healthy, productive lives. It is a personal state of positive health and quality of life that enables people to meet responsibilities, pursue ambitions, and grow as individuals.</p>
 							<!-- <div class="flexbox" style="margin: 50px 0;">
 									<div class="flex-half flex-item ">
@@ -147,6 +153,7 @@ get_header(); ?>
 						</div>
 						<div class="flex-item flex-half">
 								<p>Four Health Dimensions work together to build resilience and maintain Mental Wellness through experiences of adversity, illness, and injury. McColl Therapy assists individuals to understand and attend to each Health Dimension, enabling individuals to experience personal growth and lasting wellness.
+								<br>
 								<br>
 								<br>
 								<a href="/wellness" class="btn">Read More</a>

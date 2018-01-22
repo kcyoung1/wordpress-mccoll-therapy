@@ -3,7 +3,7 @@
 }
 .site-footer {
   background: $color__turq;
-  height: 400px;
+  height: 300px;
   position: relative;
   @extend .center;
   width: 100%;
@@ -11,7 +11,7 @@
   text-align: center;
   padding-bottom: 20px;
   @include tablet {
-    height: 250px;
+    height: 200px;
     padding-bottom: 0;
     .flex-item {
       align-items: flex-start;

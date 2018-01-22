@@ -15,7 +15,7 @@
 			<div class="container">
 				<p><span class="bold">Mental Wellness</span> is important for people to have healthy, productive lives. It is a state of positive health and quality of life that enables people to meet responsibilities, pursue ambitions, and grow as individuals. To maintain this optimal state of being people develop knowledge, skills, and habits that serve different aspects of personal health.</p>
 				<p>
-				<span class="bold">Four Health Dimensions</span> work together to build resilience and maintain Mental Wellness through experiences of adversity, illness, and injury. McColl Therapy assists individuals to understand and attend to each dimension, enabling individuals to experience personal growth and lasting wellness.
+				Four <span class="bold">Health Dimensions</span> work together to build resilience and maintain Mental Wellness through experiences of adversity, illness, and injury. McColl Therapy assists individuals to understand and attend to each dimension, enabling individuals to experience personal growth and lasting wellness.
 				</p>
 			</div>
 			<h2 class="section-header">Health Dimensions</h2> 
@@ -37,7 +37,7 @@
         Imbalance in one Health Dimension can lead to imbalances in other dimensions. For example:</p>
           <div class="flexbox">
             <div class="flex-half flex-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width 85%;" />
             </div>
             <div class="flex-half flex-item list-container">
                 <p>Common Health Imbalances include:</p>
@@ -71,22 +71,21 @@
               The concerns people experience can vary significantly, as do the strategies to address Imbalances and restore Mental Wellness.</p>
             </div>
             <div class="flex-half flex-item">
-              <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
+              <img style="max-width: 95%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
             </div>
           </div>
         </div>
 
         <div class="section-spacing">
-					<h2 class="section-header">Addressing Imbalances</h2>
+          <h2 class="section-header">Mental Wellness</h2>
+          <p>Advanced skills are often required to address Health Imbalances and Wellness Concerns effectively. Innovative solutions can assist to mitigate or prevent future imbalances and concerns. Assistance to better understand concerns and develop effective strategies enables people to maintain Mental Wellness and prevent future challenges from impacting quality of life.</p>
 					<div class="flexbox">
 						<div class="flex-half flex-item">
               <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/dimensions.png" alt="Wellness Diagram" />
               
 						</div>
 						<div class="flex-half flex-item list-container">
-							<p>Advanced skills are often required to address Health Imbalances and Wellness Concerns effectively. Innovative solutions can assist to mitigate or prevent future imbalances and concerns. Assistance to better understand concerns and develop effective strategies enables people to maintain Mental Wellness and prevent future challenges from impacting quality of life.
-							<br/>
-							<br/>
+							<p>
               McColl Therapy offers comprehensive Occupational Therapy for mental wellness. Our approach balances evidence-based practices with your life values and context. Through this personalized approach for well-being and activity, we assist to:
               </p>
               <ul>

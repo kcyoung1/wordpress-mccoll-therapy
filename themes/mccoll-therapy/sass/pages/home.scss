@@ -81,6 +81,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-bottom: 30px;
       @include tablet {
         flex: 0 1 33.33%;
       }
@@ -88,12 +89,24 @@
     h4 {
       font-size: 1rem;
       text-transform: none;
+      margin-bottom: 5px;
       @include desktop {
         font-size: 1.3rem;
       }
     }
+    p {
+      font-size: 12px;
+      letter-spacing: .8px;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      @include desktop {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+    }
     .img-circle {
-      background: $color__mint;
+      background: $color__navy;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -115,57 +128,57 @@
 // ================
 
 .services-wrapper {
-    margin-top: 30px;
-    @extend .center;
-    background-color: $color__navy;
-    color: white;
-    padding-bottom: 30px;
+  margin-top: 30px;
+  @extend .center;
+  background-color: $color__navy;
+  color: white;
+  padding-bottom: 30px;
+  h2 {
+      color: $color__mint;
+  }
+  .border {
+      border-bottom: 1px solid $color__mint;
+      width: 100%;
+  }
+  .accordian {
+    .accordian-head {
+      max-width: 1000px;
+      width: 100%;
+      justify-content: center;
+    }
+    button {
+      position: absolute; 
+      right: 0;
+      @include tablet {
+        right: 10%;
+      }
+    }
     h2 {
-        color: $color__mint;
-    }
-    .border {
-        border-bottom: 1px solid $color__mint;
-        width: 100%;
-    }
-    .accordian {
-        .accordian-head {
-            max-width: 1000px;
-            width: 100%;
-            justify-content: center;
-        }
-        button {
-          position: absolute; 
-          right: 0;
-          @include tablet {
-            right: 10%;
-          }
-        }
-        h2 {
-            font-size: 0.9rem;
-            color: $color__white;
-            @include tablet {
-                font-size: 1.5rem;
-            }
-        }
-        img {
-            width: 110px;
-            @include tablet {
-                width: 170px;
-            }
-        }
-        .expand-content {
-            background: white;
-            color: $color__text-main;
-        }
-        .content-wrap {
-            p:last-of-type {
-                margin-bottom: 15px;
-            }
-        }
-        .btn {
-            background: $color__turq;
+        font-size: 0.9rem;
+        color: $color__white;
+        @include tablet {
+            font-size: 1.5rem;
         }
     }
+    img {
+        width: 110px;
+        @include tablet {
+            width: 170px;
+        }
+    }
+    .expand-content {
+        background: white;
+        color: $color__text-main;
+    }
+    .content-wrap {
+        p:last-of-type {
+          margin-bottom: 15px;
+        }
+    }
+    .btn {
+        background: $color__mint;
+    }
+  }
 }
 
 
@@ -287,7 +300,7 @@
       }
       p {
         @media only screen and (max-width: $tablet-width) {
-          text-align: center;
+          // text-align: center;
         }
       }
     }

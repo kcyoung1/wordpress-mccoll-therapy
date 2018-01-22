@@ -24,7 +24,7 @@
             </a>
             <br>
             <br>
-            <a href="mailto:ldmccoll@gmail.com">ldmccoll@gmail.com</a>
+            <a href="mailto:logan@mccolltherapy.com">logan@mccolltherapy.com</a>
             <br/>
             <a href="tel:780-965-9906">780-965-9906</a>
           </div>
