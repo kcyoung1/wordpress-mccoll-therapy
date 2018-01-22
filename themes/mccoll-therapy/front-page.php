@@ -132,7 +132,7 @@ get_header(); ?>
 				<div class="wellness-banner">
 					<h2>Mental Wellness</h2>
 				</div>	
-				<div class="container">
+				<div class="container" style="padding: 70px 0;">
 					<div style="">
 							<p style="max-width: 900px; width: 100%; margin: 0 auto;">Mental Wellness is important for people to have healthy, productive lives. It is a personal state of positive health and quality of life that enables people to meet responsibilities, pursue ambitions, and grow as individuals.</p>
 							<!-- <div class="flexbox" style="margin: 50px 0;">

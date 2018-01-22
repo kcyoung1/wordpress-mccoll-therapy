@@ -255,6 +255,7 @@
         border-bottom: 2px solid $color__turq;
       }
       h4 {
+        margin-top: 30px;
         @include tablet {
           width: 400px;
           margin-left: auto;
