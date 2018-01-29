@@ -20,8 +20,8 @@
 			</div>
 			<h2 class="section-header">Health Dimensions</h2> 
 			<?php get_template_part( 'template-parts/content', 'wellness' ); ?>	
-			<div class="container" style="padding-bottom: 0;">
-				<p>The Health Dimensions are connected internally, with the human nervous system, as well as externally with communities and workplaces. When one dimension is negatively impacted by injury, illness or adversity, the other dimensions find strategies to compensate. 
+			<div class="container bottom">
+				<p style="margin-bottom: 0;">The Health Dimensions are connected internally, with the human nervous system, as well as externally with communities and workplaces. When one dimension is negatively impacted by injury, illness or adversity, the other dimensions find strategies to compensate. 
         <br>
         <br>
 				If the Health Dimensions are unable to effectively protect Mental Wellness, <span class="bold">Health Imbalances</span> can develop.
@@ -29,7 +29,7 @@
 			</div>
 
 		
-    <div class="container">
+    <div class="container bottom">
         <h2 class="section-header">Health Imbalances</h2>
         <p>Many different situations may lead to Health Imbalances, from significant life difficulties to seemingly mundane stress to lapses in self-care. Typically, imbalances don’t become concerns for Mental Wellness until there are multiple occurring at the same time.
         <br>
@@ -38,7 +38,7 @@
           <div class="flexbox">
             <div class="flex-half flex-item">
               <!-- <h3>For example:</h3> -->
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width: 70%;" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width: 300px;" />
             </div>
             <div class="flex-half flex-item list-container">
                 <p>Common Health Imbalances include:</p>
@@ -61,23 +61,23 @@
                 </ul>
             </div>
         </div>
-
-        <div class="section-spacing">
+      </div>
+        <div class="container bottom">
           <h2 class="section-header">Wellness Concern</h2>
           <div class="flexbox">
             <div class="flex-half flex-item">
-              <p>Much like when a cup spills over, imbalances that linger and accumulate can disrupt Mental Wellness. The resulting Wellness Concerns may occur gradually or suddenly, and if left unaddressed may act as further imbalances.
+              <p style="margin-top: 0;">Much like when a cup spills over, imbalances that linger and accumulate can disrupt Mental Wellness. The resulting Wellness Concerns may occur gradually or suddenly, and if left unaddressed may act as further imbalances.
               <br>
               <br>
               The concerns people experience can vary significantly, as do the strategies to address Imbalances and restore Mental Wellness.</p>
             </div>
             <div class="flex-half flex-item">
-              <img style="max-width: 100%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
+              <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
             </div>
           </div>
         </div>
 
-        <div class="section-spacing">
+        <div class="container">
           <h2 class="section-header">Mental Wellness</h2>
           <p>Advanced skills are often required to address Health Imbalances and Wellness Concerns effectively. Innovative solutions can assist to mitigate or prevent future imbalances and concerns. Assistance to better understand concerns and develop effective strategies enables people to maintain Mental Wellness and prevent future challenges from impacting quality of life.</p>
 					<div class="flexbox">
@@ -119,7 +119,6 @@
             <p><a href="/#services" class="bold">Read more</a> about McColl Therapy services or <a href="/#contact" class="bold">request an appointment</a></p>
 					</div>
         </div>
-    </div>
 	
 
 </section>

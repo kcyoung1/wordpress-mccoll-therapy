@@ -416,6 +416,8 @@ big {
   @media (min-width: 1024px) {
     .container, .site-info {
       width: 75%; } }
+  .container.bottom, .bottom.site-info {
+    padding-bottom: 0; }
 
 .section-spacing {
   padding: 30px 0; }
@@ -431,7 +433,7 @@ big {
 .flex-item {
   -ms-flex: 0 1 98%;
       flex: 0 1 98%;
-  margin: 1%; }
+  margin: 0 1%; }
 
 .flex-full {
   -ms-flex: 0 1 98%;
@@ -1676,6 +1678,10 @@ object {
     text-transform: uppercase;
     font-size: 1.2rem; }
 
+@media (min-width: 768px) {
+  .wellness .container, .wellness .site-info {
+    padding-top: 70px; } }
+
 .wellness .banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/dimensions-banner.jpg") no-repeat top center;
   background-size: cover;
@@ -1695,7 +1701,7 @@ object {
       height: 100px; } }
 
 .wellness .section-header {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .wellness .list-container {
   -ms-flex-direction: column;
@@ -1705,7 +1711,8 @@ object {
   -ms-flex-pack: start;
       justify-content: flex-start; }
   .wellness .list-container p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 0; }
   .wellness .list-container ul {
     list-style: disc;
     margin-left: 40px; }
