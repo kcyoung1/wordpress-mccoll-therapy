@@ -38,7 +38,7 @@
           <div class="flexbox">
             <div class="flex-half flex-item">
               <!-- <h3>For example:</h3> -->
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.svg" alt="Wellness List" style="max-width: 300px;" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.svg" alt="Wellness List" style="max-width: 70%; width: 100%;" />
             </div>
             <div class="flex-half flex-item list-container">
                 <p>Common Health Imbalances include:</p>
