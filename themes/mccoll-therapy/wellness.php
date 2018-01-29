@@ -38,7 +38,7 @@
           <div class="flexbox">
             <div class="flex-half flex-item">
               <!-- <h3>For example:</h3> -->
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.png" alt="Wellness List" style="max-width: 300px;" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-list.svg" alt="Wellness List" style="max-width: 300px;" />
             </div>
             <div class="flex-half flex-item list-container">
                 <p>Common Health Imbalances include:</p>
@@ -72,7 +72,7 @@
               The concerns people experience can vary significantly, as do the strategies to address Imbalances and restore Mental Wellness.</p>
             </div>
             <div class="flex-half flex-item">
-              <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.png" alt="Wellness Diagram" />
+              <img style="max-width: 90%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/wellness-diagram.svg" alt="Wellness Diagram" />
             </div>
           </div>
         </div>
