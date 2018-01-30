@@ -101,9 +101,11 @@
       width: 100%;
       max-width: 200px;
       margin: 0 auto;
+      display: block;
       @include desktop {
         font-size: 14px;
         letter-spacing: 1px;
+        display: none;
       }
     }
     .img-circle {
@@ -114,12 +116,44 @@
       height: 100px;
       width: 100px;
       border-radius: 50%;
+      position: relative;
+      cursor: pointer;
       @include desktop {
         height: 200px;
         width: 200px;
       }
+      &:hover {
+        @include desktop {
+          p {
+            opacity: 1;
+          }
+          img {
+            opacity: 0;
+          }
+        }
+      }
       img {
+        opacity: 1;
+        transition: 300ms ease;
         max-width: 50%;
+      }
+      p {
+        display: none;
+        color: #FFF;
+        @include desktop {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: 300ms ease;
+        }
       }
       &.focus {
         img {

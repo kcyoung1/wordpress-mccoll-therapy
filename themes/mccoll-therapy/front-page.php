@@ -51,6 +51,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle focus">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-focus.png" alt="Focus and Productivity">
+								<p>Fully engage in activities to meet goals</p>
 							</div>	
 							<h4>Focus & Productivity</h4>
 							<p>Fully engage in activities to meet goals</p>
@@ -58,6 +59,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle work">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-work.png" alt="Work-Self Balance">
+								<p>Pursue interests and <br/> enjoy each moment</p>	
 							</div>	
 							<h4>Work-Self Balance</h4>
 							<p>Pursue interests and enjoy each moment</p>
@@ -65,6 +67,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle emotion">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-emotion.png" alt="Emotion Regulation">
+								<p>Experience and handle emotions effectively</p>
 							</div>	
 							<h4>Emotion Regulation</h4>
 							<p>Experience and handle emotions effectively</p>
@@ -72,6 +75,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle transitions">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-transition.png" alt="Transitions and Independence">
+								<p>Engage in new activities <br/> of daily living</p>
 							</div>	
 							<h4>Transitions & Independence</h4>
 							<p>Engage in new activities of daily living</p>
@@ -79,6 +83,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle mental">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-mental.png" alt="Mental Illness Recovery">
+								<p>Pursue life goals and prevent relapse</p>
 							</div>	
 							<h4>Mental Illness Recovery</h4>
 							<p>Pursue life goals and prevent relapse</p>
@@ -86,6 +91,7 @@ get_header(); ?>
 						<li>
 							<div class="img-circle safety">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-safety.png" alt="Safety and Risk Management">
+								<p>Handle ineffective and harmful urges</p>
 							</div>	
 							<h4>Safety and Risk Management</h4>
 							<p>Handle ineffective and harmful urges</p>
