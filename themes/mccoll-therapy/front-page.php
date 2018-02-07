@@ -54,15 +54,15 @@ get_header(); ?>
 								<p>Fully engage in activities to meet goals</p>
 							</div>	
 							<h4>Focus & Productivity</h4>
-							<p>Fully engage in activities to meet goals</p>
+							<!-- <p>Fully engage in activities to meet goals</p> -->
 						</li>
 						<li>
 							<div class="img-circle work">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-work.png" alt="Work-Self Balance">
-								<p>Pursue interests and <br/> enjoy each moment</p>	
+								<p>Pursue interests and enjoy each moment</p>	
 							</div>	
 							<h4>Work-Self Balance</h4>
-							<p>Pursue interests and enjoy each moment</p>
+							<!-- <p>Pursue interests and enjoy each moment</p> -->
 						</li>
 						<li>
 							<div class="img-circle emotion">
@@ -70,15 +70,15 @@ get_header(); ?>
 								<p>Experience and handle emotions effectively</p>
 							</div>	
 							<h4>Emotion Regulation</h4>
-							<p>Experience and handle emotions effectively</p>
+							<!-- <p>Experience and handle emotions effectively</p> -->
 						</li>
 						<li>
 							<div class="img-circle transitions">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-transition.png" alt="Transitions and Independence">
-								<p>Engage in new activities <br/> of daily living</p>
+								<p>Engage in new activities of daily living</p>
 							</div>	
 							<h4>Transitions & Independence</h4>
-							<p>Engage in new activities of daily living</p>
+							<!-- <p>Engage in new activities of daily living</p> -->
 						</li>
 						<li>
 							<div class="img-circle mental">
@@ -86,15 +86,15 @@ get_header(); ?>
 								<p>Pursue life goals and prevent relapse</p>
 							</div>	
 							<h4>Mental Illness Recovery</h4>
-							<p>Pursue life goals and prevent relapse</p>
+							<!-- <p>Pursue life goals and prevent relapse</p> -->
 						</li>
 						<li>
 							<div class="img-circle safety">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cat-safety.png" alt="Safety and Risk Management">
 								<p>Handle ineffective and harmful urges</p>
 							</div>	
-							<h4>Safety and Risk Management</h4>
-							<p>Handle ineffective and harmful urges</p>
+							<h4>Risk Management</h4>
+							<!-- <p>Handle ineffective and harmful urges</p> -->
 						</li>
 					</ul>
 				</div>

@@ -91,6 +91,7 @@
       font-size: 1rem;
       text-transform: none;
       margin-bottom: 5px;
+      padding: 0 15px;
       @include desktop {
         font-size: 1.3rem;
       }
@@ -103,7 +104,7 @@
       margin: 0 auto;
       display: block;
       @include desktop {
-        font-size: 14px;
+        font-size: 17px;
         letter-spacing: 1px;
         display: none;
       }
@@ -118,12 +119,16 @@
       border-radius: 50%;
       position: relative;
       cursor: pointer;
+      transition: 300ms ease;
+      opacity: 1;
       @include desktop {
         height: 200px;
         width: 200px;
       }
       &:hover {
         @include desktop {
+          background: $color__turq;
+          opacity: 0.6;
           p {
             opacity: 1;
           }
@@ -148,6 +153,7 @@
           transform: translate(-50%, -50%);
           height: 100%;
           width: 100%;
+          max-width: 76%;
           display: flex;
           align-items: center;
           justify-content: center;
