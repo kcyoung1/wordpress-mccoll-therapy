@@ -61,7 +61,7 @@
         <div class="container bottom">
           <h2 class="section-header">Wellness Concern</h2>
           <div class="flexbox">
-            <div class="flex-half flex-item">
+            <div class="flex-half flex-item" style="flex-direction: column;">
             <?php echo wp_kses_post(CFS()->get( 'wellness_concern_desc' )); ?>
               <!-- <p style="margin-top: 0;">Much like when a cup spills over, imbalances that linger and accumulate can disrupt Mental Wellness. The resulting Wellness Concerns may occur gradually or suddenly, and if left unaddressed may act as further imbalances.
               <br>

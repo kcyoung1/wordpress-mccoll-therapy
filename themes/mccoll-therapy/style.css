@@ -1696,6 +1696,10 @@ object {
 .page-template-wellness header {
   display: none; }
 
+@media screen and (max-width: 768px) {
+  .page-template-wellness .flex-half:first-of-type {
+    margin-bottom: 30px; } }
+
 .back-btn {
   position: fixed;
   max-width: 130px;
