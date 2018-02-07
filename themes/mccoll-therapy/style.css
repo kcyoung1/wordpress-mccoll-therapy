@@ -1776,7 +1776,7 @@ object {
 .error404 {
   text-align: center; }
   .error404 .error-404 {
-    height: calc(100vh - 250px); }
+    height: calc(100vh - 200px); }
   .error404 .page-content {
     margin-top: 0;
     display: -ms-flexbox;
